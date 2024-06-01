@@ -1,0 +1,67 @@
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 'auto';
+  min-width: 598px;
+  height: 57px;
+  margin-top: 30px;
+  padding: 8px 8px 8px 16px;
+  border-radius: 12px;
+  background: #FFFFFF99;
+  /* box-shadow: 0px 6px 50px 0px #0000001A; */
+
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: rgba(255, 255, 255, 0.9) 0rem 0rem 0.0625rem 0.0625rem inset, rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem;
+  /* backdrop-filter: saturate(200%) blur(1.875rem); */
+  backdrop-filter: blur(11px);
+
+  /* transition: 'box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+  boxShadow: isScroll ? 'rgba(255, 255, 255, 0.9) 0rem 0rem 0.0625rem 0.0625rem inset, rgba(0, 0, 0, 0.05) 0rem 1.25rem 1.6875rem 0rem': 'none',
+  backdropFilter: isScroll ? 'saturate(200%) blur(1.875rem)': 'none',
+  // backdropFilter  : 'blur(20px)'
+  // maxHeight       : 64,
+  width: 'auto',
+  minHeight: '4.6875rem',
+  color: theme.navbar.color,
+  backgroundColor: isScroll ? theme.navbar.background: 'transparent !important', */
+}
+
+.logo {
+  width: 80px;
+  height: 24px;
+}
+
+.menu-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  width: 290px;
+}
+
+.menu-links a {
+  text-decoration: none;
+}
+
+
+/* Button */
+.menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: 145px;
+  height: 41px;
+
+  background: #7F84FF;
+  border-radius: 8px;
+
+  /* Text */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: #FFFFFF;
+}
