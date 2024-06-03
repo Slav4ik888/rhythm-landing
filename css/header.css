@@ -29,6 +29,13 @@ header {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
   width: 80px;
   height: 24px;
 }

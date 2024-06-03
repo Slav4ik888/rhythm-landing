@@ -12,7 +12,7 @@
 </head>
 <body>
   <header>
-    <div>Ритм</div>
+    <div class="logo">Ритм</div>
     <div class="menu-links">
       <a href="#">О продукте</a>
       <a href="#">Преимущества</a>
@@ -47,15 +47,61 @@
 
         <div class="main-d-s-box">
           <div class="main-d-s-top-row">
-            <div class="main-d-s-top-row-item">1
-              <div class="main-d-s-top-row-item-img"></div>
+            <div class="main-d-s-top-row-item">
+              <div class="main-d-s-top-row-item-title">Сумма продаж</div>
+              <div>
+                <span class="main-d-s-top-row-item-value">3,74</span>
+                <span class="main-d-s-top-row-item-value-text">млн.р.</span>
+              </div>
+              <img class="main-d-s-top-row-item-img main-d-s-1" src="./assets/main-d-s-1.png" />
             </div>
 
-            <div class="main-d-s-top-row-item">2</div>
-            <div class="main-d-s-top-row-item">3</div>
+            <div class="main-d-s-top-row-item">
+              <div class="main-d-s-top-row-item-title">Кол-во точек сбыта</div>
+              <div>
+                <span class="main-d-s-top-row-item-value">135</span>
+                <span class="main-d-s-top-row-item-value-text">шт</span>
+              </div>
+              <img class="main-d-s-top-row-item-img main-d-s-2" src="./assets/main-d-s-2.png" />
+            </div>
+
+            <div class="main-d-s-top-row-item">
+              <div class="main-d-s-top-row-item-title">Постоянных клиентов</div>
+              <div>
+                <span class="main-d-s-top-row-item-value">45</span>
+                <span class="main-d-s-top-row-item-value-text">клиентов</span>
+              </div>
+              <img class="main-d-s-top-row-item-img main-d-s-3" src="./assets/main-d-s-3.png" />
+            </div>
           </div>
 
+          <div class="main-d-s-bottom-row">
+            <div class="main-d-s-bottom-row-box-1">
+              <div class="main-d-s-bottom-row-title">
+                <div class="main-d-s-bottom-row-title-text">Продажи по видам продукции</div>
+              </div>
+              <div class="main-d-s-bottom-row-products">
+                <div class="main-d-s-bottom-row-products-box-1">
+                  <div class="main-d-s-bottom-row-products-box-1-text">
+                    <div class="main-d-s-bottom-row-products-box-1-text-title">
+                      <div class="main-d-s-bottom-row-products-box-1-text-title-text">Сумма продаж</div>
+                      <div class="main-d-s-bottom-row-products-box-1-text-title-tag">
+                        <div class="main-d-s-bottom-row-products-box-1-text-title-tag-text">Выручка</div>
+                      </div>
+                    </div>
+                    <div class="main-d-s-bottom-row-products-box-1-text-numbers">
+                      <span class="main-d-s-bottom-row-products-box-1-text-numbers-value">317,3</span>
+                      <span class="main-d-s-bottom-row-products-box-1-text-numbers-comment">тысяч рублей</span>
+                    </div>
+                  </div>
+                  <img class="main-d-s-bottom-row-products-box-1-graph" src="./assets/main-d-s-4.png" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="main-d-s-bottom-row-blur"></div>
       </div>
     </div>
   </main>
@@ -138,7 +184,7 @@
 </html>
 
 <!-- 
-  git add . && git commit -m "set yandex metrica" && git push origin master
+  git add . && git commit -m "add dashboard" && git push origin main
  -->
 <!-- 
   npm install postcss-cli postcss-import postcss-media-minmax postcss-csso
