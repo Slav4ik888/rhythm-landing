@@ -33,6 +33,7 @@ main {
 
 /* Frame */
 .main-frame {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -41,7 +42,7 @@ main {
 
   width: 762px;
   height: 472px;
-  margin: 40px 80px;
+  margin: 80px;
   background: rgba(255, 255, 255, 0.44);
   backdrop-filter: blur(5px);
   /* Note: backdrop-filter has minimal browser support */
@@ -93,11 +94,11 @@ main {
 
 /* Ритм компании «Мой пекарь» */
 .main-dashboard-title-text {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-SemiBold";
   font-style: normal;
   font-weight: 700;
-  font-size: 2rem;
-  line-height: 2.3rem; /* 126% or 30px */
+  font-size: 1.7rem;
+  line-height: 2.1rem; /* 126% or 30px */
 
   /* Inside auto layout */
   flex: none;
@@ -245,11 +246,6 @@ main {
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.2rem; /* 126%; or 28px */
-  /* leading-trim and text-edge are draft CSS properties.
-  Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
-  */
-  leading-trim: both;
-  text-edge: cap;
 
   /* Inside auto layout */
   flex: none;
@@ -262,14 +258,7 @@ main {
   font-style: normal;
   font-weight: 500;
   font-size: 0.95rem;
-  line-height: 1.2rem;
-  /* 126% or 16px */
-  /* leading-trim and text-edge are draft CSS properties.
-
-  Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
-  */
-  leading-trim: both;
-  text-edge: cap;
+  line-height: 1.2rem; /* 126% or 16px */
 
   /* Inside auto layout */
   flex: none;
@@ -508,9 +497,6 @@ main {
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 1.2rem; /* 126%; or 28px */
-  /* leading-trim and text-edge are draft CSS properties. Read more: https://drafts.csswg.org/css-inline-3/#leading-trim */
-  leading-trim: both;
-  text-edge: cap;
   color: #111111;
 
   /* Inside auto layout */
@@ -526,12 +512,8 @@ main {
   font-weight: 500;
   font-size: 0.95rem;
   line-height: 1.2rem; /* 126%; or 16px */
-  /* leading-trim and text-edge are draft CSS properties. Read more: https://drafts.csswg.org/css-inline-3/#leading-trim */
-  leading-trim: both;
-  text-edge: cap;
 
   color: #111111;
-
 
   /* Inside auto layout */
   flex: none;
@@ -546,8 +528,6 @@ main {
   height: 70px;
   left: 276px;
   top: 58px;
-
-  /* border: 2.4px solid #9747FF; */
 
   /* Inside auto layout */
   flex: none;
@@ -573,4 +553,169 @@ main {
   order: 2;
   flex-grow: 0;
   z-index: 2;
+}
+
+/* ADVANTAGE */
+.main-d-s-advantage {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 18px 16px;
+  gap: 10px;
+
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(8px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 12px;
+}
+
+.main-d-s-advantage-1 {
+  width: 255px;
+  left: -155px;
+  bottom: 64px;
+}
+
+.main-d-s-advantage-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 6px;
+  
+  width: 122px;
+  height: 24px;
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.main-d-s-advantage-title-icon {
+  width: 24px;
+  height: 24px;
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+  
+/* Настройка */
+.main-d-s-advantage-1-title-text {
+  font-family: 'Montserrat-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.8rem; /* 20px; */
+
+  color: #3F7BEE;
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+  
+/* Мы настраиваем - вы применяете! */
+.main-d-s-advantage-1-content {
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.5rem; /* 20px; */
+  width: 155px;
+  color: #111111;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+
+/* advantage 2 */
+.main-d-s-advantage-2 {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 240px;
+  right: -172px;
+  top: -41px;
+}
+
+
+/* Нужные и понятные элементы статистики */
+.main-d-s-advantage-2-title {
+  width: 200px;
+
+  font-family: 'Montserrat-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.3rem; /* 130%; or 21px */
+  text-align: center;
+
+  color: #111111;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+/* graph */
+.main-d-s-advantage-2-graph {
+  width: 150px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* advantage 3 */
+.main-d-s-advantage-3 {
+  width: 220px;
+  right: -151px;
+  bottom: 51px;
+}
+
+/* Google Таблицы */
+.main-d-s-advantage-3-title-text {
+  width: 139px;
+
+  font-family: 'Montserrat-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #30772A;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* Удобно и просто прямо в гугл таблице */
+.main-d-s-advantage-3-content {
+  width: 188px;
+  height: 40px;
+
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  /* or 20px */
+
+  color: #111111;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
