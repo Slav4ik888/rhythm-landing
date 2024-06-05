@@ -719,3 +719,138 @@ main {
   align-self: stretch;
   flex-grow: 0;
 }
+
+
+/* TABS */
+
+.main-d-s-tabs {
+  position: absolute;
+  left: calc(50% - 500px/2);
+  top: 453px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+
+  width: 500px;
+  height: 43px;
+  
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 8px;
+}
+
+/* Frame 23 */
+.main-d-s-tabs-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0 auto;
+  /* width: 434px; */
+  height: 27px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* Frame 5 */
+/* Статистика */
+.main-d-s-tabs-content-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 6px 10px;
+  gap: 10px;
+
+  border-radius: 4px;
+
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+
+  color: #111111;
+}
+
+/* Frame 7 */
+.main-d-s-tabs-content-item.active {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 6px 10px;
+  gap: 10px;
+
+  background: rgba(156, 156, 156, 0.15);
+  border-radius: 4px;
+}
+
+  
+/* Frame 9 */
+.main-d-s-tabs-selection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 10px;
+  gap: 2px;
+
+  margin: 0 auto;
+  width: 33px;
+  height: 27px;
+
+  background: rgba(156, 156, 156, 0.15);
+  border-radius: 4px;
+}
+
+/* Rectangle 17 */
+.main-d-s-tabs-selection-rect {
+  width: 3px;
+  height: 3px;
+
+  background: #111111;
+  opacity: 0.7;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+  /* flex: none;
+  order: 0;
+  flex-grow: 0; */
+}
+
+  /* Rectangle 18 */
+
+  /* width: 3px;
+  height: 3px;
+
+  background: #111111;
+  opacity: 0.7;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+  /* flex: none;
+  order: 1;
+  flex-grow: 0; */
+
+
+  /* Rectangle 19 */
+
+  /* width: 3px;
+  height: 3px;
+
+  background: #111111;
+  opacity: 0.7;
+  border-radius: 10px; */
+
+  /* Inside auto layout */
+  /* flex: none;
+  order: 2;
+  flex-grow: 0; */
