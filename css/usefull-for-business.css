@@ -1,0 +1,18 @@
+/* Usefull for business */
+.usefull-for-business {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 60px 405px; */
+  gap: 40px;
+
+
+  background: #F7F8FA;
+}
+
+.usefull-for-business-tag {
+  font-family: "Montserrat-SemiBold";
+  font-size: 1rem;
+  line-height: 1.2rem;
+  margin-bottom: 20px;
+}

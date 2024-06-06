@@ -1,0 +1,15 @@
+.sec1-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  margin: 40px 0;
+  gap: 1rem;
+  width: 730px;
+}
+
+.sec1-description-text {
+  font-size: 1.1rem;
+  line-height: 1.7rem; /* 146% or 23px */
+  text-align: center;
+}

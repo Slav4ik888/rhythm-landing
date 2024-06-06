@@ -47,10 +47,21 @@ a:visited {
   color:#111111;
 }
 
+.full-width {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 section {
   min-height: 300px;
   margin-top: 5.71rem;
-  /* margin-bottom: 3rem; */
+}
+
+section.container-small {
+  width: 100%;
+  max-width: 1110px;
+  margin-top: 4rem;
 }
 
 .container {
@@ -112,6 +123,22 @@ section {
     padding: 0 10px;
   }
 } */
+
+.p-0 {
+  padding: 0;
+}
+
+.text-aling-left {
+  text-align: left;
+}
+
+/* ----------------- */
+/*       COLORS      */
+/* ----------------- */
+
+.bg-grey {
+  background: rgba(196, 208, 222, 0.15);
+}
 
 /* ----------------- */
 /*        FLEX       */
