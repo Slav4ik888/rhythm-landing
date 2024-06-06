@@ -12,11 +12,11 @@ main {
   flex-direction: column;
   font-size: 4.2rem; /* 58px; */
   line-height: 5rem;
+  margin-bottom: 2.5rem;
 }
 
 .main-subtitle {
   font-size: 1.7rem; /* 22px; */
-  font-weight: 500;
   text-align: center;
 }
 
@@ -68,10 +68,6 @@ main {
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 14px;
 
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   overflow: hidden;
 }
 
@@ -84,26 +80,15 @@ main {
   gap: 18px;
 
   width: 100%;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   z-index: 0;
 }
 
 /* Ритм компании «Мой пекарь» */
 .main-dashboard-title-text {
   font-family: "Montserrat-SemiBold";
-  font-style: normal;
   font-weight: 700;
   font-size: 1.7rem;
   line-height: 2.1rem; /* 126% or 30px */
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
   
 /* menu */
@@ -114,17 +99,10 @@ main {
   padding: 0px;
   gap: 14px;
   width: 100%;
-  
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
   
 /* Управление */
 .main-dashboard-title-menu-item {
-  font-weight: 500;
-  font-size: 1rem;
   line-height: 1.3rem; /* 126% identical to box height, or 18px */
   color: #7F7F7F;
 }
@@ -132,11 +110,6 @@ main {
 /* Отдел продаж */
 .main-dashboard-title-menu-item.active {
   color: #111111;
-
-  /* Inside auto layout */
-  /* flex: none;
-  order: 0;
-  flex-grow: 0; */
 }
 
 /* ----- statistic ----- */
@@ -146,12 +119,6 @@ main {
   align-items: flex-start;
   padding: 0px;
   gap: 10px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
   z-index: 1;
 }
 
@@ -163,14 +130,8 @@ main {
   align-items: flex-start;
   justify-content: space-between;
   padding: 0px;
-  /* gap: 10px; */
+  gap: 10px;
   width: 100%;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 .main-d-s-top-row-item {
@@ -193,10 +154,6 @@ main {
   box-shadow: inset 0px 0px 20px rgba(71, 22, 135, 0.08);
   border-radius: 22px;
   overflow: hidden;
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .main-d-s-top-row-item-img {
@@ -228,42 +185,22 @@ main {
 /* Titles */
 .main-d-s-top-row-item-title {
   font-family: "Montserrat-SemiBold";
-  font-style: normal;
   font-weight: 600;
   font-size: 1.1rem;
   line-height: 1.4rem; /* identical to box height, 126% or 19px */
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 .main-d-s-top-row-item-value {
   font-family: "Montserrat-SemiBold";
-  font-style: normal;
   font-weight: 700;
   font-size: 1.6rem;
   line-height: 1.2rem; /* 126%; or 28px */
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 /* млн.р. */
 .main-d-s-top-row-item-value-text {
-  font-style: normal;
-  font-weight: 500;
   font-size: 0.95rem;
   line-height: 1.2rem; /* 126% or 16px */
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 /* BOTTOM ROW */
@@ -273,15 +210,8 @@ main {
   align-items: flex-start;
   padding: 0px;
   gap: 10px;
-
   width: 674px;
   height: 332px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 .main-d-s-bottom-row-box-1 {
@@ -290,19 +220,11 @@ main {
   align-items: flex-start;
   padding: 16px;
   gap: 20px;
-
   width: 674px;
   height: 332px;
-
   background: rgba(151, 71, 255, 0.06);
   box-shadow: inset 0px 0px 20px rgba(71, 22, 135, 0.08);
   border-radius: 22px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 1;
 }
 
 .main-d-s-bottom-row-title {
@@ -311,31 +233,15 @@ main {
   align-items: flex-start;
   padding: 0px;
   gap: 14px;
-
   width: 100%;
-  /* width: 642px;
-  height: 19px; */
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 /* Продажи по видам продукции */
 .main-d-s-bottom-row-title-text {
   font-family: "Montserrat-SemiBold";
-  font-style: normal;
   font-weight: 600;
   font-size: 1.1rem;
   line-height: 1.3rem; /* identical to box height, 126%; or 19px */
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 /* products */
@@ -347,14 +253,7 @@ main {
   gap: 10px;
 
   width: 100%;
-  /* width: 642px; */
   height: 290px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 .main-d-s-bottom-row-products-box-1 {
@@ -367,20 +266,11 @@ main {
   padding: 16px;
   row-gap: 12px;
   isolation: isolate;
-
   width: 100%;
-  /* width: 642px; */
   height: 140px;
-
   background: rgba(151, 71, 255, 0.06);
   box-shadow: inset 0px 0px 20px rgba(71, 22, 135, 0.08);
   border-radius: 22px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 .main-d-s-bottom-row-products-box-1-text {
@@ -389,14 +279,8 @@ main {
   align-items: flex-start;
   padding: 0px;
   gap: 14px;
-
   width: 100%;
-  /* width: 610px; */
   height: 51px;
-
-  flex: none;
-  order: 0;
-  flex-grow: 1;
   z-index: 0;
 }
 
@@ -406,35 +290,18 @@ main {
   align-items: flex-start;
   padding: 0px;
   gap: 14px;
-
   width: 100%;
-  /* width: 610px; */
   height: 22px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 /* Сумма продаж */
 .main-d-s-bottom-row-products-box-1-text-title-text {
   width: 488px;
   height: 18px;
-
-  font-family: "Montserrat-Regular";
-  font-style: normal;
   font-weight: 600;
   font-size: 1.1rem;
   line-height: 1.2rem; /* identical to box height, 126% or 18px */
-
   color: #111111;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 1;
 }
 
 /* tag */
@@ -445,33 +312,19 @@ main {
   align-items: center;
   padding: 4px 10px;
   gap: 10px;
-
   width: 108px;
   height: 22px;
-
   background: rgba(151, 71, 255, 0.1);
   border-radius: 6px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 /* Выручка */
 .main-d-s-bottom-row-products-box-1-text-title-tag-text {
   font-family: "Montserrat-SemiBold";
-  font-style: normal;
   font-weight: 600;
   font-size: 0.9rem;
   line-height: 1.2rem; /* identical to box height,126% or 14px */
-
   color: #3A126E;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 /* numbers */
@@ -481,44 +334,22 @@ main {
   align-items: flex-end;
   padding: 0px;
   gap: 4px;
-
-  width: 152px;
-  height: 15px;
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 /* 317,3 */
 .main-d-s-bottom-row-products-box-1-text-numbers-value {
   font-family: 'Montserrat-SemiBold';
-  font-style: normal;
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 1.2rem; /* 126%; or 28px */
   color: #111111;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 /* тысяч рублей */
 .main-d-s-bottom-row-products-box-1-text-numbers-comment {
-  font-family: 'Montserrat-Regular';
-  font-style: normal;
-  font-weight: 500;
   font-size: 0.95rem;
   line-height: 1.2rem; /* 126%; or 16px */
-
   color: #111111;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 /* graph */
@@ -528,11 +359,6 @@ main {
   height: 70px;
   left: 276px;
   top: 58px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   z-index: 1;
 }
 
@@ -543,15 +369,8 @@ main {
   height: 238px;
   left: calc(50% - 794px/2);
   bottom: -64px;
-
   background: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(2px);
-  /* Note: backdrop-filter has minimal browser support */
-
-  /* Inside auto layout */
-  flex: none;
-  order: 2;
-  flex-grow: 0;
   z-index: 2;
 }
 
@@ -563,7 +382,6 @@ main {
   align-items: flex-start;
   padding: 18px 16px;
   gap: 10px;
-
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.06);
   backdrop-filter: blur(8px);
@@ -583,56 +401,27 @@ main {
   align-items: center;
   padding: 0px;
   gap: 6px;
-  
-  width: 122px;
-  height: 24px;
-  
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .main-d-s-advantage-title-icon {
   width: 24px;
   height: 24px;
-  
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
   
 /* Настройка */
 .main-d-s-advantage-1-title-text {
   font-family: 'Montserrat-SemiBold';
-  font-style: normal;
   font-weight: 600;
   font-size: 1.1rem;
   line-height: 1.8rem; /* 20px; */
-
   color: #3F7BEE;
-  
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
   
 /* Мы настраиваем - вы применяете! */
 .main-d-s-advantage-1-content {
-  font-family: 'Montserrat-Regular';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.1rem;
-  line-height: 1.5rem; /* 20px; */
+  line-height: 1.4rem; /* 20px; */
   width: 155px;
   color: #111111;
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 
@@ -646,33 +435,20 @@ main {
   top: -41px;
 }
 
-
 /* Нужные и понятные элементы статистики */
 .main-d-s-advantage-2-title {
-  width: 200px;
-
   font-family: 'Montserrat-SemiBold';
-  font-style: normal;
   font-weight: 600;
   font-size: 1.1rem;
-  line-height: 1.3rem; /* 130%; or 21px */
+  line-height: 1.4rem; /* 130%; or 21px */
   text-align: center;
-
+  width: 200px;
   color: #111111;
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 /* graph */
 .main-d-s-advantage-2-graph {
   width: 150px;
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 /* advantage 3 */
@@ -684,40 +460,20 @@ main {
 
 /* Google Таблицы */
 .main-d-s-advantage-3-title-text {
-  width: 139px;
-
   font-family: 'Montserrat-SemiBold';
-  font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  width: 139px;
   color: #30772A;
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 /* Удобно и просто прямо в гугл таблице */
 .main-d-s-advantage-3-content {
+  line-height: 1.4rem;/* 140% or 20px */
+  color: #111111;
   width: 188px;
   height: 40px;
-
-  font-family: 'Montserrat-Regular';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 140%;
-  /* or 20px */
-
-  color: #111111;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 
@@ -726,17 +482,15 @@ main {
 .main-d-s-tabs {
   position: absolute;
   left: calc(50% - 500px/2);
-  top: 453px;
+  top: 446px;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 8px;
-
   width: 500px;
   height: 43px;
-  
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(10px);
@@ -754,11 +508,6 @@ main {
   margin: 0 auto;
   /* width: 434px; */
   height: 27px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 /* Frame 5 */
@@ -769,15 +518,9 @@ main {
   align-items: flex-start;
   padding: 6px 10px;
   gap: 10px;
-
   border-radius: 4px;
-
-  font-family: 'Montserrat-Regular';
-  font-style: normal;
-  font-weight: 500;
   font-size: 0.9rem;
   line-height: 1.1rem;
-
   color: #111111;
 }
 
@@ -788,7 +531,6 @@ main {
   align-items: flex-start;
   padding: 6px 10px;
   gap: 10px;
-
   background: rgba(156, 156, 156, 0.15);
   border-radius: 4px;
 }
@@ -802,11 +544,9 @@ main {
   align-items: center;
   padding: 6px 10px;
   gap: 2px;
-
   margin: 0 auto;
   width: 33px;
   height: 27px;
-
   background: rgba(156, 156, 156, 0.15);
   border-radius: 4px;
 }
@@ -815,42 +555,7 @@ main {
 .main-d-s-tabs-selection-rect {
   width: 3px;
   height: 3px;
-
   background: #111111;
   opacity: 0.7;
   border-radius: 10px;
-
-  /* Inside auto layout */
-  /* flex: none;
-  order: 0;
-  flex-grow: 0; */
 }
-
-  /* Rectangle 18 */
-
-  /* width: 3px;
-  height: 3px;
-
-  background: #111111;
-  opacity: 0.7;
-  border-radius: 10px;
-
-  /* Inside auto layout */
-  /* flex: none;
-  order: 1;
-  flex-grow: 0; */
-
-
-  /* Rectangle 19 */
-
-  /* width: 3px;
-  height: 3px;
-
-  background: #111111;
-  opacity: 0.7;
-  border-radius: 10px; */
-
-  /* Inside auto layout */
-  /* flex: none;
-  order: 2;
-  flex-grow: 0; */

@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/montserrat/static/Montserrat-Bold.ttf") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   cursor:default;
@@ -26,8 +33,10 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: "Montserrat-Regular";
-  color: #111111;
+  font-style: normal;
+  font-weight: 500;
   background-color: white;
+  color: #111111;
 }
 
 a {
@@ -40,11 +49,14 @@ a:visited {
 
 section {
   min-height: 300px;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 5.71rem;
+  /* margin-bottom: 3rem; */
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   max-width: 1110px;
 }
@@ -53,14 +65,36 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 700px;
 }
 
 .title {
-  font-family: "Montserrat-SemiBold";
+  font-family: "Montserrat-Bold";
   font-size: 3.1rem; /* 44px; */
   font-weight: 700;
   line-height: 54.56px;
   text-align: center;
+}
+
+/* tag */
+.title-tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 10px;
+  margin-bottom: 20px;
+  gap: 10px;
+  background-color: #FFFFFF;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+/* Элементы панели */
+.title-tag-text {
+  font-size: 1.1rem;
+  line-height: 1.2rem; /* 126% or 20px */
+  color: #111111;
 }
 
 /* @media screen and (max-width: 1230px) {

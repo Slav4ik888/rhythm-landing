@@ -32,9 +32,8 @@ header {
   display: flex;
   align-items: center;
   font-family: "Montserrat-SemiBold";
-  font-style: normal;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.3rem;
   width: 80px;
   height: 24px;
@@ -43,7 +42,7 @@ header {
 .menu-links {
   display: flex;
   justify-content: space-between;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   width: 290px;
 }
 
@@ -67,9 +66,6 @@ header {
   border: none;
   
   /* Text */
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1rem;
   line-height: 1.2rem;
   color: #FFFFFF;
   cursor: pointer;
