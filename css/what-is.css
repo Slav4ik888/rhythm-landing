@@ -1,0 +1,1429 @@
+.what-is-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  margin: 40px 0;
+  gap: 1rem;
+  width: 730px;
+}
+
+.what-is-description-text {
+  font-size: 1.1rem;
+  line-height: 1.7rem; /* 146% or 23px */
+  text-align: center;
+}
+
+.what-is-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+
+  width: 920px;
+  /* height: 754px; */
+  background: #FFFFFF;
+}
+
+/* Frame 67 */
+.what-is-content-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+
+  /* width: 428.33px; */
+  /* height: 40px; */
+}
+
+/* Frame 62 */
+.what-is-content-panel-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 12px;
+  /* width: 210.33px;
+  height: 40px; */
+  border-radius: 8px;
+  color: #646AF2;
+}
+
+.what-is-content-panel-button.active {
+  background: #7F84FF;
+  color: #FFFFFF;
+}
+
+/* Union */
+.what-is-content-panel-button-icon-table {
+  width: 16.33px;
+  height: 14px;
+  /* background: #FFFFFF; */
+}
+
+/* В табличном виде */
+.what-is-content-panel-button-text {
+  /* width: 158px;
+  height: 20px; */
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.8rem; /* 20px identical to box height */
+  /* color: #FFFFFF; */
+}
+
+/* Frame */
+/* В виде дашборда */
+.what-is-content-panel-button-icon-dashboard {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+/* Frame 65 */
+.what-is-content-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+
+  width: 920px;
+  /* height: 690px; */
+  overflow: hidden;
+}
+
+/* Frame 51 */
+.what-is-content-body-top-row {
+  width: 100%;
+  height: 360px;
+  background: rgba(196, 208, 222, 0.15);
+  border-radius: 20px;
+}
+
+/* javascript anim */
+.what-is-content-body-top-row-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  margin: 40px auto 0;
+  
+  width: 730px;
+  height: 342px;
+
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 22px 160px rgba(0, 0, 0, 0.04), 0px 24px 160px rgba(0, 0, 0, 0.05);
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* Frame 1688 */
+.what-is-content-body-top-row-box-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 18px;
+  gap: 26px;
+  width: 100%;
+  height: 41px;
+}
+
+/* Frame 1683 */
+.what-is-content-body-top-row-box-panel-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  width: 44px;
+  height: 12px;
+}
+
+.what-is-content-body-top-row-box-panel-icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%; /* 80px;*/
+}
+
+/* Rectangle 485 */
+.what-is-content-body-top-row-box-panel-icon.red {
+  background: #FF5F56;
+}
+  
+/* Rectangle 486 */
+.what-is-content-body-top-row-box-panel-icon.yellow {
+  background: #FFBD07;
+}
+
+/* Rectangle 487 */
+.what-is-content-body-top-row-box-panel-icon.green {
+  background: #00CB2C;
+}
+
+/* Frame 1687 */
+.what-is-content-body-top-row-box-panel-address {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 120px;
+
+  width: 621px;
+  height: 25px;
+}
+
+/* Frame 1685 - chevrons */
+.what-is-content-body-top-row-box-panel-address-chevrs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 6px;
+
+  margin: 0 auto;
+  width: 46px;
+  height: 20px;
+}
+
+/* chevron */
+.what-is-content-body-top-row-box-panel-address-chevron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.what-is-content-body-top-row-box-panel-address-chevron.right {
+  transform: rotate(180deg);
+}
+
+/* Frame 1684 */
+.what-is-content-body-top-row-box-panel-address-box {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 10px;
+  gap: 6px;
+
+  margin: 0 auto;
+  width: 370px;
+  height: 25px;
+
+  background: rgba(242, 242, 242, 0.5);
+  border: 1px solid rgba(229, 229, 229, 0.8);
+  border-radius: 6px;
+}
+
+  /* refresh-cw-01 */
+
+  margin: 0 auto;
+  width: 10px;
+  height: 10px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Icon */
+
+  position: absolute;
+  left: 12.5%;
+  right: 8.33%;
+  top: 12.5%;
+  bottom: 12.5%;
+
+
+
+  /* Frame 1686 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 6px;
+
+  margin: 0 auto;
+  width: 195px;
+  height: 17px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+
+  /* icon */
+
+  width: 12px;
+  height: 12px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Rectangle 3 */
+
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 0px;
+  top: 2.5px;
+
+  background: #4C9C45;
+  border-radius: 4px;
+
+
+  /* Union */
+
+  position: absolute;
+  width: 5.25px;
+  height: 4.5px;
+  left: calc(50% - 5.25px/2 - 91.5px);
+  top: calc(50% - 4.5px/2);
+
+  background: #FFFFFF;
+  border-radius: 4px;
+
+
+  /* Ритм компании «Мой пекарь» */
+
+  width: 177px;
+  height: 17px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 150%;
+  /* identical to box height, or 16px */
+  letter-spacing: 0.005em;
+
+  /* BASIC BLACK COLOR */
+  color: #0F1214;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+
+  /* refresh-cw-01 */
+
+  margin: 0 auto;
+  width: 10px;
+  height: 10px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+
+  /* Icon */
+
+  position: absolute;
+  left: 12.5%;
+  right: 8.33%;
+  top: 12.5%;
+  bottom: 12.5%;
+
+  border: 1px solid #111111;
+
+
+  /* plus */
+
+  margin: 0 auto;
+  width: 18px;
+  height: 18px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+
+  /* Icon */
+
+  position: absolute;
+  left: 20.83%;
+  right: 20.83%;
+  top: 20.83%;
+  bottom: 20.83%;
+
+  border: 1.6px solid #868686;
+
+
+  /* CleanShot 2024-05-23 at 23.22 1 */
+
+  width: 730px;
+  height: 301px;
+
+  background: url(CleanShot 2024-05-23 at 23.22.png);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+
+  /* Frame 29 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 920px;
+  height: 320px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+
+  /* dashboard */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 40px;
+  gap: 20px;
+  isolation: isolate;
+
+  width: 455px;
+  height: 320px;
+
+  background: linear-gradient(0deg, rgba(196, 208, 222, 0.15), rgba(196, 208, 222, 0.15)), #FFFFFF;
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+
+
+  /* В таблице указываются количественные показатели статистики, отражающие результативность и эффективность. */
+
+  width: 375px;
+  height: 96px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 132%;
+  /* or 24px */
+  text-align: center;
+
+  color: #111111;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 0;
+
+
+  /* Frame 1694 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 17px;
+  gap: 8px;
+
+  display: none;
+  width: 145px;
+  height: 112px;
+
+  background: #FFFFFF;
+  border-radius: 24px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+
+
+  /* Frame 1701 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  isolation: isolate;
+
+  position: absolute;
+  width: 333px;
+  height: 179px;
+  left: 61px;
+  top: 160px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  z-index: 2;
+
+
+  /* Frame 1693 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  gap: 2px;
+
+  width: 333px;
+  height: 65px;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(8px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: -8px 0px;
+  z-index: 2;
+
+
+  /* Frame 1700 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+
+  width: 321px;
+  height: 53px;
+
+  background: #F6F8FA;
+  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Frame 1690 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 14px;
+  gap: 12px;
+
+  width: 321px;
+  height: 53px;
+
+  background: #FFFFFF;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+
+  /* Прибыль компании */
+
+  margin: 0 auto;
+  width: 139px;
+  height: 9px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 118%;
+  /* or 15px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  text-align: right;
+  letter-spacing: 0.01em;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* 23.02.2023 */
+
+  margin: 0 auto;
+  width: 59px;
+  height: 8px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 118%;
+  /* or 13px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  text-align: right;
+  letter-spacing: 0.01em;
+
+  color: #9D9D9D;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+
+  /* 1 921 500 */
+
+  margin: 0 auto;
+  width: 59px;
+  height: 9px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 118%;
+  /* or 15px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  text-align: right;
+  letter-spacing: 0.01em;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+
+  /* Frame 1695 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  gap: 2px;
+
+  width: 313px;
+  height: 65px;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(8px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: -8px 0px;
+  z-index: 1;
+
+
+  /* Frame 1700 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+
+  width: 301px;
+  height: 53px;
+
+  background: #F6F8FA;
+  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Frame 1690 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 14px;
+  gap: 12px;
+
+  width: 301px;
+  height: 53px;
+
+  background: #FFFFFF;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+
+  /* Кредиторская задолж. */
+
+  margin: 0 auto;
+  width: 158px;
+  height: 9px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 118%;
+  /* or 15px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  text-align: right;
+  letter-spacing: 0.01em;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* 640 734 */
+
+  margin: 0 auto;
+  width: 55px;
+  height: 9px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 118%;
+  /* or 15px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  text-align: right;
+  letter-spacing: 0.01em;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+
+  /* Frame 1696 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  gap: 2px;
+
+  width: 293px;
+  height: 65px;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(8px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  z-index: 0;
+
+
+  /* Frame 1700 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+
+  width: 281px;
+  height: 53px;
+
+  background: #F6F8FA;
+  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Frame 1690 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 14px;
+  gap: 12px;
+
+  width: 281px;
+  height: 53px;
+
+  background: #FFFFFF;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+
+  /* Средняя з/п */
+
+  margin: 0 auto;
+  width: 85px;
+  height: 9px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 118%;
+  /* or 15px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  text-align: right;
+  letter-spacing: 0.01em;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* 59 784 */
+
+  margin: 0 auto;
+  width: 45px;
+  height: 9px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 118%;
+  /* or 15px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  text-align: right;
+  letter-spacing: 0.01em;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+
+  /* dashboard */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 40px;
+  gap: 20px;
+  isolation: isolate;
+
+  width: 455px;
+  height: 320px;
+
+  background: linear-gradient(0deg, rgba(196, 208, 222, 0.15), rgba(196, 208, 222, 0.15)), #FFFFFF;
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+
+
+  /* С помощью статистики можно проводить анализ и делать выводы о работе компании */
+
+  width: 375px;
+  height: 72px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 132%;
+  /* or 24px */
+  text-align: center;
+
+  color: #111111;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 0;
+
+
+  /* white-table-by-angle-with-graphical-financial-elem 1 */
+
+  position: absolute;
+  width: 564px;
+  height: 564px;
+  left: -49px;
+  top: 86px;
+
+  background: url(white-table-by-angle-with-graphical-financial-elem.png);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+
+
+  /* Frame 1693 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  gap: 2px;
+
+  position: absolute;
+  width: 172px;
+  height: 158px;
+  left: 251px;
+  top: 130px;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(8px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  z-index: 2;
+
+
+  /* Frame 1700 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+
+  width: 160px;
+  height: 146px;
+
+  background: #F6F8FA;
+  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Frame 1689 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 14px;
+  gap: 12px;
+
+  width: 160px;
+  height: 35px;
+
+  background: #FFFFFF;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+
+  /* 388 116 */
+
+  margin: 0 auto;
+  width: 43px;
+  height: 14px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 118%;
+  /* or 14px */
+  letter-spacing: 0.01em;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Frame 1694 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 6px;
+  gap: 10px;
+
+  margin: 0 auto;
+  width: 28px;
+  height: 15px;
+
+  background: #FDE5E0;
+  border-radius: 30px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+
+  /* ЧП */
+
+  width: 16px;
+  height: 7px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 118%;
+  /* or 12px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  text-align: center;
+
+  color: #AB2018;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Frame 1689 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 14px;
+  gap: 12px;
+
+  width: 160px;
+  height: 35px;
+
+  background: #FFFFFF;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+
+  /* 596 296 */
+
+  margin: 0 auto;
+  width: 48px;
+  height: 14px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 118%;
+  /* or 14px */
+  letter-spacing: 0.01em;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Frame 1694 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 6px;
+  gap: 10px;
+
+  margin: 0 auto;
+  width: 66px;
+  height: 15px;
+
+  background: #C6D8FB;
+  border-radius: 30px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+
+  /* Изобилие */
+
+  width: 54px;
+  height: 7px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 118%;
+  /* or 12px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  text-align: center;
+
+  color: #324F7C;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Frame 1689 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 14px;
+  gap: 12px;
+
+  width: 160px;
+  height: 35px;
+
+  background: #FFFFFF;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+
+
+  /* 470 561 */
+
+  margin: 0 auto;
+  width: 46px;
+  height: 14px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 118%;
+  /* or 14px */
+  letter-spacing: 0.01em;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Frame 1694 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 6px;
+  gap: 10px;
+
+  margin: 0 auto;
+  width: 48px;
+  height: 15px;
+
+  background: #D7EAF9;
+  border-radius: 30px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+
+  /* Норма */
+
+  width: 36px;
+  height: 7px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 118%;
+  /* or 12px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  text-align: center;
+
+  color: #3E637F;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Frame 1689 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 14px;
+  gap: 12px;
+
+  width: 160px;
+  height: 35px;
+
+  background: #FFFFFF;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
+
+
+  /* 391 813 */
+
+  margin: 0 auto;
+  width: 42px;
+  height: 14px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 118%;
+  /* or 14px */
+  letter-spacing: 0.01em;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Frame 1694 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 6px;
+  gap: 10px;
+
+  margin: 0 auto;
+  width: 28px;
+  height: 15px;
+
+  background: #FDE5E0;
+  border-radius: 30px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+
+  /* ЧП */
+
+  width: 16px;
+  height: 7px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 118%;
+  /* or 12px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  text-align: center;
+
+  color: #AB2018;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}

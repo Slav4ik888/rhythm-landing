@@ -11,6 +11,7 @@
   <script src="scripts/app.js" type="module" defer></script>
 </head>
 <body>
+  <!-- HEADER -->
   <header>
     <div class="logo">Ритм</div>
     <div class="menu-links">
@@ -22,6 +23,7 @@
     <button class="menu-button">Получить демо</button>
   </header>
 
+  <!-- MAIN -->
   <main>
     <div class="title main-title">
       <span>Информационная панель</span>
@@ -139,6 +141,7 @@
     </div>
   </main>
 
+  <!-- WHAT IS -->
   <section class="container">
     <div class="title-box">
       <div class="title-tag">
@@ -146,9 +149,49 @@
       </div>
       <span class="title">Что такое информационная панель руководителя?</span>
     </div>
-    <div class="sec1-description">
-      <div class="sec1-description-text">Информационная панель руководителя (ИПР) - это таблица с графиками и диаграммами, которая наглядно отображает статистики важных областей компании.</div>
-      <div class="sec1-description-text">Как правило, на панель выводят только важные, для контроля, статистики.</div>
+    <div class="what-is-description">
+      <div class="what-is-description-text">Информационная панель руководителя (ИПР) - это таблица с графиками и диаграммами, которая наглядно отображает статистики важных областей компании.</div>
+      <div class="what-is-description-text">Как правило, на панель выводят только важные, для контроля, статистики.</div>
+    </div>
+    <div class="what-is-content">
+      <div class="what-is-content-panel">
+        <div id="what-is-btn-table" class="what-is-content-panel-button active">
+          <img src="./assets/what-is-icon-1.png" class="what-is-content-panel-button-icon-table" />
+          <span class="what-is-content-panel-button-text">В табличном виде</span>
+        </div>
+
+        <div id="what-is-btn-dashboard" class="what-is-content-panel-button">
+          <img src="./assets/what-is-icon-3.png" class="what-is-content-panel-button-icon-dashboard" />
+          <span class="what-is-content-panel-button-text">В виде дашборда</span>
+        </div>
+      </div>
+
+      <div class="what-is-content-body">
+        <div class="what-is-content-body-top-row">
+          <div class="what-is-content-body-top-row-box">
+            <div class="what-is-content-body-top-row-box-panel">
+              <div class="what-is-content-body-top-row-box-panel-icons">
+                <span class="what-is-content-body-top-row-box-panel-icon red"></span>
+                <span class="what-is-content-body-top-row-box-panel-icon yellow"></span>
+                <span class="what-is-content-body-top-row-box-panel-icon green"></span>
+              </div>
+              <div class="what-is-content-body-top-row-box-panel-address">
+                <div class="what-is-content-body-top-row-box-panel-address-chevrs">
+                  <div class="what-is-content-body-top-row-box-panel-address-chevron">
+                    <img src="./assets/what-is-icon-chevron.png" />
+                  </div>
+                  <div class="what-is-content-body-top-row-box-panel-address-chevron right">
+                    <img src="./assets/what-is-icon-chevron.png" />
+                  </div>
+                </div>
+                <div class="what-is-content-body-top-row-box-panel-address-box">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -235,7 +278,7 @@
 </html>
 
 <!-- 
-  git add . && git commit -m "refact tags" && git push origin main
+  git add . && git commit -m "add what is" && git push origin main
  -->
 <!-- 
   npm install postcss-cli postcss-import postcss-media-minmax postcss-csso
