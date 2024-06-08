@@ -150,43 +150,90 @@
       <span class="title">Что такое информационная панель руководителя?</span>
     </div>
     <div class="what-is-description">
-      <div class="what-is-description-text">Информационная панель руководителя (ИПР) - это таблица с графиками и диаграммами, которая наглядно отображает статистики важных областей компании.</div>
-      <div class="what-is-description-text">Как правило, на панель выводят только важные, для контроля, статистики.</div>
+      <div class="text">Информационная панель руководителя (ИПР) - это таблица с графиками и диаграммами, которая наглядно отображает статистики важных областей компании.</div>
+      <div class="text">Как правило, на панель выводят только важные, для контроля, статистики.</div>
     </div>
     <div class="what-is-content">
-      <div class="what-is-content-panel">
-        <div id="what-is-btn-table" class="what-is-content-panel-button active">
-          <img src="./assets/what-is-icon-1.png" class="what-is-content-panel-button-icon-table" />
-          <span class="what-is-content-panel-button-text">В табличном виде</span>
+      <div class="panel">
+        <div id="what-is-btn-table" class="button active">
+          <img src="./assets/what-is-icon-1.png" class="icon-table" />
+          <span class="text">В табличном виде</span>
         </div>
 
-        <div id="what-is-btn-dashboard" class="what-is-content-panel-button">
-          <img src="./assets/what-is-icon-3.png" class="what-is-content-panel-button-icon-dashboard" />
-          <span class="what-is-content-panel-button-text">В виде дашборда</span>
+        <div id="what-is-btn-dashboard" class="button">
+          <img src="./assets/what-is-icon-3.png" class="icon-dashboard" />
+          <span class="text">В виде дашборда</span>
         </div>
       </div>
 
-      <div class="what-is-content-body">
-        <div class="what-is-content-body-top-row">
-          <div class="what-is-content-body-top-row-box">
-            <div class="what-is-content-body-top-row-box-panel">
-              <div class="what-is-content-body-top-row-box-panel-icons">
-                <span class="what-is-content-body-top-row-box-panel-icon red"></span>
-                <span class="what-is-content-body-top-row-box-panel-icon yellow"></span>
-                <span class="what-is-content-body-top-row-box-panel-icon green"></span>
+      <div class="body">
+        <div class="top-row">
+          <div class="box">
+            <div class="panel">
+              <div class="panel-icons">
+                <span class="panel-icon red"></span>
+                <span class="panel-icon yellow"></span>
+                <span class="panel-icon green"></span>
               </div>
-              <div class="what-is-content-body-top-row-box-panel-address">
-                <div class="what-is-content-body-top-row-box-panel-address-chevrs">
-                  <div class="what-is-content-body-top-row-box-panel-address-chevron">
-                    <img src="./assets/what-is-icon-chevron.png" />
-                  </div>
-                  <div class="what-is-content-body-top-row-box-panel-address-chevron right">
-                    <img src="./assets/what-is-icon-chevron.png" />
-                  </div>
+              <div class="panel-address">
+                <div class="chevrs">
+                  <img src="./assets/what-is-icon-chevron.png" class="chevron" />
+                  <img src="./assets/what-is-icon-chevron.png" class="chevron right" />
                 </div>
-                <div class="what-is-content-body-top-row-box-panel-address-box">
+                <div class="address-box">
+                  <div class="refresh"></div>
+                  <div class="title">
+                    <img src="./assets/what-is-icon-union.png" class="title-icon" />
+                    <div class="title-text">Ритм компании «Мой пекарь»</div>
+                  </div>
+                  <img src="./assets/what-is-icon-refresh.png" class="refresh" />
+                </div>
+                <img src="./assets/what-is-icon-plus.png" class="plus" />
+              </div>
+            </div>
+            <img src="./assets/what-is-top-row-content2.png" class="content" />
+          </div>
+        </div>
 
+        <div class="bottom-row">
+          <!-- Box left -->
+          <div class="box">
+            <div class="title">В таблице указываются количественные показатели статистики, отражающие результативность и эффективность.</div>
+            <div class="content">
+              <div class="item11">
+                <div class="item12">
+                  <div class="item13">
+                    <span class="title">Прибыль компании</span>
+                    <span class="date">23.02.2023</span>
+                    <span class="value">1 921 500</span>
+                  </div>
                 </div>
+              </div>
+              <div class="item21">
+                <div class="item22">
+                  <div class="item23">
+                    <span class="title">Кредиторская задолж.</span>
+                    <span class="value">640 734</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item31">
+                <div class="item32">
+                  <div class="item33">
+                    <span class="title">Средняя з/п</span>
+                    <span class="value">59 784</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Box right -->
+          <div class="box box-right">
+            <div class="title">С помощью статистики можно проводить анализ и делать выводы о работе компании</div>
+            <img src="./assets/what-is-img-2.png" class="fon" />
+            <div class="wrap">
+              <div class="content">
+
               </div>
             </div>
           </div>
@@ -278,7 +325,7 @@
 </html>
 
 <!-- 
-  git add . && git commit -m "add what is" && git push origin main
+  git add . && git commit -m "continue what is" && git push origin main
  -->
 <!-- 
   npm install postcss-cli postcss-import postcss-media-minmax postcss-csso
