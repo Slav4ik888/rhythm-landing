@@ -36,7 +36,7 @@
   gap: 10px;
 
   /* width: 428.33px; */
-  /* height: 40px; */
+  min-height: 40px;
 }
 
 /* Frame 62 */
@@ -48,6 +48,9 @@
   gap: 12px;
   border-radius: 8px;
   color: #646AF2;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  -webkit-transition: background-color 0.4s ease;
 }
 
 .what-is-content .panel .button.active {
@@ -60,6 +63,7 @@
   width: 16.33px;
   height: 14px;
   /* background: #FFFFFF; */
+  cursor: pointer;
 }
 
 /* В табличном виде */
@@ -68,6 +72,7 @@
   font-weight: 600;
   font-size: 1.1rem;
   line-height: 1.6rem; /* 20px identical to box height */
+  cursor: pointer;
 }
 
 /* Frame */
@@ -97,6 +102,7 @@
 
 /* Frame 51 */
 .what-is-content .body .top-row {
+  position: relative;
   width: 100%;
   height: 360px;
   background: rgba(196, 208, 222, 0.15);
@@ -118,7 +124,72 @@
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 22px 160px rgba(0, 0, 0, 0.04), 0px 24px 160px rgba(0, 0, 0, 0.05);
   border-radius: 20px 20px 0px 0px;
+  
+  transition: margin 0.4s ease;
+  -webkit-transition: margin 0.4s ease;
 }
+
+
+/* In dashboard */
+.what-is-content .body .top-row .box .content-item-wrap {
+  position: absolute;
+  left: 30px;
+  top: 162px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  gap: 2px;
+  width: 262px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+}
+  
+/* Frame 1700 */
+.what-is-content .body .top-row .box .content-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+  background: #F6F8FA;
+  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+}
+  
+/* Frame 1690 */
+.what-is-content .body .top-row .box .content-item-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  gap: 12px;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+/* Дашборд позволяет быстро и точно определить состояние каждого направления бизнеса */
+.what-is-content .body .top-row .box .content-item-body-text {
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 132%; /* or 17px */
+  letter-spacing: 0.01em;
+  color: #000000;
+  margin: 0 auto;
+}
+
+
+/***************/
+/*    PANEL    */
+/***************/
 
 /* Frame 1688 */
 .what-is-content .body .top-row .box .panel {
@@ -194,6 +265,7 @@
 }
 
 .what-is-content .body .top-row .box .panel-address .chevron.right {
+  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
   margin-top: 1px;
 }
@@ -525,395 +597,66 @@
   align-items: center;
   padding: 0px;
   gap: 2px;
-
   width: 160px;
   height: 146px;
-
   background: #F6F8FA;
   box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
   border-radius: 14px;
+  overflow: hidden;
 }
 
 /* Frame 1689 */
-
-  /* Auto layout */
+.what-is-content .body .bottom-row .box-right .wrap .content .item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px 10px 14px;
   gap: 12px;
-
   width: 160px;
-  height: 35px;
-
   background: #FFFFFF;
+}
 
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-
-
-  /* 388 116 */
-
-  margin: 0 auto;
-  width: 43px;
-  height: 14px;
-
-  font-family: 'Montserrat';
+/* 388 116 */
+.what-is-content .body .bottom-row .box-right .wrap .content .item .value {
+  font-family: 'Montserrat-Regular';
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 118%;
-  /* or 14px */
+  font-size: 0.9rem;
+  line-height: 118%; /* or 14px */
+  text-align: left;
   letter-spacing: 0.01em;
-
   color: #000000;
+  /* width: 43px;
+  height: 14px; */
+}
 
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* Frame 1694 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 6px;
-  gap: 10px;
-
-  margin: 0 auto;
-  width: 28px;
-  height: 15px;
-
-  background: #FDE5E0;
+/* Frame 1694 */
+.what-is-content .body .bottom-row .box-right .wrap .content .item .condition {
+  padding: 2px 6px;
   border-radius: 30px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-
-  /* ЧП */
-
-  width: 16px;
-  height: 7px;
-
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 10px;
-  line-height: 118%;
-  /* or 12px */
-  /* leading-trim and text-edge are draft CSS properties.
+  line-height: 118%; /* or 12px */
+  text-align: right;
+}
 
-Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
-*/
-  leading-trim: both;
-  text-edge: cap;
-  text-align: center;
-
+/* ЧП */
+.what-is-content .body .bottom-row .box-right .wrap .content .item .condition.cp {
+  background: #FDE5E0;
   color: #AB2018;
+}
 
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* Frame 1689 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 10px 10px 14px;
-  gap: 12px;
-
-  width: 160px;
-  height: 35px;
-
-  background: #FFFFFF;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-
-
-  /* 596 296 */
-
-  margin: 0 auto;
-  width: 48px;
-  height: 14px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 118%;
-  /* or 14px */
-  letter-spacing: 0.01em;
-
-  color: #000000;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* Frame 1694 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 6px;
-  gap: 10px;
-
-  margin: 0 auto;
-  width: 66px;
-  height: 15px;
-
+/* Изобилие */
+.what-is-content .body .bottom-row .box-right .wrap .content .item .condition.iz {
   background: #C6D8FB;
-  border-radius: 30px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-
-  /* Изобилие */
-
-  width: 54px;
-  height: 7px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 118%;
-  /* or 12px */
-  /* leading-trim and text-edge are draft CSS properties.
-
-Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
-*/
-  leading-trim: both;
-  text-edge: cap;
-  text-align: center;
-
   color: #324F7C;
+}
 
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* Frame 1689 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 10px 10px 14px;
-  gap: 12px;
-
-  width: 160px;
-  height: 35px;
-
-  background: #FFFFFF;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 2;
-  align-self: stretch;
-  flex-grow: 0;
-
-
-  /* 470 561 */
-
-  margin: 0 auto;
-  width: 46px;
-  height: 14px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 118%;
-  /* or 14px */
-  letter-spacing: 0.01em;
-
-  color: #000000;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* Frame 1694 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 6px;
-  gap: 10px;
-
-  margin: 0 auto;
-  width: 48px;
-  height: 15px;
-
+/* Норма */
+.what-is-content .body .bottom-row .box-right .wrap .content .item .condition.no {
   background: #D7EAF9;
-  border-radius: 30px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-
-  /* Норма */
-
-  width: 36px;
-  height: 7px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 118%;
-  /* or 12px */
-  /* leading-trim and text-edge are draft CSS properties.
-
-Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
-*/
-  leading-trim: both;
-  text-edge: cap;
-  text-align: center;
-
   color: #3E637F;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* Frame 1689 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 10px 10px 14px;
-  gap: 12px;
-
-  width: 160px;
-  height: 35px;
-
-  background: #FFFFFF;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 3;
-  align-self: stretch;
-  flex-grow: 0;
-
-
-  /* 391 813 */
-
-  margin: 0 auto;
-  width: 42px;
-  height: 14px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 118%;
-  /* or 14px */
-  letter-spacing: 0.01em;
-
-  color: #000000;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* Frame 1694 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 6px;
-  gap: 10px;
-
-  margin: 0 auto;
-  width: 28px;
-  height: 15px;
-
-  background: #FDE5E0;
-  border-radius: 30px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-
-  /* ЧП */
-
-  width: 16px;
-  height: 7px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 118%;
-  /* or 12px */
-  /* leading-trim and text-edge are draft CSS properties.
-
-Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
-*/
-  leading-trim: both;
-  text-edge: cap;
-  text-align: center;
-
-  color: #AB2018;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }

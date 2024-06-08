@@ -156,19 +156,21 @@
     <div class="what-is-content">
       <div class="panel">
         <div id="what-is-btn-table" class="button active">
-          <img src="./assets/what-is-icon-1.png" class="icon-table" />
+          <img id="what-is-btn-table-icon-active" src="./assets/what-is-icon-1.png" class="icon-table" />
+          <img id="what-is-btn-table-icon-not-active" src="./assets/what-is-icon-2.png" class="icon-table not-visible" />
           <span class="text">В табличном виде</span>
         </div>
 
         <div id="what-is-btn-dashboard" class="button">
-          <img src="./assets/what-is-icon-3.png" class="icon-dashboard" />
+          <img id="what-is-btn-dashboard-icon-active" src="./assets/what-is-icon-3.png" class="icon-dashboard" />
+          <img id="what-is-btn-dashboard-icon-not-active" src="./assets/what-is-icon-4.png" class="icon-dashboard not-visible" />
           <span class="text">В виде дашборда</span>
         </div>
       </div>
 
       <div class="body">
         <div class="top-row">
-          <div class="box">
+          <div id="what-is-top-row-box" class="box">
             <div class="panel">
               <div class="panel-icons">
                 <span class="panel-icon red"></span>
@@ -191,7 +193,20 @@
                 <img src="./assets/what-is-icon-plus.png" class="plus" />
               </div>
             </div>
-            <img src="./assets/what-is-top-row-content2.png" class="content" />
+            <img id="what-is-top-row-box-table" src="./assets/what-is-top-row-content2.png" class="content" />
+            <div id="what-is-top-row-box-dashboard" class="not-visible">
+              <img src="./assets/what-is-top-row-content3.png" class="content" />
+              <img src="./assets/what-is-top-row-content4.png" class="content" />
+              <div class="content-item-wrap">
+                <div class="content-item">
+                  <div class="content-item-body">
+                    <div class="content-item-body-text">
+                      Дашборд позволяет быстро и точно определить состояние каждого направления бизнеса
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -233,7 +248,22 @@
             <img src="./assets/what-is-img-2.png" class="fon" />
             <div class="wrap">
               <div class="content">
-
+                <div class="item">
+                  <div class="value">388 116</div>
+                  <div class="condition cp">ЧП</div>
+                </div>
+                <div class="item">
+                  <div class="value">596 297</div>
+                  <div class="condition iz">Изобилие</div>
+                </div>
+                <div class="item">
+                  <div class="value">470 561</div>
+                  <div class="condition no">Норма</div>
+                </div>
+                <div class="item">
+                  <div class="value">391 813</div>
+                  <div class="condition cp">ЧП</div>
+                </div>
               </div>
             </div>
           </div>
@@ -325,7 +355,7 @@
 </html>
 
 <!-- 
-  git add . && git commit -m "continue what is" && git push origin main
+  git add . && git commit -m "2024-06-08 continue what is" && git push origin main
  -->
 <!-- 
   npm install postcss-cli postcss-import postcss-media-minmax postcss-csso
