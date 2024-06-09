@@ -10,7 +10,9 @@ const
   $WhatIsBtnDashbordIconNotActive  = getId("what-is-btn-dashboard-icon-not-active"),
   $WhatIsTopRowBox                 = getId("what-is-top-row-box"),
   $WhatIsTopRowBoxTable            = getId("what-is-top-row-box-table"),
-  $WhatIsTopRowBoxDashboard        = getId("what-is-top-row-box-dashboard");
+  $WhatIsTopRowBoxDashboard        = getId("what-is-top-row-box-dashboard"),
+  $WhatIsBottomRowTable            = getId("what-is-bottom-row-table"),
+  $WhatIsBottomRowDashboard        = getId("what-is-bottom-row-dashboard");
 
 
 $WhatIsBtnTable.addEventListener("click", () => {
@@ -27,6 +29,9 @@ $WhatIsBtnTable.addEventListener("click", () => {
   $WhatIsTopRowBox.classList.remove("ml-210"); // Unshift image from right
   $WhatIsTopRowBoxTable.classList.remove("not-visible");
   $WhatIsTopRowBoxDashboard.classList.add("not-visible");
+
+  $WhatIsBottomRowTable.classList.remove("not-visible"); // Bottom row show/hidden
+  $WhatIsBottomRowDashboard.classList.add("not-visible");
 });
 
 
@@ -44,4 +49,7 @@ $WhatIsBtnDashboard.addEventListener("click", () => {
   $WhatIsTopRowBox.classList.add("ml-210"); // Shift image to the right
   $WhatIsTopRowBoxTable.classList.add("not-visible");
   $WhatIsTopRowBoxDashboard.classList.remove("not-visible");
+
+  $WhatIsBottomRowTable.classList.add("not-visible"); // Bottom row show/hidden
+  $WhatIsBottomRowDashboard.classList.remove("not-visible");
 });
