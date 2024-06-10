@@ -1,0 +1,163 @@
+/* Расскажем как удалённо мониторить деятельность компании и возможные предвидеть проблемы */
+.video-presentation .description {
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 154%; /* identical to box height, or 25px */
+  color: #111111;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* video preview */
+.video-preview {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  isolation: isolate;
+
+  width: 100%;
+  height: 360px;
+
+  background: rgba(196, 208, 222, 0.15);
+  border-radius: 18px;
+  background-image: url("../assets/video-presentation-1.png");
+  z-index: 0;
+}
+
+/* background gradient */
+.video-preview .background-gradient {
+  position: absolute;
+  width: var(--container);
+  height: 360px;
+  left: 0px;
+  top: 0px;
+  border-radius: 18px;
+  background: linear-gradient(90deg, rgba(145, 178, 243, 0.6) 0%, rgba(160, 116, 233, 0.6) 100%);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+/* duration */
+.video-preview .duration-box {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  gap: 10px;
+
+  /* width: 48px;
+  height: 26px; */
+
+  background: rgba(77, 73, 116, 0.15);
+  border-radius: 8px;
+  z-index: 2;
+}
+
+/* 3:37 */
+.video-preview .duration {
+  /* width: 28px;
+  height: 10px; */
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 118%; /* or 17px */
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+
+
+  /* play */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 167px;
+  height: 20px;
+  left: calc(50% - 167px/2);
+  top: calc(50% - 20px/2);
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  z-index: 3;
+
+
+  /* Frame */
+
+  width: 20px;
+  height: 20px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Group */
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+
+
+  /* Vector */
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: #FFFFFF;
+
+
+  /* Смотреть видео */
+
+  width: 139px;
+  height: 11px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 118%;
+  /* or 19px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  letter-spacing: 0.01em;
+
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
