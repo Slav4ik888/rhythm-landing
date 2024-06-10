@@ -39,6 +39,11 @@ body {
   color: #111111;
 }
 
+:root {
+  --container: 1110px;
+  --gap-base: 10px;
+}
+
 a {
   cursor: pointer;
 }
@@ -58,13 +63,13 @@ a:visited {
 }
 
 section {
-  min-height: 300px;
+  min-height: 100px;
   margin-top: 5.71rem;
 }
 
 section.container-small {
   width: 100%;
-  max-width: 1110px;
+  max-width: var(--container);
   margin-top: 4rem;
 }
 
@@ -73,8 +78,10 @@ section.container-small {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 1110px;
+  max-width: var(--container);
 }
+
+/* TITLE */
 
 .title-box {
   display: flex;
