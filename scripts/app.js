@@ -1,6 +1,8 @@
 const getId = (id) => document.getElementById(id);
 
-
+// ----------------
+// --  WHAT IS
+// ----------------------------------------------------------------------------------
 const
   $WhatIsBtnTable                  = getId("what-is-btn-table"),
   $WhatIsBtnDashboard              = getId("what-is-btn-dashboard"),
@@ -52,4 +54,20 @@ $WhatIsBtnDashboard.addEventListener("click", () => {
 
   $WhatIsBottomRowTable.classList.add("not-visible"); // Bottom row show/hidden
   $WhatIsBottomRowDashboard.classList.remove("not-visible");
+});
+
+// ----------------
+// --  VIDEO PRESENTATION
+// ----------------------------------------------------------------------------------
+
+const
+  $VideoPresentationVideoPreview = getId("video-presentation-video-preview"),
+  $VideoPresentationPlayBox      = getId("video-presentation-play-box");
+
+$VideoPresentationVideoPreview.addEventListener("mouseover", () => {
+  $VideoPresentationPlayBox.classList.add("hover");
+});
+
+$VideoPresentationVideoPreview.addEventListener("mouseout", () => {
+  $VideoPresentationPlayBox.classList.remove("hover");
 });

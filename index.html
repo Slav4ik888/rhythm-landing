@@ -373,15 +373,19 @@
   </section>
 
   <!-- VIDEO-PRESENTATION -->
-  <section class="container flex-left video-presentation">
-    <div class="title-box flex-left">
-      <span class="title">Видео-презентация</span>
+  <section class="container flex-left video-presentation cursor-pointer">
+    <div class="title-box flex-left cursor-pointer">
+      <span class="title cursor-pointer">Видео-презентация</span>
       <span class="description">Покажем пример, как удалённо мониторить деятельность компании и предвидеть возможные проблемы</span>
     </div>
-    <div class="video-preview">
+    <div id="video-presentation-video-preview" class="video-preview">
       <div class="background-gradient"></div>
       <div class="duration-box">
         <span class="duration">3:37</span>
+      </div>
+      <div id="video-presentation-play-box" class="play-box">
+        <img src="./assets/video-presentation-2.png" class="vector" />
+        <div class="text">Смотреть видео</div>
       </div>
     </div>
   </section>
@@ -454,7 +458,7 @@
 </html>
 
 <!-- 
-  git add . && git commit -m "2024-06-10 start video presentation" && git push origin main
+  git add . && git commit -m "2024-06-10 end video presentation" && git push origin main
  -->
 <!-- 
   npm install postcss-cli postcss-import postcss-media-minmax postcss-csso
