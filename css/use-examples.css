@@ -1,0 +1,923 @@
+/* content */
+.use-examples-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  isolation: isolate;
+
+  width: var(--use-examples-content-width);
+  /* height: 1285px; */
+}
+
+
+/* 1st row */
+.use-examples-content .first-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--use-examples-content-width);
+  height: var(--use-examples-first-row-height);
+  margin-top: 30px;
+  background: rgba(196, 208, 222, 0.15);
+  border-radius: 20px;
+  z-index: 0;
+}
+
+/* Продукт спроектирован так, чтобы вы могли не только детально изучать каждый ключевой показатель, но и одним лишь взглядом определить узкие места в компании */
+.use-examples-content .first-row .description {
+  /* position: absolute; */
+  width: 660px;
+  height: 78px;
+  margin-top: 40px;
+
+  font-family: 'Montserrat-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 144%; /* or 26px */
+  text-align: center;
+  color: #111111;
+}
+
+/* frame */
+.use-examples-content .first-row .frame {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  isolation: isolate;
+
+  width: var(--use-examples-first-row-frame-width);
+  margin-top: 49px;
+
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 22px 160px rgba(0, 0, 0, 0.04), 0px 24px 160px rgba(0, 0, 0, 0.05);
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* right image */
+.use-examples-content .first-row .frame .right-image {
+  width: 100%;
+  z-index: 0;
+}
+
+/* left image */
+.use-examples-content .first-row .frame .left-image-box {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: calc(var(--use-examples-first-row-frame-width) / 2 + 40px); /* 380px; */
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.use-examples-content .first-row .frame .left-image {
+  height: var(--use-examples-first-row-frame-height);
+}
+
+/* slide element */
+.use-examples-content .first-row .frame .slide-element {
+  position: absolute;
+  left: calc(var(--use-examples-first-row-frame-width) / 2 + 40px - var(--use-examples-first-row-slide-element)); /* 371px; */
+  top: 0px;
+
+  display: flex;
+  justify-content: center;
+
+  width: var(--use-examples-first-row-slide-element); /* 18px; */
+  height: var(--use-examples-first-row-frame-height); /* 318px;*/
+  background: rgba(241, 241, 241, 0.749);
+  z-index: 2;
+}
+
+/* Rectangle 492 */
+.use-examples-content .first-row .frame .slide-element .col-stripe {
+  width: 4px;
+  height: var(--use-examples-first-row-frame-height);
+  background: #7F84FF;
+}
+
+/* Rectangle 493 */
+.use-examples-content .first-row .frame .slide-element .rectangle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 26px;
+  top: calc(50% - 26px/2);
+  background: #7F84FF;
+  border-radius: 6px;
+}
+
+.use-examples-content .first-row .frame .slide-element .rectangle-img {
+  width: 8px;
+}
+
+/* Frame 1725 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 1px;
+
+  position: absolute;
+  width: 8px;
+  height: 10px;
+  left: calc(50% - 8px/2 + 15px);
+  top: calc(50% - 10px/2);
+
+
+
+  /* Rectangle 494 */
+
+  width: 2px;
+  height: 10px;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Rectangle 495 */
+
+  width: 2px;
+  height: 10px;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+
+  /* Rectangle 496 */
+
+  width: 2px;
+  height: 10px;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+
+  
+
+
+
+  /* advantage */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  gap: 2px;
+
+  position: absolute;
+  width: 212px;
+  height: 91px;
+  left: 678px;
+  top: 374px;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(8px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+
+
+  /* Frame 1700 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+
+  width: 200px;
+  height: 79px;
+
+  background: #F6F8FA;
+  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Frame 1690 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 14px;
+  gap: 12px;
+
+  width: 200px;
+  height: 79px;
+
+  background: #FFFFFF;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+
+  /* Дашборд для быстрого и наглядного контроля за ситуацией компании */
+
+  margin: 0 auto;
+  width: 172px;
+  height: 43px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 132%;
+  /* or 17px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  letter-spacing: 0.01em;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+
+  /* advantage */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  gap: 2px;
+
+  position: absolute;
+  width: 212px;
+  height: 91px;
+  left: 30px;
+  top: 187px;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(8px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  z-index: 2;
+
+
+  /* Frame 1700 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+
+  width: 200px;
+  height: 79px;
+
+  background: #F6F8FA;
+  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Frame 1690 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 14px;
+  gap: 12px;
+
+  width: 200px;
+  height: 79px;
+
+  background: #FFFFFF;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+
+  /* Таблица для детального и глубокого анализа деятельности */
+
+  margin: 0 auto;
+  width: 172px;
+  height: 43px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 132%;
+  /* or 17px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  letter-spacing: 0.01em;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+
+  /* 2nd row */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 920px;
+  height: 440px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 3;
+
+
+  /* 1 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 30px;
+  gap: 20px;
+  isolation: isolate;
+
+  width: 455px;
+  height: 440px;
+
+  background: rgba(196, 208, 222, 0.15);
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+
+
+  /* Видно, что на последней недели произошло снижение, но динамика (тренд) направлен вверх */
+
+  width: 395px;
+  height: 72px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 132%;
+  /* or 24px */
+  text-align: center;
+
+  color: #111111;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 0;
+
+
+  /* image */
+
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 287.78px;
+  height: 300px;
+  left: calc(50% - 287.78px/2 + 0.39px);
+  top: 130px;
+
+  background: url(CleanShot 2024-05-27 at 20.40.png);
+  border: 2px solid #FFFFFF;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+
+
+  /* advantage */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  gap: 2px;
+
+  position: absolute;
+  width: 360px;
+  height: 74px;
+  left: calc(50% - 360px/2 + 0.5px);
+  top: 366px;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(8px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  z-index: 2;
+
+
+  /* white block */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+
+  width: 348px;
+  height: 62px;
+
+  background: #F6F8FA;
+  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Frame 1690 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 18px 14px;
+  gap: 12px;
+
+  width: 348px;
+  height: 62px;
+
+  background: #FFFFFF;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Решение: Продолжать делать то, что делали (так как это приводит к системному росту). */
+
+  width: 320px;
+  height: 26px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 132%;
+  /* or 17px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* 2 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 30px;
+  gap: 20px;
+  isolation: isolate;
+
+  width: 455px;
+  height: 440px;
+
+  background: rgba(196, 208, 222, 0.15);
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 1;
+
+
+  /* Количество откликов по маркетинговым кампаниям динамика (тренд) идёт вниз */
+
+  width: 395px;
+  height: 72px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 132%;
+  /* or 24px */
+  text-align: center;
+
+  color: #111111;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 0;
+
+
+  /* image */
+
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 290.73px;
+  height: 300px;
+  left: calc(50% - 290.73px/2 + 0.87px);
+  top: 130px;
+
+  background: url(CleanShot 2024-05-27 at 20.51.png);
+  border: 2px solid #FFFFFF;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+
+
+  /* advantage */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  gap: 2px;
+
+  position: absolute;
+  width: 360px;
+  height: 91px;
+  left: calc(50% - 360px/2 + 0.5px);
+  top: 349px;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(8px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  z-index: 2;
+
+
+  /* white */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+
+  width: 348px;
+  height: 79px;
+
+  background: #F6F8FA;
+  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Frame 1690 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 18px 14px;
+  gap: 12px;
+
+  width: 348px;
+  height: 79px;
+
+  background: #FFFFFF;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Решение: нужно срочно принимать меры… (менять Маркетолога или разработать новую программу продвижения). */
+
+  width: 320px;
+  height: 43px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 132%;
+  /* or 17px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* dashboard */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 30px;
+  gap: 20px;
+  isolation: isolate;
+
+  width: 920px;
+  height: 340px;
+
+  background: rgba(196, 208, 222, 0.15);
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 4;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 4;
+
+
+  /* Общая сумма дебиторской задолженности продолжает расти несмотря кажется успешную деятельность */
+
+  width: 860px;
+  height: 48px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 132%;
+  /* or 24px */
+  text-align: center;
+
+  color: #111111;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  z-index: 0;
+
+
+  /* CleanShot 2024-05-27 at 20.59 1 */
+
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 530px;
+  height: 299px;
+  left: calc(50% - 530px/2);
+  top: 106px;
+
+  background: url(CleanShot 2024-05-27 at 20.59.png);
+  border: 2px solid #FFFFFF;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+
+
+  /* Frame 1722 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  gap: 2px;
+
+  position: absolute;
+  width: 290px;
+  height: 91px;
+  left: calc(50% - 290px/2 + 296px);
+  bottom: 113px;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(8px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  z-index: 2;
+
+
+  /* Frame 1700 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+
+  width: 278px;
+  height: 79px;
+
+  background: #F6F8FA;
+  box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Frame 1690 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 18px 14px;
+  gap: 12px;
+
+  width: 278px;
+  height: 79px;
+
+  background: #FFFFFF;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+  /* Решение: найти причину и устранить её (и судя по графику - это следовало сделать уже давно). */
+
+  width: 250px;
+  height: 43px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 132%;
+  /* or 17px */
+  /* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+  leading-trim: both;
+  text-edge: cap;
+  letter-spacing: 0.01em;
+
+  color: #111111;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}

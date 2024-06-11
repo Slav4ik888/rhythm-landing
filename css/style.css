@@ -42,6 +42,12 @@ body {
 :root {
   --container: 1110px;
   --gap-base: 10px;
+
+  --use-examples-content-width: 920px;
+  --use-examples-first-row-height: 600px;
+  --use-examples-first-row-frame-width: 730px;
+  --use-examples-first-row-frame-height: 410px;
+  --use-examples-first-row-slide-element: 20px;
 }
 
 a {
