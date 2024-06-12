@@ -48,6 +48,8 @@ body {
   --use-examples-first-row-frame-width: 730px;
   --use-examples-first-row-frame-height: 410px;
   --use-examples-first-row-slide-element: 20px;
+
+  --use-examples-second-row-height: 480px;
 }
 
 a {
@@ -140,6 +142,11 @@ section.container-small {
     padding: 0 10px;
   }
 } */
+
+.semi-bold {
+  font-family: "Montserrat-SemiBold";
+  font-weight: 600;
+}
 
 .p-0 {
   padding: 0;
