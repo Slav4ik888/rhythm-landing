@@ -60,6 +60,22 @@ a:visited {
   color:#111111;
 }
 
+/* INPUT */
+
+.order-demo .right-box .input-box .input-item {
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 17px; /* identical to box height */
+  background: inherit;
+  color: #111111;
+  width: 100%;
+  border: none;
+}
+
+/* END INPUT */
+
 .not-visible {
   display: none !important;
 }

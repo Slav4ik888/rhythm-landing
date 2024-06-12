@@ -33,10 +33,11 @@ header {
   align-items: center;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.3rem;
   width: 80px;
   height: 24px;
+  text-align: center;
 }
 
 .menu-links {
