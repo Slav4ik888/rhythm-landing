@@ -83,3 +83,7 @@ header {
 .menu-button:hover {
   background: #757BF6; /* 686dee;*/
 }
+
+header a {
+  text-decoration: none;
+}

@@ -26,6 +26,7 @@
 
 html {
   font-size: 14px;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -53,6 +54,7 @@ body {
 }
 
 a {
+  color:#111111;
   cursor: pointer;
 }
 
@@ -195,8 +197,10 @@ section.container-small {
 }
 
 
+/* ------------------------- */
+/*    НЕПОДГРУЖАЕМЫЕ СТИЛИ   */
+/* ------------------------- */
 
-/* НЕПОДГРУЖАЕМЫЕ СТИЛИ */
 .get-demo .right-box .input-box .input-item {
   font-family: 'Montserrat-Regular';
   font-style: normal;

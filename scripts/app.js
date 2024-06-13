@@ -72,5 +72,20 @@ $VideoPresentationVideoPreview.addEventListener("mouseout", () => {
   $VideoPresentationPlayBox.classList.remove("hover");
 });
 
+// ----------------
+// --  ПЛАВНАЯ ПРОКРУТКА
+// ----------------------------------------------------------------------------------
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', e => {
+    e.preventDefault();
+    document
+      .querySelector(anchor.getAttribute('href'))
+      .scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+  });
+});
 
 // Превентивные меры - предупреждающие, предохранительные действия. Это меры предупредительного характера в ситуациях, когда необходимо снизить риски возникновения нежелательных событий.
