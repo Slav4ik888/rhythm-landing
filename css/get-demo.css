@@ -1,19 +1,18 @@
 /* Order demo */
-.order-demo {
+.get-demo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   margin-top: 80px;
   padding-top: 40px;
   gap: 40px;
   isolation: isolate;
 
   /* width: 1920px; */
-  height: 468px;
+  height: 520px;
   background: rgba(196, 208, 222, 0.15);
 }
 
-.order-demo .container {
+.get-demo .container {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -24,7 +23,7 @@
 }
 
 /* title */
-.order-demo .left-box {
+.get-demo .left-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -37,7 +36,7 @@
 }
 
 /* logo-box */
-.order-demo .logo-box {
+.get-demo .logo-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -49,12 +48,12 @@
 }
 
 /* Познакомим вас с нашим продуктом поближе */
-.order-demo .title-box {
+.get-demo .title-box {
   width: 100%;
   margin-top: 20px;
 }
 
-.order-demo .title {
+.get-demo .title {
   width: 420px;
   font-family: 'Montserrat-Bold';
   font-style: normal;
@@ -66,16 +65,15 @@
 }
 
 /* form */
-.order-demo .right-box {
+.get-demo .right-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 34px;
   gap: 30px;
 
-  /* margin: 0 auto; */
   width: 372px;
-  height: 388px;
+  /* height: 388px; */
 
   background: #FFFFFF;
   backdrop-filter: blur(5px);
@@ -85,7 +83,7 @@
 
 /* Получите демо-версию панели */
 /* Мы пришлём ссылку демо-версию панели */
-.order-demo .right-box .title {
+.get-demo .right-box .title {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -98,7 +96,7 @@
 }
 
 /* form elements */
-.order-demo .right-box .form-elements {
+.get-demo .right-box .form-elements {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -111,7 +109,7 @@
 }
 
 /* inputs */
-.order-demo .right-box .inputs {
+.get-demo .right-box .inputs {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,7 +122,7 @@
 }
 
 /* input */
-.order-demo .right-box .input-box {
+.get-demo .right-box .input-box {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -138,8 +136,10 @@
   border-radius: 8px;
 };
 
+
+
 /* title */
-/* .order-demo .right-box .input-box .input-item {
+/* .get-demo .right-box .input-box .input-item {
   width: 100%;
   font-family: 'Montserrat-Regular';
   font-style: normal;
@@ -150,67 +150,64 @@
 } */
 
 /* Button */
-.order-demo .container .right-box .form-elements .inputs .button-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+/* button.btn-box {
   padding: 18px 16px;
   gap: 10px;
   width: 100%;
-  /* width: 304px;
-  height: 53px; */
-  background: #7F84FF;
-  border-radius: 8px;
-  cursor: pointer;
-}
 
-/* Text */
-.order-demo .right-box .button-box .text {
-  /* width: 120px;
-  height: 17px; */
   font-family: 'Montserrat-Regular';
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 17px; /* identical to box height */
+  font-size: 1rem;
+  line-height: 120%;
+  background: #7F84FF;
   color: #FFFFFF;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  -webkit-transition: background-color 0.4s ease;
 }
+
+button.btn-box:hover {
+  background: #757BF6;
+} */
+
 
 /* image */
 
-  position: absolute;
+  /* position: absolute;
   width: 358.78px;
   height: 466px;
   left: 754px;
-  top: 51px;
+  top: 51px; */
 
 
   /* Inside auto layout */
-  flex: none;
+  /* flex: none;
   order: 2;
   flex-grow: 0;
-  z-index: 2;
+  z-index: 2; */
 
 
   /* Vector 2 */
 
-  position: absolute;
+  /* position: absolute;
   width: 358.78px;
   height: 466px;
   left: 754px;
   top: 51px;
 
-  background: #D9D9D9;
+  background: #D9D9D9; */
 
 
   /* glassmorphism-style-remote-business-statistic-on-p 1 */
 
-  position: absolute;
+  /* position: absolute;
   width: 535.56px;
   height: 535.56px;
   left: calc(50% - 535.56px/2 + 35.63px);
   top: calc(50% - 535.56px/2 + 8.95px);
 
   background: url(glassmorphism-style-remote-business-statistic-on-p.png);
-}
+} */

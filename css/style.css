@@ -60,22 +60,6 @@ a:visited {
   color:#111111;
 }
 
-/* INPUT */
-
-.order-demo .right-box .input-box .input-item {
-  font-family: 'Montserrat-Regular';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 17px; /* identical to box height */
-  background: inherit;
-  color: #111111;
-  width: 100%;
-  border: none;
-}
-
-/* END INPUT */
-
 .not-visible {
   display: none !important;
 }
@@ -208,4 +192,55 @@ section.container-small {
 }
 .justify-space-between {
   justify-content: space-between;
+}
+
+
+
+/* НЕПОДГРУЖАЕМЫЕ СТИЛИ */
+.get-demo .right-box .input-box .input-item {
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 17px;
+  /* identical to box height */
+  background: inherit;
+  color: #111111;
+  width: 100%;
+  border: none;
+}
+
+
+/* Button */
+.get-demo .btn-box {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+  padding: 18px 16px;
+  gap: 10px;
+  width: 100%;
+
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 120%;
+  background: #7F84FF;
+  color: #FFFFFF;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  -webkit-transition: background-color 0.4s ease;
+}
+
+.get-demo .btn-box:hover {
+  background: #757BF6;
+}
+
+.get-demo .helper-description {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
