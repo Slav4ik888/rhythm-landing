@@ -1,0 +1,168 @@
+:root {
+  --primary-secondary-box-width: 525px;
+}
+
+.primary-secondary {
+  position: relative;
+  height: 600px;
+}
+
+/* content */
+.primary-secondary .content-box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 60px;
+
+  width: var(--container);
+  height: 371px;
+}
+
+/* left */
+.primary-secondary .content-box .left-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+
+  width: var(--primary-secondary-box-width);
+  height: 286px;
+  z-index: 1;
+}
+
+/* Ключевые — одни из самых важных и значимых. Это те показатели по которым мы можем определить как дела в конкретной области */
+.primary-secondary .content-box .description {
+  /* width: 525px;
+  height: 116px; */
+  font-family: 'Montserrat-SemiBold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 132%; /* or 29px */
+  color: #111111;
+}
+
+/* list */
+.primary-secondary .content-box .left-box .list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 0px;
+  gap: var(--gap-base);
+  isolation: isolate;
+  /* width: 525px;*/
+  height: 140px;
+}
+
+/* 1 */
+.primary-secondary .content-box .left-box .list .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 22px;
+
+  width: calc((var(--primary-secondary-box-width) - var(--gap-base) * 2) / 3); /* 168.33px;*/
+  /* height: 140px; */
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(8px);
+  border-radius: 18px;
+
+  z-index: 2;
+}
+
+/* icon */
+.primary-secondary .content-box .left-box .list .item .icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Сумма дохода */
+.primary-secondary .content-box .left-box .list .item-text {
+  width: 120px;
+
+  font-family: 'Montserrat-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 130%; /* or 18px */
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+
+/* right */
+.primary-secondary .content-box .right-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 25px 28px;
+  gap: 22px;
+
+  width: var(--primary-secondary-box-width);
+  height: 400px;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+  z-index: 1;
+}
+
+/* right-box list */
+.primary-secondary .content-box .right-box .list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  isolation: isolate;
+
+  width: calc(var(--primary-secondary-box-width) * 0,89); /* 469px; */
+  /* height: 241px; */
+}
+
+/* 01 */
+.primary-secondary .content-box .right-box .list .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px 20px;
+  gap: 22px;
+
+  width: 100%;
+  /* height: 80px; */
+
+  border-radius: 12px;
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 136%; /* or 19px */
+  letter-spacing: 0.01em;
+  background: #FFFFFF;
+  color: #000000;
+  z-index: 2;
+}
+
+/* background gradient */
+.primary-secondary .background {
+  position: absolute;
+  width: 922px;
+  height: 552px;
+  left: 0;
+  top: 0;
+
+  background: linear-gradient(90deg, #91B2F3 0%, #A074E9 100%);
+  opacity: 0.2;
+  filter: blur(150px);
+  z-index: 0;
+}

@@ -1,3 +1,7 @@
+:root {
+  --get-demo-content-width: 980px;
+}
+
 /* Order demo */
 .get-demo {
   display: flex;
@@ -8,7 +12,7 @@
   isolation: isolate;
 
   /* width: 1920px; */
-  height: 520px;
+  height: 550px;
   background: rgba(196, 208, 222, 0.15);
 }
 
@@ -18,7 +22,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  width: 980px;
+  width: var(--get-demo-content-width);
   height: 100%;
 }
 

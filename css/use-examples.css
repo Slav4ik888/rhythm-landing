@@ -1,3 +1,12 @@
+:root {
+  --use-examples-content-width: 920px;
+  --use-examples-first-row-height: 600px;
+  --use-examples-first-row-frame-width: 730px;
+  --use-examples-first-row-frame-height: 410px;
+  --use-examples-first-row-slide-element: 20px;
+  --use-examples-second-row-height: 480px;
+}
+
 /* content */
 .use-examples-content {
   display: flex;
@@ -147,7 +156,7 @@
   gap: 2px;
 
   background: rgba(255, 255, 255, 0.6);
-  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(8px);
   border-radius: 20px;
   z-index: 1;
