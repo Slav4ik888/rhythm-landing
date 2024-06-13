@@ -28,16 +28,22 @@ header {
   backgroundColor: isScroll ? theme.navbar.background: 'transparent !important', */
 }
 
-.logo {
+.logo { 
   display: flex;
   align-items: center;
+  justify-content: center;
   font-family: "Montserrat-SemiBold";
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.3rem;
+  gap: 4px;
   width: 80px;
   height: 24px;
   text-align: center;
+}
+.logo-img {
+  width: 21px;
+  padding-bottom: 4px;
 }
 
 .menu-links {

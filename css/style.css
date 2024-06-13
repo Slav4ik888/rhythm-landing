@@ -201,7 +201,7 @@ section.container-small {
   font-family: 'Montserrat-Regular';
   font-style: normal;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 17px;
   /* identical to box height */
   background: inherit;
@@ -210,6 +210,19 @@ section.container-small {
   border: none;
 }
 
+.get-demo .right-box .input-box .input-item:active,
+.get-demo .right-box .input-box .input-item:focus,
+.get-demo .right-box .input-box .input-item:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.get-demo .right-box .input-box .input-item::placeholder {
+  font-size: 1rem;
+}
+
+/* input[type=text]::-webkit-input-placeholder {
+input[type=text]::-moz-placeholder { */
 
 /* Button */
 .get-demo .btn-box {
@@ -243,4 +256,14 @@ section.container-small {
   font-size: 0.9rem;
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+/* image */
+.get-demo .image-box {
+  position: absolute;
+  width: 380px;
+  left: 260px;
+  bottom: 0;
+
+  z-index: 2;
 }
