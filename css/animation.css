@@ -1,0 +1,18 @@
+
+.bg-anim {
+  animation: bg-animation 12s infinite;
+}
+
+@keyframes bg-animation {
+  0% {
+    width: 100%;
+  }
+
+  50% {
+    width: 103%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
