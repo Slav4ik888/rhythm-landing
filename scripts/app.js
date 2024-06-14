@@ -73,6 +73,16 @@ $VideoPresentationVideoPreview.addEventListener("mouseout", () => {
 });
 
 // ----------------
+// --  DEV-TIMELINE
+// ----------------------------------------------------------------------------------
+
+const $DevTimelineSnoska = getId("dev-timeline-snoska");
+
+$DevTimelineSnoska.addEventListener("mouseover", () => {
+  
+});
+
+// ----------------
 // --  ПЛАВНАЯ ПРОКРУТКА
 // ----------------------------------------------------------------------------------
 
