@@ -1,0 +1,72 @@
+:root {
+  --why-we-content-height: 420px;
+}
+
+
+/* content */
+.why-we .content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 40px;
+  padding: 0px;
+  gap: 10px;
+
+  width: var(--container);
+  height: 420px;
+}
+
+/* 1st col */
+.why-we .content .column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: var(--gap-base);
+
+  width: calc((var(--container) - var(--gap-base)) / 2);
+  height: var(--why-we-content-height);
+}
+
+/* 1 */
+.why-we .content .column .box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 30px;
+  gap: 18px;
+
+  width: 550px;
+  height: calc((var(--why-we-content-height) - var(--gap-base)) / 2); /* 205px;*/
+
+  background: #F6F8FA;
+  border-radius: 20px;
+}
+
+.why-we .content .column .box.fullwidth {
+  height: var(--why-we-content-height);
+}
+
+/* Помогаем определить «ключевые» и «первичные» показатели */
+.why-we .content .column .box .title {
+  /* width: 490px;
+  height: 58px; */
+  font-family: 'Montserrat-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 132%; /* or 29px */
+  color: #111111;
+}
+
+/* Среди огромного числа возможных показателей поможем выделить «ключевые», а затем те, что на них влияют. */
+.why-we .content .column .box .text {
+  /* width: 420px;
+  height: 63px; */
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 150%; /* or 21px */
+  color: #111111;
+}
