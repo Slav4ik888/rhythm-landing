@@ -207,6 +207,7 @@ section.container-small {
   color: #111111;
   width: 100%;
   border: none;
+  cursor: text;
 }
 
 .get-demo .right-box .input-box .input-item:active,

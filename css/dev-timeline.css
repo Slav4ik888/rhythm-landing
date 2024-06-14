@@ -52,6 +52,7 @@
 
 /* elements list */
 .dev-timeline .content .list-items {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -110,17 +111,35 @@
   font-weight: 600;
   font-size: 1.2rem;
   line-height: 132%; /* or 21px */
+  z-index: 1;
 }
 
-.dev-timeline .content .list-items .item .top .title-box .snoska {
+/* SNOSKA */
+
+.dev-timeline .content .list-items .item .top .title-box .snoska-anchor {
   position: absolute;
   top: -3px;
   right: -8px;
-}
-
-.dev-timeline .content .list-items .item .top .title-box .snoska:hover {
   color: #7F84FF;
 }
+
+.dev-timeline .content .list-items .snoska-box {
+  position: absolute;
+  top: -20px;
+  left: 230px;
+  width: 300px;
+  z-index: 2;
+}
+
+.dev-timeline .content .list-items .snoska-box .text {
+  padding: 18px 14px;
+  font-family: 'Montserrat-Regular';
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 138%;
+}
+
+/* ---   END SNOSKA   --- */
 
 .dev-timeline .content .list-items .item .top .text-box {
   display: flex;

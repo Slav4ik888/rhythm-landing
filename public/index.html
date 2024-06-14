@@ -15,7 +15,7 @@
   <meta property="og:image:alt" content="Как работает автомобильная коробка передач">
   <meta property="twitter:description" content="Что такое КПП в машине, зачем нужна коробка передач в авто и какие типы коробок передач существуют">
 
-  <script src="scripts/app.js" type="module" defer></script>
+  <script src="../scripts/app.js" type="module" defer></script>
 </head>
 <body>
   <!-- HEADER -->
@@ -615,12 +615,22 @@
           <div class="round"></div>
         </div>
         <div class="list-items">
+          <!-- Snoska -->
+          <div id="dev-timeline-snoska-box" class="snoska-box not-visible">
+            <div class="advantage-container">
+              <div class="advantage-wrap">
+                <div class="text">Все встречи проходят онлайн, по видеосвязи (с помощью Zoom).</div>
+              </div>
+            </div>
+          </div>
           <!-- 1 -->
-          <div class="item">
+          <div class="item">           
             <div class="top">
               <div class="title-box">
                 <img src="../assets/dev-timeline-1.png" class="icon" />
-                <div class="text">Первая встреча<span id="dev-timeline-snoska" class="snoska">*</span></div>
+                <div class="text">Первая встреча
+                  <span id="dev-timeline-snoska-anchor" class="snoska-anchor">*</span>
+                </div>
               </div>
               <div class="text-box">
                 <div class="list-item">
@@ -730,7 +740,7 @@
 </html>
 
 <!-- 
-  git add . && git commit -m "2024-06-14 add dev-timeline" && git push origin main
+  git add . && git commit -m "2024-06-14 add snoska" && git push origin main
  -->
 <!-- 
   npm install postcss-cli postcss-import postcss-media-minmax postcss-csso

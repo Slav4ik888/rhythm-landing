@@ -56,7 +56,7 @@ $WhatIsBtnDashboard.addEventListener("click", () => {
   $WhatIsBottomRowDashboard.classList.remove("not-visible");
 });
 
-// ----------------
+// ----------------------------
 // --  VIDEO PRESENTATION
 // ----------------------------------------------------------------------------------
 
@@ -72,17 +72,23 @@ $VideoPresentationVideoPreview.addEventListener("mouseout", () => {
   $VideoPresentationPlayBox.classList.remove("hover");
 });
 
-// ----------------
+// --------------------
 // --  DEV-TIMELINE
 // ----------------------------------------------------------------------------------
 
-const $DevTimelineSnoska = getId("dev-timeline-snoska");
+const
+  $DevTimelineSnoskaAnchor = getId("dev-timeline-snoska-anchor"),
+  $DevTimelineSnoskaBox = getId("dev-timeline-snoska-box");
 
-$DevTimelineSnoska.addEventListener("mouseover", () => {
-  
+$DevTimelineSnoskaAnchor.addEventListener("mouseover", () => {
+  $DevTimelineSnoskaBox.classList.remove("not-visible");
 });
 
-// ----------------
+$DevTimelineSnoskaAnchor.addEventListener("mouseout", () => {
+  $DevTimelineSnoskaBox.classList.add("not-visible");
+});
+
+// -------------------------
 // --  ПЛАВНАЯ ПРОКРУТКА
 // ----------------------------------------------------------------------------------
 

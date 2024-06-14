@@ -108,8 +108,6 @@
   padding: 0px;
   gap: 10px;
   width: 100%;
-  /* width: 304px;
-  height: 232px; */
 }
 
 /* inputs */
@@ -121,8 +119,7 @@
   padding: 0px;
   gap: 5px;
   width: 100%;
-  /* width: 304px;
-  height: 169px; */
+  cursor: text;
 }
 
 /* input */
@@ -133,11 +130,10 @@
   padding: 18px 16px;
   gap: 10px;
   width: 100%;
-  /* width: 304px;
-  height: 53px; */
   background: #F9FAFD;
   border: 1px solid #EFF3F8;
   border-radius: 8px;
+  cursor: text;
 };
 
 
