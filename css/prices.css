@@ -1,813 +1,323 @@
 /* Prices */
+:root {
+  --el-strip-width: 52px;
+  --el-width-7: 830px;
+  --el-width-6: calc(var(--el-width-7) - var(--el-strip-width) * 2);
+  --el-width-5: calc(var(--el-width-6) - var(--el-strip-width) * 2);
+  --el-width-4: calc(var(--el-width-5) - var(--el-strip-width) * 2);
+  --el-width-3: calc(var(--el-width-4) - var(--el-strip-width) * 2);
+  --el-width-2: calc(var(--el-width-3) - var(--el-strip-width) * 2);
+}
+
 .prices {
-  position: absolute;
-  width: 875px;
-  height: 830px;
-  left: 545px;
-  top: 7830px;
+  position: relative;
+  margin-top: 26px;
+  width: var(--container);
+  overflow-y: hidden;
+}
 
+.prices .title-box {
+  margin-top: 62px;
+}
 
+.prices .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* height: var(--el-width-7); */
+}
 
-  /* background radial color */
-
-  position: absolute;
-  width: 830px;
-  height: 830px;
-  left: calc(50% - 830px/2);
-  top: calc(50% - 830px/2 + 3860px);
-
-
-
-  /* Ellipse 2 */
-
-  position: absolute;
-  width: 311.25px;
-  height: 311.25px;
-  left: 804.38px;
-  top: 8089.38px;
-
-  background: rgba(127, 132, 255, 0.03);
-
-
-  /* Ellipse 3 */
-
-  position: absolute;
-  width: 415px;
-  height: 415px;
-  left: 752.5px;
-  top: 8037.5px;
-
-  background: rgba(127, 132, 255, 0.03);
-
-
-  /* Ellipse 4 */
-
-  position: absolute;
-  width: 518.75px;
-  height: 518.75px;
-  left: 700.62px;
-  top: 7985.62px;
-
-  background: rgba(127, 132, 255, 0.03);
-
-
-  /* Ellipse 5 */
-
-  position: absolute;
-  width: 622.5px;
-  height: 622.5px;
-  left: 648.75px;
-  top: 7933.75px;
-
-  background: rgba(127, 132, 255, 0.03);
-
-
-  /* Ellipse 6 */
-
-  position: absolute;
-  width: 726.25px;
-  height: 726.25px;
-  left: 596.88px;
-  top: 7881.88px;
-
-  background: rgba(127, 132, 255, 0.03);
-
-
-  /* Ellipse 7 */
-
-  position: absolute;
-  width: 830px;
-  height: 830px;
-  left: 545px;
-  top: 7830px;
-
-  background: rgba(127, 132, 255, 0.03);
-
-
-  /* advantages */
-
-  /* Auto layout */
+/* price */
+.prices .content .container-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px;
-  gap: 12px;
-
-  position: absolute;
-  width: 220px;
-  height: 153px;
-  left: 1200px;
-  top: 8059px;
-
-  background: rgba(255, 255, 255, 0.5);
-  box-shadow: 0px 6px 42px rgba(0, 0, 0, 0.04);
-  backdrop-filter: blur(8px);
-  /* Note: backdrop-filter has minimal browser support */
-  border-radius: 20px;
-
-
-  /* Уже включена */
-
-  width: 127px;
-  height: 21px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 132%;
-  /* or 21px */
-  text-align: center;
-
-  color: #111111;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* list */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 10px;
-
-  width: 149px;
-  height: 80px;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-
-  /* 01 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 6px;
-
-  width: 106px;
-  height: 20px;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* check */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 4px;
-  gap: 10px;
-
-  width: 20px;
-  height: 20px;
-
-  background: rgba(83, 186, 66, 0.14);
-  border-radius: 6px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* icon */
-
-  width: 12px;
-  height: 12px;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* Icon */
-
-  position: absolute;
-  left: 16.67%;
-  right: 16.67%;
-  top: 25%;
-  bottom: 29.17%;
-
-  border: 2.4px solid #53BA42;
-
-
-  /* Настройка */
-
-  width: 80px;
-  height: 10px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 132%; /* or 18px */
-  text-align: center;
-
-  color: #111111;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-
-  /* 02 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 6px;
-
-  width: 149px;
-  height: 20px;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-
-  /* check */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 4px;
-  gap: 10px;
-
-  width: 20px;
-  height: 20px;
-
-  background: rgba(83, 186, 66, 0.14);
-  border-radius: 6px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* icon */
-
-  width: 12px;
-  height: 12px;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* Icon */
-
-  position: absolute;
-  left: 16.67%;
-  right: 16.67%;
-  top: 25%;
-  bottom: 29.17%;
-  border: 2.4px solid #53BA42;
-
-
-  /* Сопровождение */
-
-  width: 123px;
-  height: 10px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 132%; /* or 18px */
-  text-align: center;
-  color: #111111;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-
-  /* 03 */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 6px;
-
-  width: 131px;
-  height: 20px;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-
-
-  /* check */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 4px;
-  gap: 10px;
-
-  width: 20px;
-  height: 20px;
-
-  background: rgba(83, 186, 66, 0.14);
-  border-radius: 6px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* icon */
-
-  width: 12px;
-  height: 12px;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* Icon */
-
-  position: absolute;
-  left: 16.67%;
-  right: 16.67%;
-  top: 25%;
-  bottom: 29.17%;
-
-  border: 2.4px solid #53BA42;
-
-
-  /* Консультации */
-
-  width: 105px;
-  height: 10px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 132%; /* or 18px */
-  text-align: center;
-  color: #111111;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-
-  /* price */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  margin-top: 40px;
+  margin-bottom:80px;
   padding: 10px;
-
-  position: absolute;
   width: 440px;
-  height: 412px;
-  left: calc(50% - 440px/2);
-  top: 8039px;
-
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.04);
   backdrop-filter: blur(8px);
-  /* Note: backdrop-filter has minimal browser support */
   border-radius: 30px;
+}
 
-
-  /* content */
-
-  /* Auto layout */
+/* content */
+.prices .content .container-box .offer-box {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 26px 24px;
   gap: 22px;
-
   width: 420px;
-  height: 230px;
+}
 
+/* logo Ритм */
+.prices .content .container-box .offer-box .logo {
+  color: #7F84FF;
+}
 
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-
-
-  /* logo */
-
-  width: 73.33px;
-  height: 22px;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* Ритм */
-
-  position: absolute;
-  left: 35.6%;
-  right: 0%;
-  top: 21.36%;
-  bottom: 21.36%;
-
-  background: #7F84FF;
-
-
-  /* icon */
-
-  position: absolute;
-  left: 0%;
-  right: 69.88%;
-  top: 0%;
-  bottom: 0%;
-
-
-
-  /* Vector */
-
-  position: absolute;
-  left: 4.92%;
-  right: 5%;
-  top: 4.43%;
-  bottom: 5.18%;
-
-  background: #7F84FF;
-
-
-  /* price action block */
-
-  /* Auto layout */
+/* price action block */
+.prices .content .container-box .offer-box .price-action-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 30px;
-
   width: 296px;
-  height: 134px;
+}
 
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-
-  /* text */
-
-  /* Auto layout */
+/* text */
+.prices .content .container-box .offer-box .price-action-box .text-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 24px;
+  width: 100%;
+}
 
-  width: 290px;
-  height: 63px;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* title */
-
-  /* Auto layout */
+/* title */
+.prices .content .container-box .offer-box .price-action-box .text-box .title-box {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 0;
   padding: 0px;
   gap: 12px;
-
   width: 290px;
   height: 21px;
+}
 
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* от 3.500₽ */
-
-  width: 152px;
-  height: 21px;
-
-  font-family: 'Montserrat';
+/* от 3.500₽ */
+.prices .content .container-box .offer-box .price-action-box .text-box .title-box .value {
+  font-family: 'Montserrat-Bold';
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 132%;
-  /* or 40px */
-  /* leading-trim and text-edge are draft CSS properties.
-
-  Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
-  */
-  leading-trim: both;
-  text-edge: cap;
-
+  font-size: 2.1rem;
+  line-height: 132%; /* or 40px */
   color: #111111;
+}
 
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* / */
-
+/* / */
+.prices .content .container-box .offer-box .price-action-box .text-box .title-box .divider {
   width: 5px;
-  height: 10px;
-
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Regular';
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 132%;
-  /* or 18px */
-  /* leading-trim and text-edge are draft CSS properties.
-
-  Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
-  */
-  leading-trim: both;
-  text-edge: cap;
-
+  font-size: 1rem;
+  line-height: 132%; /* or 18px */
   color: #828282;
+}
 
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-
-  /* за показатель* */
-
+/* за показатель* */
+.prices .content .container-box .offer-box .price-action-box .text-box .title-box .za-pokaz {
   width: 109px;
-  height: 10px;
-
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Regular';
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 132%;
-  /* or 18px */
-  /* leading-trim and text-edge are draft CSS properties.
-
-  Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
-  */
-  leading-trim: both;
-  text-edge: cap;
-
+  font-size: 1rem;
+  line-height: 132%; /* or 18px */
   color: #828282;
+}
 
-
-  /* Inside auto layout */
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-
-
-  /* Разработка за 2 встречи (онлайн) */
-
+/* Разработка за 2 встречи (онлайн) */
+.prices .content .container-box .offer-box .price-action-box .text-box .description {
   width: 249px;
-  height: 18px;
-
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Regular';
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 132%;
-  /* or 18px */
+  font-size: 1rem;
+  line-height: 132%; /* or 18px */
   text-align: center;
-
   color: #111111;
+}
 
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-
-  /* Button */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 16px;
-  gap: 10px;
-
+/* Button */
+.prices .content .container-box .offer-box .price-action-box .menu-button {
   width: 296px;
   height: 41px;
+}
 
-  background: #7F84FF;
-  border-radius: 8px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-
-  /* Text */
-
-  width: 264px;
-  height: 17px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  /* identical to box height */
-
-  color: #FFFFFF;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* description */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 18px 24px;
-  gap: 10px;
-
-  width: 420px;
-  height: 162px;
-
-  background: rgba(196, 208, 222, 0.15);
-  border-radius: 22px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-
-
-  /* * За настроенный показатель на панеле и не важно сколько понадобиться для этого показателей в таблице. Например, если для одного показателя на панеле может требоваться вести 4 показателя в таблице, то цена всё равно 3.500р, так как на панеле 1. */
-
-  width: 372px;
-  height: 126px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 160%;
-  /* or 21px */
-  display: flex;
-  align-items: center;
-
-  color: #111111;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 1;
-
-
-  /* title */
-
-  /* Auto layout */
+/* description */
+.prices .content .container-box .description-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  gap: 20px;
-
-  position: absolute;
-  width: 635px;
-  height: 107px;
-  left: calc(50% - 635px/2 + 0.5px);
-  top: 7892px;
-
-
-
-  /* tag */
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 10px;
+  padding: 18px 24px;
   gap: 10px;
+  width: 100%;
+  background: rgba(196, 208, 222, 0.15);
+  border-radius: 22px;
+}
 
-  width: 91px;
-  height: 32px;
-
-  background: #FFFFFF;
-  border-radius: 8px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-
-
-  /* Условия */
-
-  width: 71px;
-  height: 20px;
-
-  font-family: 'Montserrat';
+/* * За настроенный показатель на панеле и не важно сколько понадобиться для этого показателей в таблице. Например, если для одного показателя на панеле может требоваться вести 4 показателя в таблице, то цена всё равно 3.500р, так как на панеле 1. */
+.prices .content .container-box .description-box .text {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat-Regular';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 126%;
-  /* or 20px */
-  text-align: center;
-
+  font-size: 0.95rem;
+  line-height: 160%; /* or 21px */
   color: #111111;
+}
 
+  
 
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+/* background radial color */
+/* .prices .content .radial {
+  position: absolute;
+  width: var(--el-width);
+  height: var(--el-width);
+  left: calc(50% - var(--el-width) / 2);
+  top: calc(50% - var(--el-width) / 2);
+} */
 
+/* Ellipse 2 */
+.prices .ellipse2 {
+  position: absolute;
+  top: var(--el-strip-width);
+  left: var(--el-strip-width);
+  width: var(--el-width-2);
+  height: var(--el-width-2);
+  border-radius: 50%;
+  background: rgba(127, 132, 255, 0.03);
+  z-index: 0;
+}
 
-  /* Предложение */
+/* Ellipse 3 */
+.prices .ellipse3 {
+  position: absolute;
+  top: var(--el-strip-width);
+  left: var(--el-strip-width);
+  width: var(--el-width-3);
+  height: var(--el-width-3);
+  border-radius: 50%;
+  background: rgba(127, 132, 255, 0.03);
+  z-index: 0;
+}
 
-  width: 341px;
-  height: 55px;
+/* Ellipse 4 */
+.prices .ellipse4 {
+  position: absolute;
+  top: var(--el-strip-width);
+  left: var(--el-strip-width);
+  width: var(--el-width-4);
+  height: var(--el-width-4);
+  border-radius: 50%;
+  background: rgba(127, 132, 255, 0.03);
+  z-index: 0;
+}
 
-  font-family: 'Montserrat';
-  font-style: normal;
+/* Ellipse 5 */
+.prices .ellipse5 {
+  position: absolute;
+  top: var(--el-strip-width);
+  left: var(--el-strip-width);
+  width: var(--el-width-5);
+  height: var(--el-width-5);
+  border-radius: 50%;
+  background: rgba(127, 132, 255, 0.03);
+  z-index: 0;
+} 
+
+/* Ellipse 6 */
+.prices .ellipse6 {
+  position: absolute;
+  top: var(--el-strip-width);
+  left: var(--el-strip-width);
+  width: var(--el-width-6); /* 726.25px;*/
+  height: var(--el-width-6);
+  border-radius: 50%;
+  background: rgba(127, 132, 255, 0.03);
+  z-index: 0;
+}
+
+/* Ellipse 7 */
+.prices .ellipse7 {
+  position: absolute;
+  top: 0;
+  left: calc(var(--container) / 2 - var(--el-width-7) / 2);
+  width: var(--el-width-7);
+  height: var(--el-width-7);
+  border-radius: 50%;
+  background: rgba(127, 132, 255, 0.03);
+  z-index: 0;
+}
+
+/* ADVANTAGE */
+
+.prices .content .container-box .offer-box .advantage {
+  position: absolute;
+  top: 10px;
+  right: -250px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 12px;
+  width: 220px;
+  /* height: 153px; */
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 6px 42px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+}
+
+/* Уже включена */
+.prices .content .container-box .offer-box .advantage .title {
+  font-family: 'Montserrat-SemiBold';
   font-weight: 700;
-  font-size: 44px;
-  line-height: 124%;
-  /* identical to box height, or 55px */
-
+  font-size: 1.2rem;
+  line-height: 132%; /* or 21px */
   color: #111111;
+}
 
+/* list */
+.prices .content .container-box .offer-box .advantage .list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
 
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+/* 01 */
+.prices .content .container-box .offer-box .advantage .list .item-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 6px;
+}
+
+/* check */
+.prices .content .container-box .offer-box .advantage .list .item-box .checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px;
+  gap: 10px;
+  width: 20px;
+  height: 20px;
+  background: rgba(83, 186, 66, 0.14);
+  border-radius: 6px;
+}
+
+/* icon */
+.prices .content .container-box .offer-box .advantage .list .item-box .checkbox .icon {
+  width: 11px;
+  height: 9px;
+}
+
+/* Настройка */
+.prices .content .container-box .offer-box .advantage .list .item-box .checkbox .text {
+  font-family: 'Montserrat-Regular';
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 132%; /* or 18px */
+  color: #111111;
 }
