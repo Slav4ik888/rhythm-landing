@@ -17,20 +17,22 @@
 
   <script src="../scripts/app.js" type="module" defer></script>
 </head>
-<body>
+<body id="top">
   <!-- HEADER -->
   <header>
-    <div class="logo">
-      <img src="../assets/logo3.png" alt="logo" class="logo-img" />
-      Ритм
-    </div>
+    <a href="#top" class="internal-link">
+      <div class="logo">
+        <img src="../assets/logo3.png" alt="logo" class="logo-img" />
+        Ритм
+      </div>
+    </a>
     <div class="menu-links">
-      <a href="#what-is">О продукте</a>
-      <a href="#examples">Примеры</a>
-      <a href="#">Стоимость</a>
+      <a href="#what-is" class="internal-link">О продукте</a>
+      <a href="#examples" class="internal-link">Примеры</a>
+      <a href="#dev-timeline" class="internal-link">Как происходит разработка</a>
     </div>
 
-    <a href="#get-demo">
+    <a href="#get-demo" class="internal-link">
       <button class="menu-button">Получить демо</button>
     </a>
   </header>
@@ -385,7 +387,7 @@
   </section>
 
   <!-- VIDEO-PRESENTATION -->
-  <section class="container flex-left video-presentation cursor-pointer">
+  <section id="video-presentation" class="container flex-left video-presentation cursor-pointer">
     <div class="title-box flex-left cursor-pointer">
       <span class="title cursor-pointer">Видео-презентация</span>
       <span class="description">Покажем пример, как удалённо мониторить деятельность компании и предвидеть возможные проблемы</span>
@@ -598,7 +600,7 @@
   </section>
 
   <!-- DEV-TIMELINE -->
-  <div class="full-width dev-timeline">
+  <div id="dev-timeline" class="full-width dev-timeline">
     <section class="container-small">
       <div class="title-box">
         <div class="title-tag">
@@ -746,7 +748,7 @@
   </section>
 
   <!-- PRICES -->
-  <section class="container prices">
+  <section id="prices" class="container prices">
     <div class="ellipse7">
       <div class="ellipse6">
         <div class="ellipse5">
@@ -821,17 +823,52 @@
     </div>
   </section>
   
-
-  <footer class="container footer">
-    <section class="container">
-      
-    </section>
-  </footer>
+  <!-- FOOTER -->
+  <div class="full-width footer">
+    <footer class="container-small container">
+      <!-- 1 ST ROW -->
+      <div class="content-row">
+        <!-- Logo column -->
+        <div class="col-logo">
+          <div class="logo">
+            <img src="../assets/logo3.png" alt="logo" class="logo-img" />Ритм
+          </div>
+          <div class="text-box">
+            <div class="text">ИП Корзан Регина Олмерзаевна</div>
+            <div class="text">ИНН 381208224610</div>
+          </div>
+        </div>
+        <!-- Content column -->
+        <div class="col-content">
+          <div class="sub-col">
+            <a href="#what-is" class="internal-link"><div class="link">Что такое панель руководителя?</div></a>
+            <a href="#video-presentation" class="internal-link"><div class="link">Как предвидеть проблемы в бизнесе</div></a>
+            <a href="#examples" class="internal-link"><div class="link">Примеры использования</div></a>
+          </div>
+          <div class="sub-col">
+            <a href="#get-demo" class="internal-link"><div class="link">Получить демо-версию</div></a>
+            <a href="#dev-timeline" class="internal-link"><div class="link">Как происходит разработка</div></a>
+            <a href="#prices" class="internal-link"><div class="link">Стоимость</div></a>
+          </div>
+        </div>
+        <!-- Last column -->
+        <div class="col-last">
+          <a href="#top" class="internal-link">
+            <div class="button-box">
+              <img src="../assets/footer-arrow-icon.png" class="arrow" />
+              <div class="text">Наверх</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- 2 ST ROW -->
+    </footer>
+  </div>
 </body>
 </html>
 
 <!-- 
-  git add . && git commit -m "2024-06-1 continue prices" && git push origin main
+  git add . && git commit -m "2024-06-16 continue footer" && git push origin main
  -->
 <!-- 
   npm install postcss-cli postcss-import postcss-media-minmax postcss-csso
