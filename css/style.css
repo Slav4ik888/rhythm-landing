@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-  /* text-decoration: underline; */
+  text-decoration: underline;
   color: #000;
 }
 
@@ -232,10 +232,6 @@ input[type=text]::-moz-placeholder { */
 
 /* Button */
 .get-demo .btn-box {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; */
   padding: 18px 16px;
   gap: 10px;
   width: 100%;

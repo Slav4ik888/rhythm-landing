@@ -1,20 +1,24 @@
-const getId = (id) => document.getElementById(id);
+import { displayCurrentYear } from './utils/display-current-year.js';
+
+displayCurrentYear();
+
+const getById = (id) => document.getElementById(id);
 
 // ----------------
 // --  WHAT IS
 // ----------------------------------------------------------------------------------
 const
-  $WhatIsBtnTable                  = getId("what-is-btn-table"),
-  $WhatIsBtnDashboard              = getId("what-is-btn-dashboard"),
-  $WhatIsBtnTableIconActive        = getId("what-is-btn-table-icon-active"),
-  $WhatIsBtnTableIconNotActive     = getId("what-is-btn-table-icon-not-active"),
-  $WhatIsBtnDashbordIconActive     = getId("what-is-btn-dashboard-icon-active"),
-  $WhatIsBtnDashbordIconNotActive  = getId("what-is-btn-dashboard-icon-not-active"),
-  $WhatIsTopRowBox                 = getId("what-is-top-row-box"),
-  $WhatIsTopRowBoxTable            = getId("what-is-top-row-box-table"),
-  $WhatIsTopRowBoxDashboard        = getId("what-is-top-row-box-dashboard"),
-  $WhatIsBottomRowTable            = getId("what-is-bottom-row-table"),
-  $WhatIsBottomRowDashboard        = getId("what-is-bottom-row-dashboard");
+  $WhatIsBtnTable                  = getById("what-is-btn-table"),
+  $WhatIsBtnDashboard              = getById("what-is-btn-dashboard"),
+  $WhatIsBtnTableIconActive        = getById("what-is-btn-table-icon-active"),
+  $WhatIsBtnTableIconNotActive     = getById("what-is-btn-table-icon-not-active"),
+  $WhatIsBtnDashbordIconActive     = getById("what-is-btn-dashboard-icon-active"),
+  $WhatIsBtnDashbordIconNotActive  = getById("what-is-btn-dashboard-icon-not-active"),
+  $WhatIsTopRowBox                 = getById("what-is-top-row-box"),
+  $WhatIsTopRowBoxTable            = getById("what-is-top-row-box-table"),
+  $WhatIsTopRowBoxDashboard        = getById("what-is-top-row-box-dashboard"),
+  $WhatIsBottomRowTable            = getById("what-is-bottom-row-table"),
+  $WhatIsBottomRowDashboard        = getById("what-is-bottom-row-dashboard");
 
 
 $WhatIsBtnTable.addEventListener("click", () => {
@@ -61,8 +65,8 @@ $WhatIsBtnDashboard.addEventListener("click", () => {
 // ----------------------------------------------------------------------------------
 
 const
-  $VideoPresentationVideoPreview = getId("video-presentation-video-preview"),
-  $VideoPresentationPlayBox      = getId("video-presentation-play-box");
+  $VideoPresentationVideoPreview = getById("video-presentation-video-preview"),
+  $VideoPresentationPlayBox      = getById("video-presentation-play-box");
 
 $VideoPresentationVideoPreview.addEventListener("mouseover", () => {
   $VideoPresentationPlayBox.classList.add("hover");
@@ -77,8 +81,8 @@ $VideoPresentationVideoPreview.addEventListener("mouseout", () => {
 // ----------------------------------------------------------------------------------
 
 const
-  $DevTimelineSnoskaAnchor = getId("dev-timeline-snoska-anchor"),
-  $DevTimelineSnoskaBox = getId("dev-timeline-snoska-box");
+  $DevTimelineSnoskaAnchor = getById("dev-timeline-snoska-anchor"),
+  $DevTimelineSnoskaBox = getById("dev-timeline-snoska-box");
 
 $DevTimelineSnoskaAnchor.addEventListener("mouseover", () => {
   $DevTimelineSnoskaBox.classList.remove("not-visible");
