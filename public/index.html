@@ -392,16 +392,18 @@
       <span class="title cursor-pointer">Видео-презентация</span>
       <span class="description">Покажем пример, как удалённо мониторить деятельность компании и предвидеть возможные проблемы</span>
     </div>
-    <div id="video-presentation-video-preview" class="video-preview">
-      <div class="background-gradient"></div>
-      <div class="duration-box">
-        <span class="duration">3:37</span>
+    <a href="https://youtu.be/7GcEPgvVS6k?si=KdKha_A3xentNn2d" class="link" target="_blank" rel="noopener noreferrer">
+      <div id="video-presentation-video-preview" class="video-preview">
+        <div class="background-gradient"></div>
+        <div class="duration-box">
+          <span class="duration">3:37</span>
+        </div>
+        <div id="video-presentation-play-box" class="play-box">
+          <img src="../assets/video-presentation-2.png" class="vector" />
+          <div class="text">Смотреть видео</div>
+        </div>
       </div>
-      <div id="video-presentation-play-box" class="play-box">
-        <img src="../assets/video-presentation-2.png" class="vector" />
-        <div class="text">Смотреть видео</div>
-      </div>
-    </div>
+    </a>
   </section>
 
   <!-- USEFULL FOR BUSINESS -->
@@ -788,7 +790,7 @@
               </div>
               <div class="description">Разработка за 2 встречи (онлайн)</div>
             </div>
-            <div class="menu-button">Получить подробную информацию</div>
+            <div id="prices-btn" class="menu-button">Получить подробную информацию</div>
           </div>
           <!-- Advantages -->
           <div class="advantage">
@@ -818,6 +820,38 @@
         <div class="description-box">
           <div class="text">* За настроенный показатель на панеле и не важно сколько понадобиться для этого показателей в таблице.</div>
           <div class="text"><i>Например, если для одного показателя на панеле может требоваться вести 4 показателя в таблице, то цена всё равно 3.500р, так как на панеле - 1.</i></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP-FORM -->
+    <div id="prices-popup-form" class="prices-form popup-form">
+      <div class="form-container">
+        <div id="prices-popup-close-btn" class="close-btn">
+          <img src="../assets/close-icon.png" alt="logo" class="close-btn-icon" />
+        </div>
+        <div class="head">
+          <div class="logo-box">
+            <img src="../assets/logo-icon-5.png" alt="logo" class="icon" />
+          </div>
+          <div class="title">
+            <div>Расскажем все подробности</div>
+            <div>и проконсультируем</div>
+          </div>
+        </div>
+        <div class="elements">
+          <div class="inputs">
+            <div class="input-box">
+              <input type="text" class="input-item" placeholder="Ваше имя" />
+            </div>
+            <div class="input-box">
+              <input type="text" class="input-item" placeholder="Название компании" />
+            </div>
+            <div class="input-box">
+              <input type="email" class="input-item" placeholder="E-mail" />
+            </div>
+          </div>
+          <button class="btn-box">Прислать демо</button>
         </div>
       </div>
     </div>
@@ -880,7 +914,7 @@
 </html>
 
 <!-- 
-  git add . && git commit -m "2024-06-17 end footer" && git push origin main
+  git add . && git commit -m "2024-06-20 add popup form" && git push origin main
  -->
 <!-- 
   npm install postcss-cli postcss-import postcss-media-minmax postcss-csso

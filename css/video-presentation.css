@@ -3,6 +3,7 @@
   cursor: pointer;
 }
 
+
 /* Расскажем как удалённо мониторить деятельность компании и возможные предвидеть проблемы */
 .video-presentation .description {
   font-family: 'Montserrat-Regular';
@@ -15,6 +16,12 @@
   margin-bottom: 30px;
   cursor: pointer;
 }
+
+
+.video-presentation .link {
+  width: 100%;
+}
+
 
 /* video preview */
 .video-preview {

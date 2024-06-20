@@ -202,13 +202,49 @@ section.container-small {
 /*    НЕПОДГРУЖАЕМЫЕ СТИЛИ   */
 /* ------------------------- */
 
-.get-demo .right-box .input-box .input-item {
+/* form elements */
+.form-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+  width: 100%;
+}
+
+/* inputs */
+.inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 5px;
+  width: 100%;
+  cursor: text;
+}
+
+/* input */
+.input-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 18px 16px;
+  gap: 10px;
+  width: 100%;
+  background: #F9FAFD;
+  border: 1px solid #EFF3F8;
+  border-radius: 8px;
+  cursor: text;
+}
+
+.input-box .input-item {
   font-family: 'Montserrat-Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 1.3rem;
-  line-height: 17px;
-  /* identical to box height */
+  line-height: 130%; /* identical to box height */
   background: inherit;
   color: #111111;
   width: 100%;
@@ -216,22 +252,19 @@ section.container-small {
   cursor: text;
 }
 
-.get-demo .right-box .input-box .input-item:active,
-.get-demo .right-box .input-box .input-item:focus,
-.get-demo .right-box .input-box .input-item:focus-visible {
+.input-box .input-item:active,
+.input-box .input-item:focus,
+.input-box .input-item:focus-visible {
   border: none;
   outline: none;
 }
 
-.get-demo .right-box .input-box .input-item::placeholder {
+.input-box .input-item::placeholder {
   font-size: 1rem;
 }
 
-/* input[type=text]::-webkit-input-placeholder {
-input[type=text]::-moz-placeholder { */
-
 /* Button */
-.get-demo .btn-box {
+.btn-box {
   padding: 18px 16px;
   gap: 10px;
   width: 100%;
@@ -250,7 +283,7 @@ input[type=text]::-moz-placeholder { */
   -webkit-transition: background-color 0.4s ease;
 }
 
-.get-demo .btn-box:hover {
+.btn-box:hover {
   background: #757BF6;
 }
 

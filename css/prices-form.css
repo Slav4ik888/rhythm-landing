@@ -1,0 +1,115 @@
+/* form */
+.prices-form.popup-form {
+  display: none; /* Скрываем форму по умолчанию */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.prices-form .form-container {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 34px;
+  gap: 30px;
+  isolation: isolate;
+
+  width: 400px;
+  /* height: 430px; */
+
+  background: #FFFFFF;
+  backdrop-filter: blur(5px);
+  border-radius: 28px;
+}
+
+/* Frame 1744 */
+.prices-form .form-container .head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+
+  width: 332px;
+  height: 100px;
+  z-index: 0;
+}
+
+/* Frame 2 */
+.prices-form .form-container .head .logo-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  gap: 10px;
+
+  width: 38.09px;
+  height: 38px;
+
+  background: #7F84FF;
+  border-radius: 8px;
+}
+
+/* icon */
+.prices-form .form-container .head .logo-box .icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* Расскажем все подробности и проконсультируем */
+.prices-form .form-container .head .title {
+  width: 332px;
+  /* height: 46px; */
+
+  font-family: 'Montserrat-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 130%; /* or 23px */
+  text-align: center;
+  color: #111111;
+}
+
+/* form elements */
+.prices-form .form-container .elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 332px;
+  z-index: 1;
+}
+
+/* x */
+.prices-form .close-btn {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 18px;
+  top: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+/* Icon */
+.prices-form .close-btn .close-btn-icon {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
