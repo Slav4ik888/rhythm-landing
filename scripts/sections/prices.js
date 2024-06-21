@@ -29,7 +29,8 @@ $PricesPopupCloseBtn.addEventListener('click', function (e) {
 $PricesPopupSendBtn.addEventListener('click', () => {
   console.log('Click btn');
 
-    fetch('http://localhost:9090/api/hello', {
+    // fetch('http://localhost:9090/api/hello', {
+    fetch('http://rhy.thm.su/api/hello', {
       method: 'GET', // или 'POST' в зависимости от вашего запроса
       headers: {
         'Content-Type': 'application/json'
