@@ -1,0 +1,30 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MONTH_NAME_RU_DEC = exports.MONTH_NAME_RU = exports.MONTH_NAME = exports.WEEK_DAYS_FULL = exports.WEEK_DAYS_RU = exports.WEEK_DAYS = exports.SUB = exports.FORMAT = void 0;
+var FORMAT;
+(function (FORMAT) {
+    FORMAT["Month"] = "Month";
+    FORMAT["MonthYYYY"] = "Month YYYY";
+    FORMAT["MonthDD\u0441YYYY"] = "Month DD, YYYY";
+    FORMAT["DDMonthYYYY"] = "DD Month YYYY";
+    FORMAT["DMonthYYYY"] = "D Month YYYY";
+    FORMAT["DMonthYYYYHHMM"] = "D Month YYYY HH:MM";
+    FORMAT["YYYYMMDDt"] = "YYYY-MM-DD";
+    FORMAT["YYYYMMDD"] = "YYYYMMDD";
+    FORMAT["DDMMYYYYt"] = "DD-MM-YYYY";
+    FORMAT["DDMMYYYYd"] = "DD.MM.YYYY";
+    FORMAT["DDMMYYdHHMM"] = "DD.MM.YY HH:MM";
+    FORMAT["HHMM"] = "HH:MM";
+})(FORMAT || (exports.FORMAT = FORMAT = {}));
+var SUB;
+(function (SUB) {
+    SUB["EN"] = "en";
+    SUB["RU"] = "ru";
+    SUB["RU_DECL"] = "ru_decl";
+})(SUB || (exports.SUB = SUB = {}));
+exports.WEEK_DAYS = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
+exports.WEEK_DAYS_RU = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+exports.WEEK_DAYS_FULL = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+exports.MONTH_NAME = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+exports.MONTH_NAME_RU = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+exports.MONTH_NAME_RU_DEC = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];
