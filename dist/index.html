@@ -828,7 +828,7 @@
     </div>
 
     <!-- POPUP-FORM -->
-    <div id="prices-popup-form" class="prices-form popup-form">
+    <div id="prices-popup-form" class="prices-form popup">
       <div class="form-container">
         <div id="prices-popup-close-btn" class="close-btn">
           <img src="../assets/close-icon.png" alt="logo" class="close-btn-icon" />
@@ -845,15 +845,15 @@
         <form id="prices-form" name="prices-form" class="elements">
           <div class="inputs">
             <div class="input-box">
-              <input type="text" class="input-item" name="name" placeholder="Ваше имя" value="123" />
+              <input type="text" class="input-item" name="name" placeholder="Ваше имя" />
             </div>
             <div id="prices-form-helper-name" class="helper not-visible"></div>
             <div class="input-box">
-              <input type="text" class="input-item" name="company" placeholder="Название компании" value="456" />
+              <input type="text" class="input-item" name="company" placeholder="Название компании" />
             </div>
             <div id="prices-form-helper-company" class="helper not-visible"></div>
             <div class="input-box">
-              <input type="email" class="input-item" name="email" placeholder="E-mail" value="korzan.va@mail.ru" />
+              <input type="email" class="input-item" name="email" placeholder="E-mail" />
             </div>
             <div id="prices-form-helper-email" class="helper not-visible"></div>
           </div>
@@ -916,6 +916,47 @@
       </div>
     </footer>
   </div>
+
+  <!-- POPUPS -->
+  <!-- Success -->
+  <div id="popup-success" class="popup">
+    <div class="container">
+      <div id="popup-success-close-btn" class="close-btn">
+        <img src="../assets/close-icon.png" alt="logo" class="close-btn-icon" />
+      </div>
+      <div class="content">
+        <div class="header">
+          <img src="../assets/popup-check-ok.png" class="icon" />
+          <div class="title">Запрос отправлен</div>
+        </div>
+        <div class="description">Мы отправили вам письмо, проверьте указанный email. Если письмо не пришло - проверьте папку "Спам".</div>
+        <div class="description">Если письмо не пришло в течении 2 минут - <a target="_blank" href="mailto:korzan.va@mail.ru?subject=Не%20приходит%20письмо%20с%20www.rhy.thm.su&body=Здравствуйте,%0A%0AЯ%20отправил%20запрос,%20но%20мне%20ничего%20не%20пришло." class="mailto"><strong><u>нажмите сюда</u></strong></a>&nbsp;и сообщите нам об этом.</div>
+      </div>
+      <div id="popup-success-btn" class="button">
+        <div class="text">Закрыть</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Failed -->
+  <div id="popup-failed" class="popup">
+    <div class="container">
+      <div id="popup-failed-close-btn" class="close-btn">
+        <img src="../assets/close-icon.png" alt="logo" class="close-btn-icon" />
+      </div>
+      <div class="content">
+        <div class="header">
+          <img src="../assets/popup-check-failed.png" class="icon" />
+          <div class="title">Произошла ошибка</div>
+        </div>
+        <div class="description">Мы получили сообщение об ошибке и разбираемся с ней, <a target="_blank" href="mailto:korzan.va@mail.ru?subject=Произошла ошибка%20на%20www.rhy.thm.su&body=Здравствуйте,%0A%0AЯ%20отправил%20запрос,%20но%20произошла%20ошибка." class="mailto"><strong><u>напишите нам</u></strong></a>&nbsp;и мы в ответном письме, отправим вам нужную информацию.</div>
+      </div>
+      <div id="popup-failed-btn" class="button">
+        <div class="text">Закрыть</div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
 

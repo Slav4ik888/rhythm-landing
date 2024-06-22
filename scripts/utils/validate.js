@@ -6,6 +6,7 @@ import { isEmptyStr, isNotEmail, isNotEmptyStr, isNotStr } from './validators.js
  * выводит их на экран в форму
  * 
  * @param {object} body - объект с данными
+ * @param {string} classPrefix 'prices' | 'get-demo'
  * @returns {boolean}
  */
 export const validate = (body, classPrefix) => {
@@ -14,8 +15,6 @@ export const validate = (body, classPrefix) => {
     $FormHeplerCompany = getById(classPrefix + "-form-helper-company"),
     $FormHeplerEmail   = getById(classPrefix + "-form-helper-email"),
     errors = {};
-  
-    console.log('classPrefix: ', classPrefix + "-form-helper-name");
   
   // Очищает все ранее выведенные ошибки в форме
   $FormHeplerName.textContent = '';
@@ -27,7 +26,6 @@ export const validate = (body, classPrefix) => {
   
   // Email
   if (isNotEmail(body.email)) {
-    console.log('body.email: ', body.email);
     errors.email = 'Не корректный email';
     $FormHeplerEmail.textContent = errors.email;
     $FormHeplerEmail.classList.remove('not-visible');

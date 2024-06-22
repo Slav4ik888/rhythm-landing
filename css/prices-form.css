@@ -1,18 +1,4 @@
 /* form */
-.prices-form.popup-form {
-  display: none; /* Скрываем форму по умолчанию */
-  position: fixed;
-  top: 0;
-  left: 0;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-}
-
 .prices-form .form-container {
   /* position: relative; */
   display: flex;
@@ -89,27 +75,4 @@
 
   width: 332px;
   z-index: 1;
-}
-
-/* x */
-.prices-form .close-btn {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  right: 18px;
-  top: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  z-index: 2;
-  cursor: pointer;
-}
-
-
-/* Icon */
-.prices-form .close-btn .close-btn-icon {
-  width: 10px;
-  height: 10px;
-  cursor: pointer;
 }

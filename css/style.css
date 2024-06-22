@@ -21,12 +21,12 @@
 
 * {
   box-sizing: border-box;
-  cursor:default;
 }
 
 html {
   font-size: 14px;
   /* scroll-behavior: smooth; */
+  cursor: default;
 }
 
 body {
@@ -306,6 +306,145 @@ section.container-small {
   width: 380px;
   left: 260px;
   bottom: 0;
-
   z-index: 2;
+}
+
+/* POPUPS */
+.popup {
+  display: none; /* Скрываем форму по умолчанию */
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* container - success | failed */
+.popup .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 34px;
+  gap: 30px;
+  isolation: isolate;
+
+  width: 380px;
+  /* height: 278px; */
+
+  background: #FFFFFF;
+  backdrop-filter: blur(5px);
+  border-radius: 28px;
+}
+
+/* Content Frame 1744 */
+.popup .container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  width: 100%;
+  /* width: 252px;
+  height: 139px; */
+  z-index: 0;
+}
+
+/* Frame 1745 */
+.popup .container .content .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  width: 100%;
+  /* width: 177px;
+  height: 69px; */
+}
+
+/* check-verified-01 */
+.popup .container .content .header .icon {
+  width: 34px;
+  height: 34px;
+}
+
+/* Запрос отправлен */
+.popup .container .content .header .title {
+  font-family: 'Montserrat-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 130%; /* or 23px */
+  text-align: center;
+  color: #111111;
+}
+
+/* x */
+.close-btn {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 18px;
+  top: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+/* Icon */
+.close-btn .close-btn-icon {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+/* В ближайшее время мы подготовим все материалы и свяжемся с Вами для консультации */
+.popup .container .content .description {
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 140%; /* or 18px */
+  text-align: center;
+  color: #606060;
+}
+
+/* Gray button */
+.popup .container .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 10px;
+  width: 100%;
+  background: #F3F7FC;
+  border-radius: 8px;
+  z-index: 2;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  -webkit-transition: background-color 0.4s ease;
+}
+
+.popup .container .button:hover {
+  background: #eaeef3;
+}
+
+/* Text */
+.popup .container .button .text {
+  font-family: 'Montserrat-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 130%; /* identical to box height */
+  color: #233040;
 }
