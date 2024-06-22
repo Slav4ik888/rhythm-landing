@@ -29,6 +29,8 @@ app.use((ctx, next) => __awaiter(void 0, void 0, void 0, function* () {
         yield next();
     }
     catch (err) {
+        console.log('err: ', err);
+        console.log('err.body: ', err === null || err === void 0 ? void 0 : err.body);
         loggers_1.loggerServer.error(`[Server]: ${JSON.stringify(err)}`); // (err, null, 2)}`);
         if (err.status) {
             ctx.status = err.status;

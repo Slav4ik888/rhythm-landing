@@ -228,8 +228,8 @@ section.container-small {
 /* input */
 .input-box {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 18px 16px;
   gap: 10px;
   width: 100%;
@@ -261,6 +261,12 @@ section.container-small {
 
 .input-box .input-item::placeholder {
   font-size: 1rem;
+}
+
+.inputs .helper {
+  padding-left: 18px;
+  font-size: 0.8rem;
+  color: #d00000;
 }
 
 /* Button */

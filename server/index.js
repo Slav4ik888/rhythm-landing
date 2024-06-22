@@ -5,8 +5,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const app_1 = __importDefault(require("./app"));
 app_1.default.listen(process.env.PORT || 9090, () => console.log(`Listening on port ${process.env.PORT || 9090}!`));
-// cd ../company-rules-server 
-// git add . && git commit -m "07.04.2024" && git push -u origin main
+// 
+// git add . && git commit -m "2024-06-21 add server fix bug" && git push origin main
+// 
 // 200 OK
 // This response code indicates that the request was successful.
 // 201 Created

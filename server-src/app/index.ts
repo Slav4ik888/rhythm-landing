@@ -20,6 +20,8 @@ app.use(async (ctx, next) => {
     await next();
   }
   catch (err) {
+    console.log('err: ', err);
+    console.log('err.body: ', err?.body);
     loggerServer.error(`[Server]: ${JSON.stringify(err)}`); // (err, null, 2)}`);
 
     if (err.status) {

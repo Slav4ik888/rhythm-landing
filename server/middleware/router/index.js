@@ -7,10 +7,16 @@ const koa_router_1 = __importDefault(require("koa-router"));
 // import controllers from '../../controllers';
 const router = new koa_router_1.default({ prefix: '/api' });
 // { files } = controllers;
-// USERS - Auth
-router.post('/test', (ctx) => { console.log('Hello its /byEmail'); });
-// USERS - Data
-// FILES
+router.post('/get-demo', (ctx) => {
+    console.log('Get-demo');
+    console.log(ctx.request.body); // { name: '123', company: '456', email: 'korzan.va@mail.ru' }
+    ctx.body = { str: 'Get-demo Hello wolrd!' };
+});
+router.post('/get-prices', (ctx) => {
+    console.log('Get-prices');
+    console.log(ctx.request.body); // { name: '123', company: '456', email: 'korzan.va@mail.ru' }
+    ctx.body = { str: 'Get-prices Hello wolrd!' };
+});
 // router.post('/files', checkUserSession, () => { console.log('Hello its /files') });
 // Testing
 router.get('/hello', (ctx) => {

@@ -1,4 +1,7 @@
+import { SETTINGS } from '../consts/index.js';
 import { getById } from '../utils/get-by-id.js';
+import { getFormData } from '../utils/get-form-data.js';
+import { validate } from '../utils/validate.js';
 
 
 // --------------------
@@ -9,7 +12,7 @@ const
   $PricesBtn           = getById("prices-btn"),
   $PricesPopup         = getById("prices-popup-form"),
   $PricesPopupCloseBtn = getById("prices-popup-close-btn"),
-  $PricesPopupSendBtn  = getById("prices-popup-send-btn");
+  $PricesForm          = getById("prices-form");
 
 
 $PricesBtn.addEventListener("click", () => {
@@ -26,26 +29,28 @@ $PricesPopupCloseBtn.addEventListener('click', function (e) {
   $PricesPopup.style.display = 'none';
 });
 
-$PricesPopupSendBtn.addEventListener('click', () => {
-  console.log('Click btn');
 
-    // fetch('http://localhost:9090/api/hello', {
-    fetch('http://rhy.thm.su/api/hello', {
-      method: 'GET', // или 'POST' в зависимости от вашего запроса
-      headers: {
+$PricesForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  const body = getFormData('prices-form');
+  if (! validate(body, 'prices')) return;
+
+  try {
+    const response = await fetch(SETTINGS.url + '/get-prices', {
+      method  : 'POST',
+      body    : JSON.stringify(body),
+      headers : {
         'Content-Type': 'application/json'
       }
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
-    .then(data => {
-      console.log('Success:', data);
-    })
-    .catch(error => {
-      console.error('Error:', error);
     });
+
+    const result = await response.json();
+    console.log('Success:', result);
+    $PricesPopup.style.display = 'none';
+
+  }
+  catch (error) {
+    console.error('Error:', error);
+  }
 });
