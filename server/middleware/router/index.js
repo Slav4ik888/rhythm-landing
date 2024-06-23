@@ -4,14 +4,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const koa_router_1 = __importDefault(require("koa-router"));
+const get_demo_1 = require("../../controllers/get-demo");
 // import controllers from '../../controllers';
 const router = new koa_router_1.default({ prefix: '/api' });
 // { files } = controllers;
-router.post('/get-demo', (ctx) => {
-    console.log('Get-demo');
-    console.log(ctx.request.body); // { name: '123', company: '456', email: 'korzan.va@mail.ru' }
-    ctx.body = { str: 'Get-demo Hello wolrd!' };
-});
+router.post('/get-demo', get_demo_1.getDemo);
 router.post('/get-prices', (ctx) => {
     console.log('Get-prices');
     console.log(ctx.request.body); // { name: '123', company: '456', email: 'korzan.va@mail.ru' }

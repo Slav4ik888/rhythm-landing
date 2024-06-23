@@ -1,0 +1,26 @@
+doctype html
+html
+    head
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        title Info about get-demo
+        style.
+            .container { padding: 0 100px; font-size: 14px; }
+            .strong { font-weight: 600; font-size: 14px; }
+            .span { font-weight: 300; font-size: 14px; }
+
+    body.container
+        a(href=url_site)
+            img(src="https://firebasestorage.googleapis.com/v0/b/osnova-course.appspot.com/o/logo.png?alt=media&token=019bd620-6eea-4024-9e37-9576568ffcb6",  alt="Учебный центр Основа" style="width: 130px;")
+        h3 Пришёл запрос на демо-панель
+        br
+        p.strong name:&nbsp;
+            span.span #{name}
+        p.strong companyName:&nbsp;
+            span.span #{companyName}
+        p.strong email:&nbsp;
+            span.span #{email}
+
+        hr
+        footer
+            p С уважением, 
+            p Bot учебного центра «Основа»

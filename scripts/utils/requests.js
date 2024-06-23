@@ -67,13 +67,19 @@ export const getRequest = async (body, classPrefix, elemPopup) => {
       }
     });
 
-    const result = await response.json();
+    console.log(111111);
+    
+    console.log(222222);
+    const data = await response.json();
+    console.log('data: ', data);
 
     // Prices
     if (pricesType) {
+      console.log(33333);
       elemPopup.style.display = 'none'; // Закрываем запрос
     }
     if (getDemoType) {
+      console.log(444444);
     }
 
     $PopupSucces.style.display = 'flex';

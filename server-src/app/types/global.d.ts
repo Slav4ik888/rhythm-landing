@@ -4,7 +4,9 @@ import { Context as KoaContext } from 'koa';
 type Context = KoaContext & {
   request: {
     body?: {
-      email?: string
+      email?   : string
+      name?    : string
+      company? : string
     }
   },
   state: {

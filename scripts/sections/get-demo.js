@@ -1,4 +1,3 @@
-import { SETTINGS } from '../consts/index.js';
 import { getById } from '../utils/get-by-id.js';
 import { getFormData } from '../utils/get-form-data.js';
 import { getRequest } from '../utils/requests.js';
