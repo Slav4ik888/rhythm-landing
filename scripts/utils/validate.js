@@ -36,8 +36,8 @@ export const validate = (body, classPrefix) => {
     $FormHeplerName.textContent = errors.name;
     $FormHeplerName.classList.remove('not-visible');
   }
-  if (body.name?.length > 20) {
-    errors.name = 'Имя должно быть меньше 20 символов';
+  if (body.name?.length > 50) {
+    errors.name = 'Имя должно быть меньше 50 символов';
     $FormHeplerName.textContent = errors.name;
     $FormHeplerName.classList.remove('not-visible');
   }
@@ -47,8 +47,8 @@ export const validate = (body, classPrefix) => {
     $FormHeplerCompany.textContent = errors.company;
     $FormHeplerCompany.classList.remove('not-visible');
   }
-  if (body.company?.length > 40) {
-    errors.company = 'Название компании должно быть меньше 40 символов';
+  if (body.company?.length > 50) {
+    errors.company = 'Название компании должно быть меньше 50 символов';
     $FormHeplerCompany.textContent = errors.company;
     $FormHeplerCompany.classList.remove('not-visible');
   }

@@ -1,5 +1,6 @@
 import Router from 'koa-router';
 import { getDemo } from '../../controllers/get-demo';
+import { getPrices } from '../../controllers/get-prices';
 // import controllers from '../../controllers';
 
 
@@ -10,12 +11,7 @@ const
 
 
 router.post('/get-demo', getDemo);
-
-router.post('/get-prices', (ctx) => {
-  console.log('Get-prices');
-  console.log(ctx.request.body); // { name: '123', company: '456', email: 'korzan.va@mail.ru' }
-  ctx.body = { str: 'Get-prices Hello wolrd!' };
-});
+router.post('/get-prices', getPrices);
 
 // router.post('/files', checkUserSession, () => { console.log('Hello its /files') });
 

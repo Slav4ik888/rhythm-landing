@@ -12,7 +12,8 @@ const
   $PricesBtn           = getById("prices-btn"),
   $PricesPopup         = getById("prices-popup-form"),
   $PricesPopupCloseBtn = getById("prices-popup-close-btn"),
-  $PricesForm          = getById("prices-form");
+  $PricesForm          = getById("prices-form"),
+  $PricesFormBtn       = getById("prices-form-btn");
 
 
 $PricesBtn.addEventListener("click", () => {
@@ -35,6 +36,7 @@ $PricesForm.addEventListener('submit', function (e) {
   
   const body = getFormData('prices-form');
   if (! validate(body, 'prices')) return;
-
-  getRequest(body, 'prices', $PricesPopup);
+  
+  $PricesFormBtn.disabled = true;
+  getRequest(body, 'prices', $PricesFormBtn, $PricesPopup);
 });

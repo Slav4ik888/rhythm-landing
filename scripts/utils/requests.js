@@ -48,10 +48,11 @@ const
  * 
  * @param {object} body - объект с данными
  * @param {string} classPrefix 'prices' | 'get-demo'
+ * @param {element} elemBtn
  * @param {element} elemPopup - for 'prices'
  * @returns {boolean}
  */
-export const getRequest = async (body, classPrefix, elemPopup) => {
+export const getRequest = async (body, classPrefix, elemBtn, elemPopup) => {
 
   try {
     const
@@ -67,25 +68,21 @@ export const getRequest = async (body, classPrefix, elemPopup) => {
       }
     });
 
-    console.log(111111);
-    
-    console.log(222222);
-    const data = await response.json();
-    console.log('data: ', data);
+    await response.json();
 
     // Prices
     if (pricesType) {
-      console.log(33333);
       elemPopup.style.display = 'none'; // Закрываем запрос
     }
     if (getDemoType) {
-      console.log(444444);
     }
 
+    elemBtn.disabled = false;
     $PopupSucces.style.display = 'flex';
   }
   catch (error) {
     console.error('Error:', error);
+    elemBtn.disabled = false;
     $PopupFailed.style.display = 'flex';
   }
 };

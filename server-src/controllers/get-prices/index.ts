@@ -5,41 +5,42 @@ import { createLogTemp, loggerUsers as logger } from '../../libs/loggers';
 
 
 
-export async function getDemo(ctx: Context): Promise<any> {
+export async function getPrices(ctx: Context): Promise<any> {
   const
-    logTemp = createLogTemp(ctx, 'getDemo');
+    logTemp = createLogTemp(ctx, 'getPrices');
   
   try {
-    console.log('Get-demo');
+    console.log('Get-prices');
     const { name, company, email, partner } = ctx.request.body; // { name: '123', company: '456', email: 'korzan.va@mail.ru' }
     console.log(ctx.request.body); 
 
     // mailto Client
     await sendMail({
       to       : email,
-      subject  : 'Ссылка на демо-панель «Ритм»',
-      template : 'get-demo',
+      subject  : 'Информация по информационной панели руководителя «Ритм»',
+      template : 'get-prices',
       locals   : {
         url_demo  : cfg.DEMO_URL,
         url_site  : cfg.SITE_URL,
-        telegramm : cfg.TELEGRAM
+        url_site_primary_secondary: cfg.SITE_URL_PRIMARY_SECONDARY,
+        telegramm : cfg.TELEGRAM,
       }
     });
 
     // mailto me
     await sendMail({
       to       : cfg.ADMIN_EMAIL,
-      subject  : 'Прислали запрос на демо-панель «Ритм»',
-      template : 'notification-get-demo',
+      subject  : 'Прислали запрос на доп условия по панели «Ритм»',
+      template : 'notification-get-prices',
       locals   : {
         companyName: company,
         email,
         name,
-        partner
+        partner,
       }
     });
 
-    ctx.body   = { result: 'Ссылка на демо-панель отправлена!' };
+    ctx.body   = { result: 'Информация по панели отправлена!' };
     logger.info(`${logTemp} success`);
   }
   catch (errors) {

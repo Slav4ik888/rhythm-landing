@@ -7,6 +7,7 @@ type Context = KoaContext & {
       email?   : string
       name?    : string
       company? : string
+      partner? : string
     }
   },
   state: {

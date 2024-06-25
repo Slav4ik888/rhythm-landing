@@ -8,7 +8,8 @@ import { validate } from '../utils/validate.js';
 // ----------------------------------------------------------------------------------
 
 const
-  $GetDemoForm = getById("get-demo-form");
+  $GetDemoForm = getById("get-demo-form"),
+  $GetDemoBtn = getById("get-demo-btn");
 
 
 $GetDemoForm.addEventListener('submit', function (e) {
@@ -18,5 +19,6 @@ $GetDemoForm.addEventListener('submit', function (e) {
 
   if (! validate(body, 'get-demo')) return;
 
-  getRequest(body, 'get-demo');
+  $GetDemoBtn.disabled = true;
+  getRequest(body, 'get-demo', $GetDemoBtn);
 });

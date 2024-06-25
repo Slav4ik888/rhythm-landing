@@ -4,16 +4,19 @@ export interface EmailConfig {
 }
 
 interface Locals {
-  greetting?        : string,
-  name?             : string,
-  url_site?         : string,
-  url_confirmation? : string,
-  url_demo?         : string,
-  email?            : string,
-  companyId?        : string,
-  companyName?      : string,
-  platform_name?    : string,
-  password?         : string
+  greetting?                  : string
+  name?                       : string
+  url_site?                   : string
+  url_confirmation?           : string
+  url_demo?                   : string
+  url_site_primary_secondary? : string
+  telegramm?                  : string
+  partner?                    : string
+  email?                      : string
+  companyId?                  : string
+  companyName?                : string
+  platform_name?              : string
+  password?                   : string
 }
 
 interface Attachment {

@@ -293,6 +293,10 @@ section.container-small {
   background: #757BF6;
 }
 
+.btn-box:disabled {
+  background: #c0c2c6;
+}
+
 .get-demo .helper-description {
   font-size: 0.9rem;
   margin-top: 8px;
