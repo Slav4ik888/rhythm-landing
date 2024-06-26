@@ -1,7 +1,6 @@
 {
   "extends" : "./tsconfig.json",
   "exclude" : [
-    "babel.config.js",
     "./config/**/*",
     "./scripts/**/*",
     "./server/**/*",

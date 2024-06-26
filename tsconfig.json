@@ -27,8 +27,8 @@
   },
   "lib"     : ["es2015"],
   "exclude" : [
-    "babel.config.js",
     "./config/**/*",
+    "./scripts/**/*",
     "./server/**/*",
     // "**/tests/**/*",
     // "**/test/**/*",
