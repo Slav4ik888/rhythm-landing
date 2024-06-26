@@ -226,7 +226,7 @@ section.container-small {
 }
 
 /* input */
-.input-box {
+/* .input-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -237,9 +237,9 @@ section.container-small {
   border: 1px solid #EFF3F8;
   border-radius: 8px;
   cursor: text;
-}
+} */
 
-.input-box .input-item {
+.input-item {
   font-family: 'Montserrat-Regular';
   font-style: normal;
   font-weight: 500;
@@ -248,18 +248,22 @@ section.container-small {
   background: inherit;
   color: #111111;
   width: 100%;
-  border: none;
+  padding: 18px 16px;
+  border: 1px solid #EFF3F8;
+    /* border: none; */
+  background: #F9FAFD;
+  border-radius: 8px;
   cursor: text;
 }
 
-.input-box .input-item:active,
-.input-box .input-item:focus,
-.input-box .input-item:focus-visible {
+.input-item:active,
+.input-item:focus,
+.input-item:focus-visible {
   border: none;
   outline: none;
 }
 
-.input-box .input-item::placeholder {
+.input-item::placeholder {
   font-size: 1rem;
 }
 
