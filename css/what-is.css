@@ -1063,3 +1063,43 @@
   border-right: 5px solid transparent;
   border-top: 8px solid #CF2D1F;
 }
+
+/* Стили для маленьких мобильных устройств (до 320px) */
+@media only screen and (max-width: 320px) {
+  
+}
+
+/* Стили для средних мобильных устройств (321px - 480px) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  
+}
+
+/* Стили для больших мобильных устройств (481px - 767px) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  
+}
+
+/* Стили для планшетов в портретном режиме (768px - 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
+}
+
+/* Стили для планшетов в ландшафтном режиме (1025px - 1280px) */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  
+}
+
+/* Стили для маленьких экранов компьютеров и ноутбуков (1281px - 1440px) */
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+  
+}
+
+/* Стили для средних экранов компьютеров и ноутбуков (1441px - 1920px) */
+@media only screen and (min-width: 1441px) and (max-width: 1920px) {
+  
+}
+
+/* Стили для больших экранов (более 1920px) */
+@media only screen and (min-width: 1921px) {
+  
+}
