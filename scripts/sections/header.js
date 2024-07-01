@@ -1,7 +1,6 @@
 import { getById } from '../utils/get-by-id.js';
 
 const
-  whatIs = getById('what-is'),
   advantages = getById('advantages'),
   videoPresentation = getById('video-presentation'),
   usefullForBusiness = getById('usefull-for-business'),
@@ -13,7 +12,6 @@ const
   prices = getById('prices'),
   footer = getById('footer');
 
-whatIs.classList.add('not-visible');
 advantages.classList.add('not-visible');
 videoPresentation.classList.add('not-visible');
 usefullForBusiness.classList.add('not-visible');
