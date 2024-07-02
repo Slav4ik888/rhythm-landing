@@ -22,7 +22,6 @@
   gap: 24px;
 
   width: 920px;
-  /* height: 754px; */
   background: #FFFFFF;
 }
 
@@ -34,8 +33,6 @@
   align-items: center;
   padding: 0px;
   gap: 10px;
-
-  /* width: 428.33px; */
   min-height: 40px;
 }
 
@@ -1066,12 +1063,46 @@
 
 /* Стили для маленьких мобильных устройств (до 320px) */
 @media only screen and (max-width: 320px) {
-  
+  .what-is-description {
+    width: 100%;
+    margin: 16px 0;
+  }
+
+  .what-is-description .text {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  .what-is-content {
+    width: 100%;
+  }
+
+  .what-is-content .panel .button .text {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
 }
 
 /* Стили для средних мобильных устройств (321px - 480px) */
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  
+  .what-is-description {
+    width: 100%;
+    margin: 16px 0;
+  }
+
+  .what-is-description .text {
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+
+  .what-is-content {
+    width: 100%;
+  }
+
+  .what-is-content .panel .button .text {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
 }
 
 /* Стили для больших мобильных устройств (481px - 767px) */

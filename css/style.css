@@ -452,6 +452,21 @@ section.container-small {
   section {
     margin-top: 4rem;
   }
+
+  .container {
+    padding: 0 6px;
+    max-width: 100%;
+  }
+
+  .title-box {
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 130%; /* identical to box height */
+  }
 }
 
 /* Стили для средних мобильных устройств (321px - 480px) */
@@ -463,6 +478,21 @@ section.container-small {
 
   section {
     margin-top: 4rem;
+  }
+
+  .container {
+    padding: 0 6px;
+    max-width: 100%;
+  }
+
+  .title-box {
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 130%; /* identical to box height */
   }
 }
 
@@ -476,6 +506,11 @@ section.container-small {
   section {
     margin-top: 4rem;
   }
+
+  .container {
+    padding: 0 6px;
+    max-width: 100%;
+  }
 }
 
 /* Стили для планшетов в портретном режиме (768px - 1024px) */
@@ -487,6 +522,21 @@ section.container-small {
 
   section {
     margin-top: 4rem;
+  }
+
+  .container {
+    padding: 0 6px;
+    max-width: 100%;
+  }
+
+  .title-box {
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 130%; /* identical to box height */
   }
 }
 
@@ -508,6 +558,16 @@ section.container-small {
   section {
     margin-top: 4rem;
   }
+
+  .title-box {
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 130%; /* identical to box height */
+  }
 }
 
 /* Стили для средних экранов компьютеров и ноутбуков (1441px - 1920px) */
@@ -523,5 +583,15 @@ section.container-small {
   :root {
     --container: 1110px;
     --gap-base: 10px;
+  }
+
+  .title-box {
+    width: 100%;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 130%; /* identical to box height */
   }
 }
