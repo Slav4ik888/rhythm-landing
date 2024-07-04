@@ -88,6 +88,10 @@
     font-size: 0.7rem;
   }
 
+  .usefull-for-business .list-ufb {
+    margin-bottom: 0;
+  }
+
   .usefull-for-business .list-ufb .arrows {
     display: block;
   }
@@ -123,6 +127,10 @@
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .usefull-for-business-tag {
     font-size: 0.7rem;
+  }
+
+  .usefull-for-business .list-ufb {
+    margin-bottom: 0;
   }
 
   .usefull-for-business .list-ufb .arrows {
@@ -162,6 +170,10 @@
     font-size: 0.7rem;
   }
 
+  .usefull-for-business .list-ufb {
+    margin-bottom: 0;
+  }
+
   .usefull-for-business .list-ufb .arrows {
     display: block;
   }
@@ -197,6 +209,10 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .usefull-for-business-tag {
     font-size: 0.7rem;
+  }
+
+  .usefull-for-business .list-ufb {
+    margin-bottom: 0;
   }
 
   .usefull-for-business .list-ufb .list-ufb-item {
