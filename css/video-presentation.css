@@ -48,7 +48,7 @@
 .video-preview .background-gradient {
   position: absolute;
   width: var(--container);
-  height: 360px;
+  height: 100%;
   left: 0px;
   top: 0px;
   border-radius: 18px;
@@ -70,10 +70,6 @@
   align-items: center;
   padding: 8px 10px;
   gap: 10px;
-
-  /* width: 48px;
-  height: 26px; */
-
   background: rgba(77, 73, 116, 0.15);
   border-radius: 8px;
   cursor: pointer;
@@ -82,8 +78,6 @@
 
 /* 3:37 */
 .video-preview .duration {
-  /* width: 28px;
-  height: 10px; */
   font-family: 'Montserrat-Regular';
   font-style: normal;
   font-weight: 500;
@@ -141,22 +135,58 @@
 
 /* Стили для маленьких мобильных устройств (до 320px) */
 @media only screen and (max-width: 320px) {
-  
+  .video-preview {
+    height: 150px;
+    margin-bottom: 0;
+  }
+
+  .video-presentation .description {
+    font-size: 1rem;
+    margin: 10px;
+  }
 }
 
 /* Стили для средних мобильных устройств (321px - 480px) */
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  
+  .video-preview {
+    height: 150px;
+    margin-bottom: 0;
+  }
+
+  .video-presentation .description {
+    font-size: 1rem;
+    margin: 10px;
+  }
 }
 
 /* Стили для больших мобильных устройств (481px - 767px) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  
+  .video-preview {
+    height: 200px;
+    margin-bottom: 0;
+  }
+
+  .video-presentation .description {
+    font-size: 1rem;
+    margin: 10px;
+  }
 }
 
 /* Стили для планшетов в портретном режиме (768px - 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  
+  .video-preview {
+    height: 250px;
+    margin-bottom: 0;
+  }
+
+  .video-preview .background-gradient {
+    width: 100%;
+  }
+
+  .video-presentation .description {
+    font-size: 1rem;
+    margin: 10px;
+  }
 }
 
 /* Стили для планшетов в ландшафтном режиме (1025px - 1280px) */

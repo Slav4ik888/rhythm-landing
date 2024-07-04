@@ -15,10 +15,12 @@
 }
 
 /* list */
-.usefull-for-business .list {
+.usefull-for-business .list-ufb {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: center;
   padding: 0px;
   gap: 20px;
 
@@ -27,27 +29,31 @@
   margin-bottom: 60px;
 }
 
+.usefull-for-business .list-ufb .arrows {
+  display: none;
+}
+
 /* 01 */
-.usefull-for-business .list .item {
+.usefull-for-business .list-ufb .list-ufb-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
   gap: 24px;
   width: 262.5px;
+  min-height: 290px;
 }
 
 /* image */
-.usefull-for-business .list .item .image-box {
+.usefull-for-business .list-ufb .list-ufb-item .image-box {
   width: 262px;
   height: 262px;
-
   background: #FFFFFF;
   border-radius: 10px;
 }
 
 /* text */
-.usefull-for-business .list .item .title-box {
+.usefull-for-business .list-ufb .list-ufb-item .title-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -57,7 +63,7 @@
 }
 
 /* Предвидеть проблемы */
-.usefull-for-business .list .item .title-box .title {
+.usefull-for-business .list-ufb .list-ufb-item .title-box .title {
   font-family: 'Montserrat-SemiBold';
   font-style: normal;
   font-weight: 600;
@@ -67,7 +73,7 @@
 }
 
 /* Позволяет принимать превентивные меры в случае обнаружения возможных проблем */
-.usefull-for-business .list .item .title-box .description {
+.usefull-for-business .list-ufb .list-ufb-item .title-box .description {
   font-family: 'Montserrat-Regular';
   font-style: normal;
   font-weight: 500;
@@ -78,22 +84,129 @@
 
 /* Стили для маленьких мобильных устройств (до 320px) */
 @media only screen and (max-width: 320px) {
-  
+  .usefull-for-business-tag {
+    font-size: 0.7rem;
+  }
+
+  .usefull-for-business .list-ufb .arrows {
+    display: block;
+  }
+
+  .usefull-for-business .list-ufb .arrows .left,
+  .usefull-for-business .list-ufb .arrows .right {
+    position: absolute;
+    top: 120px;
+    width: 60px;
+    color:#111111;
+  }
+
+  .usefull-for-business .list-ufb .arrows .left {
+    left: 0px;
+    transform: rotate(180deg);
+  }
+
+  .usefull-for-business .list-ufb .arrows .right {
+    right: 0px;
+  }
+
+  .usefull-for-business .list-ufb .list-ufb-item {
+    width: 80%;
+  }
+
+  .usefull-for-business .list-ufb .list-ufb-item .image-box {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 /* Стили для средних мобильных устройств (321px - 480px) */
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  
+  .usefull-for-business-tag {
+    font-size: 0.7rem;
+  }
+
+  .usefull-for-business .list-ufb .arrows {
+    display: block;
+  }
+
+  .usefull-for-business .list-ufb .arrows .left,
+  .usefull-for-business .list-ufb .arrows .right {
+    position: absolute;
+    top: 120px;
+    width: 60px;
+    color:#111111;
+  }
+
+  .usefull-for-business .list-ufb .arrows .left {
+    left: 0px;
+    transform: rotate(180deg);
+  }
+
+  .usefull-for-business .list-ufb .arrows .right {
+    right: 0px;
+  }
+
+  .usefull-for-business .list-ufb .list-ufb-item {
+    width: 80%;
+  }
+
+  .usefull-for-business .list-ufb .list-ufb-item .image-box {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 /* Стили для больших мобильных устройств (481px - 767px) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  
+  .usefull-for-business-tag {
+    font-size: 0.7rem;
+  }
+
+  .usefull-for-business .list-ufb .arrows {
+    display: block;
+  }
+
+  .usefull-for-business .list-ufb .arrows .left,
+  .usefull-for-business .list-ufb .arrows .right {
+    position: absolute;
+    top: 120px;
+    width: 60px;
+    color:#111111;
+  }
+
+  .usefull-for-business .list-ufb .arrows .left {
+    left: 0px;
+    transform: rotate(180deg);
+  }
+
+  .usefull-for-business .list-ufb .arrows .right {
+    right: 0px;
+  }
+
+  .usefull-for-business .list-ufb .list-ufb-item {
+    width: 80%;
+  }
+
+  .usefull-for-business .list-ufb .list-ufb-item .image-box {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 /* Стили для планшетов в портретном режиме (768px - 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  
+  .usefull-for-business-tag {
+    font-size: 0.7rem;
+  }
+
+  .usefull-for-business .list-ufb .list-ufb-item {
+    width: 25%;
+  }
+
+  .usefull-for-business .list-ufb .list-ufb-item .image-box {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 /* Стили для планшетов в ландшафтном режиме (1025px - 1280px) */

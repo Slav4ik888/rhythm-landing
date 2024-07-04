@@ -40,10 +40,10 @@ body {
   color: #111111;
 }
 
-/* :root {
+:root {
   --container: 1110px;
   --gap-base: 10px;
-} */
+}
 
 a {
   text-decoration: none;
@@ -462,6 +462,11 @@ section.container-small {
     width: 100%;
   }
 
+  .title-tag-text {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
   .title {
     width: 100%;
     font-size: 1.5rem;
@@ -489,6 +494,11 @@ section.container-small {
     width: 100%;
   }
 
+  .title-tag-text {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
   .title {
     width: 100%;
     font-size: 1.5rem;
@@ -511,26 +521,31 @@ section.container-small {
     padding: 0 6px;
     max-width: 100%;
   }
+
+  .title-tag-text {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
 }
 
 /* Стили для планшетов в портретном режиме (768px - 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  :root {
-    --container: 100%;
-    --gap-base: 5px;
-  }
-
   section {
     margin-top: 4rem;
   }
 
   .container {
-    padding: 0 6px;
+    padding: 0 12px;
     max-width: 100%;
   }
 
   .title-box {
     width: 100%;
+  }
+
+  .title-tag-text {
+    font-size: 1rem;
+    line-height: 1rem;
   }
 
   .title {
@@ -542,13 +557,6 @@ section.container-small {
 
 /* Стили для планшетов в ландшафтном режиме (1025px - 1280px) */
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  
-}
-
-/* Стили для маленьких экранов компьютеров и ноутбуков (1281px - 1440px) */
-@media only screen and (min-width: 1281px) and (max-width: 1440px) {
-  
-
   section {
     margin-top: 4rem;
   }
@@ -557,11 +565,21 @@ section.container-small {
     width: 100%;
   }
 
+  .title-tag-text {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  
   .title {
     width: 100%;
     font-size: 1.5rem;
     line-height: 130%; /* identical to box height */
   }
+}
+
+/* Стили для маленьких экранов компьютеров и ноутбуков (1281px - 1440px) */
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+  
 }
 
 /* Стили для средних экранов компьютеров и ноутбуков (1441px - 1920px) */

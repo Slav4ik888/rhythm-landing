@@ -13,7 +13,8 @@
   isolation: isolate;
   width: 100%;
   /* width: 1110px; */
-  height: 160px;
+    height: auto;
+  /* height: 160px; */
 }
 
 /* 01 */
@@ -73,7 +74,8 @@
     gap: 8px;
     padding: 18px 0px 18px 10px;
     width: 48%;
-    height: 100%;
+    height: auto;
+    /* height: 100%; */
   }
 
   .item.last {
@@ -105,7 +107,8 @@
     gap: 8px;
     padding: 18px 0px 18px 10px;
     width: 48%;
-    height: 100%;
+    height: auto;
+    /* height: 100%; */
   }
 
   .item.last {
@@ -137,7 +140,8 @@
     gap: 8px;
     padding: 18px 0px 18px 10px;
     width: 48%;
-    height: 100%;
+    height: auto;
+    /* height: 100%; */
   }
 
   .item.last {
@@ -160,7 +164,7 @@
   .advantages-row .item {
     gap: 8px;
     padding: 18px 0px 18px 18px;
-    height: 120px;
+    /* height: 120px; */
   }
 
   .advantages-row .item .text {
