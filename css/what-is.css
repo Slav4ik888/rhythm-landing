@@ -239,7 +239,8 @@
   align-items: center;
   padding: 0px;
   gap: 70px;
-  width: 621px;
+  width: 100%;
+  /* width: 621px; */
   height: 25px;
 }
 
@@ -277,7 +278,8 @@
   padding: 4px 10px;
   gap: 6px;
   margin: 0 auto;
-  width: 370px;
+  width: 100%;
+  /* width: 370px; */
   height: 25px;
   background: rgba(242, 242, 242, 0.5);
   border: 1px solid rgba(229, 229, 229, 0.8);
@@ -294,7 +296,7 @@
   padding: 0px;
   gap: 6px;
   margin: 0 auto;
-  width: 240px;
+  /* width: 240px; */
   height: 17px;
 }
 
@@ -308,7 +310,7 @@
   line-height: 1.1rem; /* identical to box height, 150% or 16px */
   letter-spacing: 0.005em;
   color: #0F1214;
-  width: 210px;
+  /* width: 210px; */
 }
 
 /* icon */
@@ -326,7 +328,7 @@
 
 /* CleanShot 2024-05-23 at 23.22 1 */
 .what-is-content .body .top-row .box .content {
-  width: 730px;
+  width: 100%;
 }
   
 /**************************/
@@ -1081,6 +1083,48 @@
     font-size: 0.7rem;
     line-height: 1rem;
   }
+
+  .what-is-content .body {
+    width: 100%;
+  }
+
+  .what-is-content .body .top-row .box {
+    margin: 0;
+  }
+
+  .what-is-content .body .top-row .box .panel-address {
+    gap: 10px;
+  }
+
+  .what-is-content .body .top-row .box .panel .address-box .title {
+    justify-content: left;
+  }
+
+  .ml-210 {
+    margin-left: 60px !important;
+  }
+
+  .what-is-content .body .top-row .box .content-item-wrap {
+    left: 20px;
+  }
+
+  .what-is-content .body .bottom-row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .what-is-content .body .bottom-row .box {
+    width: 100%;
+  }
+
+  .what-is-content .body .bottom-row .box-right .wrap {
+    right: 0px;
+    left: inherit;
+  }
+
+  .what-is-content .body .bottom-row .box .title {
+    font-size: 1rem;
+  }
 }
 
 /* Стили для средних мобильных устройств (321px - 480px) */
@@ -1103,16 +1147,128 @@
     font-size: 0.8rem;
     line-height: 1.1rem;
   }
+
+  .what-is-content .body {
+    width: 100%;
+  }
+
+  .what-is-content .body .top-row .box {
+    margin: 0;
+  }
+
+  .what-is-content .body .top-row .box .panel-address {
+    gap: 10px;
+  }
+
+  .what-is-content .body .top-row .box .panel .address-box .title {
+    justify-content: left;
+  }
+
+  .ml-210 {
+    margin-left: 60px !important;
+  }
+
+  .what-is-content .body .top-row .box .content-item-wrap {
+    left: 20px;
+  }
+
+  .what-is-content .body .bottom-row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .what-is-content .body .bottom-row .box {
+    width: 100%;
+  }
+
+  .what-is-content .body .bottom-row .box-right .wrap {
+    right: 0px;
+    left: inherit;
+  }
+
+  .what-is-content .body .bottom-row .box .title {
+    font-size: 1rem;
+  }
 }
 
 /* Стили для больших мобильных устройств (481px - 767px) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  
+  .what-is-description {
+    width: 100%;
+    margin: 16px 0;
+  }
+
+  .what-is-description .text {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  .what-is-content {
+    width: 100%;
+  }
+
+  .what-is-content .panel .button .text {
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+
+  .what-is-content .body {
+    width: 100%;
+  }
+
+  .what-is-content .body .top-row .box {
+    margin: 0;
+  }
+
+  .what-is-content .body .top-row .box .panel-address {
+    gap: 10px;
+  }
+
+  .what-is-content .body .top-row .box .panel .address-box .title {
+    justify-content: left;
+  }
+
+  .ml-210 {
+    margin-left: 60px !important;
+  }
+
+  .what-is-content .body .top-row .box .content-item-wrap {
+    left: 20px;
+  }
+
+  .what-is-content .body .bottom-row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .what-is-content .body .bottom-row .box {
+    width: 100%;
+  }
+
+  .what-is-content .body .bottom-row .box-right .wrap {
+    right: 0px;
+    left: inherit;
+  }
+
+  .what-is-content .body .bottom-row .box .title {
+    font-size: 1rem;
+  }
 }
 
 /* Стили для планшетов в портретном режиме (768px - 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  
+  .what-is-content {
+    width: 100%;
+  }
+
+  .what-is-content .body {
+    width: 100%;
+  }
+
+  .what-is-content .body .bottom-row .box {
+    width: 50%;
+  }
+
 }
 
 /* Стили для планшетов в ландшафтном режиме (1025px - 1280px) */

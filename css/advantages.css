@@ -37,7 +37,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .advantages-row .item .icon-box .icon {
@@ -61,22 +61,116 @@
 
 /* Стили для маленьких мобильных устройств (до 320px) */
 @media only screen and (max-width: 320px) {
-  
+  .advantages-row {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: auto;
+  }
+
+  .advantages-row .item {
+    flex-direction: row;
+    gap: 8px;
+    padding: 18px 0px 18px 10px;
+    width: 48%;
+    height: 100%;
+  }
+
+  .item.last {
+    width: 100%;
+    align-items: center;
+  }
+
+  .advantages-row .item .text {
+    font-size: 0.7rem;
+  }
+
+  .advantages-row .item .icon-box .icon {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 /* Стили для средних мобильных устройств (321px - 480px) */
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  
+  .advantages-row {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: auto;
+  }
+
+  .advantages-row .item {
+    flex-direction: row;
+    gap: 8px;
+    padding: 18px 0px 18px 10px;
+    width: 48%;
+    height: 100%;
+  }
+
+  .item.last {
+    width: 100%;
+    align-items: center;
+  }
+
+  .advantages-row .item .text {
+    font-size: 0.7rem;
+  }
+
+  .advantages-row .item .icon-box .icon {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 /* Стили для больших мобильных устройств (481px - 767px) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  
+  .advantages-row {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: auto;
+  }
+
+  .advantages-row .item {
+    flex-direction: row;
+    gap: 8px;
+    padding: 18px 0px 18px 10px;
+    width: 48%;
+    height: 100%;
+  }
+
+  .item.last {
+    width: 100%;
+    align-items: center;
+  }
+
+  .advantages-row .item .text {
+    font-size: 0.7rem;
+  }
+
+  .advantages-row .item .icon-box .icon {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 /* Стили для планшетов в портретном режиме (768px - 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  
+  .advantages-row .item {
+    gap: 8px;
+    padding: 18px 0px 18px 18px;
+    height: 120px;
+  }
+
+  .advantages-row .item .text {
+    font-size: 0.8rem;
+  }
+
+  .advantages-row .item .icon-box .icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 /* Стили для планшетов в ландшафтном режиме (1025px - 1280px) */

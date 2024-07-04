@@ -542,18 +542,12 @@ section.container-small {
 
 /* Стили для планшетов в ландшафтном режиме (1025px - 1280px) */
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  :root {
-    --container: 1110px;
-    --gap-base: 10px;
-  }
+  
 }
 
 /* Стили для маленьких экранов компьютеров и ноутбуков (1281px - 1440px) */
 @media only screen and (min-width: 1281px) and (max-width: 1440px) {
-  :root {
-    --container: 1110px;
-    --gap-base: 10px;
-  }
+  
 
   section {
     margin-top: 4rem;
@@ -572,19 +566,11 @@ section.container-small {
 
 /* Стили для средних экранов компьютеров и ноутбуков (1441px - 1920px) */
 @media only screen and (min-width: 1441px) and (max-width: 1920px) {
-  :root {
-    --container: 1110px;
-    --gap-base: 10px;
-  }
+ 
 }
 
 /* Стили для больших экранов (более 1920px) */
 @media only screen and (min-width: 1921px) {
-  :root {
-    --container: 1110px;
-    --gap-base: 10px;
-  }
-
   .title-box {
     width: 100%;
   }
