@@ -372,28 +372,275 @@
   }
 
   .use-examples-content .description {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .use-examples-content .second-row .advantage-right {
     width: 100%;
     left: 0;
   }
+
+  .use-examples-content .third-row .image {
+    width: 100%;
+  }
+
+  .use-examples-content .third-row .advantage-third-row {
+    left: 10px;
+    bottom: -100px;
+  }
 }
 
 /* Стили для средних мобильных устройств (321px - 480px) */
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  
+  :root {
+    --use-examples-content-width: 100%;
+    --use-examples-first-row-frame-width: 100%;
+    --use-examples-first-row-height: 300px;
+    --use-examples-first-row-frame-height: 180px;
+    --use-examples-second-row-height: auto;
+  }
+
+  .use-examples-content .first-row {
+    margin: 0;
+  }
+
+  .use-examples-content .first-row .description {
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .use-examples-content .first-row-frame {
+    margin-top: 20px;
+  }
+
+  .use-examples-content .first-row .frame .advantage-right,
+  .use-examples-content .first-row .frame .advantage-left {
+    display: none;
+  }
+
+  .use-examples-content .second-row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .use-examples-content .second-row .image-box {
+    height: auto;
+  }
+
+  .use-examples-content .second-row .row-item {
+    height: 430px;
+    margin-bottom: 50px;
+  }
+
+  .use-examples-content .second-row .left-frame,
+  .use-examples-content .second-row .right-frame {
+    width: 100%;
+  }
+
+  .use-examples-content .second-row .description {
+    padding: 8px;
+    padding-top: 18px;
+  }
+
+  .use-examples-content .second-row .advantage-left {
+    bottom: -35px;
+    left: 0;
+    width: 100%;
+  }
+
+  .use-examples-content .description {
+    font-size: 1.1rem;
+  }
+
+  .use-examples-content .second-row .advantage-right {
+    width: 100%;
+    left: 0;
+  }
+
+  .use-examples-content .third-row .image {
+    width: 100%;
+  }
+
+  .use-examples-content .third-row .advantage-third-row {
+    left: 30px;
+    bottom: -100px;
+  }
 }
 
 /* Стили для больших мобильных устройств (481px - 767px) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  
+  :root {
+    --use-examples-content-width: 100%;
+    --use-examples-first-row-frame-width: 100%;
+    --use-examples-first-row-height: 360px;
+    --use-examples-first-row-frame-height: 270px;
+    --use-examples-second-row-height: auto;
+  }
+
+  .use-examples-content .first-row {
+    margin: 0;
+  }
+
+  .use-examples-content .first-row .description {
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .use-examples-content .first-row-frame {
+    margin-top: 20px;
+  }
+
+  .use-examples-content .first-row .frame .advantage-right,
+  .use-examples-content .first-row .frame .advantage-left {
+    display: none;
+  }
+
+  .use-examples-content .second-row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .use-examples-content .second-row .image-box {
+    height: auto;
+  }
+
+  .use-examples-content .second-row .row-item {
+    height: 430px;
+    margin-bottom: 50px;
+  }
+
+  .use-examples-content .second-row .left-frame,
+  .use-examples-content .second-row .right-frame {
+    width: 100%;
+  }
+
+  .use-examples-content .second-row .description {
+    padding: 8px;
+    padding-top: 18px;
+  }
+
+  .use-examples-content .second-row .advantage-left {
+    bottom: -35px;
+    left: 0;
+    width: 100%;
+  }
+
+  .use-examples-content .description {
+    font-size: 1.1rem;
+  }
+
+  .use-examples-content .second-row .advantage-right {
+    width: 100%;
+    left: 0;
+  }
+
+  .use-examples-content .third-row .image {
+    width: 100%;
+  }
+
+  .use-examples-content .third-row .advantage-third-row {
+    left: 40px;
+    bottom: -100px;
+  }
 }
 
 /* Стили для планшетов в портретном режиме (768px - 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  
+  :root {
+    --use-examples-content-width: 100%;
+    --use-examples-first-row-frame-width: 100%;
+    --use-examples-first-row-height: 460px;
+    --use-examples-first-row-frame-height: 420px;
+    --use-examples-second-row-height: auto;
+  }
+
+  .advantage-wrap {
+    width: 100%;
+  }
+
+  .advantage-text {
+    width: 100%;
+  }
+
+  .use-examples-content .first-row {
+    margin: 0;
+  }
+
+  .use-examples-content .first-row .description {
+    font-family: 'Montserrat-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .use-examples-content .first-row-frame {
+    margin-top: 20px;
+  }
+
+  .use-examples-content .first-row .frame .advantage-right,
+  .use-examples-content .first-row .frame .advantage-left {
+    display: none;
+  }
+
+  .use-examples-content .second-row {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .use-examples-content .second-row .image-box {
+    height: auto;
+  }
+
+  .use-examples-content .second-row .row-item {
+    height: 353px;
+    margin-bottom: 50px;
+  }
+
+  .use-examples-content .second-row .left-frame,
+  .use-examples-content .second-row .right-frame {
+    width: 100%;
+  }
+
+  .use-examples-content .second-row .description {
+    padding: 8px;
+    padding-top: 18px;
+  }
+
+  .use-examples-content .second-row .advantage-left {
+    bottom: -35px;
+    left: 0;
+    width: 100%;
+  }
+
+  .use-examples-content .description {
+    font-size: 1.1rem;
+  }
+
+  .use-examples-content .second-row .advantage-right {
+    width: 100%;
+    left: 0;
+  }
+
+  .use-examples-content .third-row .image {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .use-examples-content .third-row .advantage-third-row {
+    width: 100%;
+    left: 0;
+    bottom: -70px;
+  }
 }
 
 /* Стили для планшетов в ландшафтном режиме (1025px - 1280px) */

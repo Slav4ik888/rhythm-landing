@@ -100,22 +100,88 @@
 
 /* Стили для маленьких мобильных устройств (до 320px) */
 @media only screen and (max-width: 320px) {
-  
+  :root {
+    --get-demo-content-width: 100%;
+  }
+
+  .get-demo .left-box {
+    display: none;
+  }
+
+  .get-demo .image-box {
+    display: none;
+  }
+
+  .get-demo .right-box {
+    width: 100%;
+    padding: 18px 12px;
+  }
 }
 
 /* Стили для средних мобильных устройств (321px - 480px) */
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  
+  :root {
+    --get-demo-content-width: 100%;
+  }
+
+  .get-demo .left-box {
+    display: none;
+  }
+
+  .get-demo .image-box {
+    display: none;
+  }
+
+  .get-demo .right-box {
+    width: 100%;
+    padding: 18px 12px;
+  }
 }
 
 /* Стили для больших мобильных устройств (481px - 767px) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  
+  :root {
+    --get-demo-content-width: 100%;
+  }
+
+  .get-demo .left-box {
+    display: none;
+  }
+
+  .get-demo .image-box {
+    display: none;
+  }
+
+  .get-demo .container {
+    justify-content: center;
+  }
+
+  .get-demo .right-box {
+    padding: 18px 12px;
+  }
 }
 
 /* Стили для планшетов в портретном режиме (768px - 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  :root {
+    --get-demo-content-width: 100%;
+  }
   
+  .get-demo .left-box {
+    display: none;
+  }
+
+  .get-demo .image-box {
+    display: none;
+  }
+
+  .get-demo .container {
+    justify-content: center;
+  }
+
+  .get-demo .right-box {
+    padding: 18px 12px;
+  }
 }
 
 /* Стили для планшетов в ландшафтном режиме (1025px - 1280px) */

@@ -11,7 +11,6 @@ const
   $UsefullForBusinessRight = getById("usefull-for-business-right");
 
 let
-  screenWidth  =  window.outerWidth,
   activeItemId = 0;
 
 const
@@ -19,10 +18,21 @@ const
   lastIdx =  listItems.length -  1;
 
 screenResizeListener((l) => {
-  if (screenWidth < 768) {
-    screenWidth = l;
+  // console.log('screenResizeListener');
+  if (l < 768) {
+    // console.log('<<< 768');
+    activeItemId = 0;
+    listItems[0].classList.remove('not-visible');
+
     for (let i = activeItemId + 1; i < listItems.length; i++)  {
       listItems[i].classList.add('not-visible');
+    }
+  }
+  else {
+    // console.log('>>> 768');
+    activeItemId = 0;
+    for (let i = activeItemId; i < listItems.length; i++)  {
+      listItems[i].classList.remove('not-visible');
     }
   }
 });

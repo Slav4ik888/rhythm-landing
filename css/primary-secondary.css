@@ -35,12 +35,10 @@
 
 /* Ключевые — одни из самых важных и значимых. Это те показатели по которым мы можем определить как дела в конкретной области */
 .primary-secondary .content-box .description {
-  /* width: 525px;
-  height: 116px; */
   font-family: 'Montserrat-SemiBold';
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 1.5rem;
   line-height: 132%; /* or 29px */
   color: #111111;
 }
@@ -55,7 +53,6 @@
   padding: 0px;
   gap: var(--gap-base);
   isolation: isolate;
-  /* width: 525px;*/
   height: 140px;
 }
 
@@ -68,7 +65,6 @@
   gap: 22px;
 
   width: calc((var(--primary-secondary-box-width) - var(--gap-base) * 2) / 3); /* 168.33px;*/
-  /* height: 140px; */
 
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.04);
@@ -169,22 +165,204 @@
 
 /* Стили для маленьких мобильных устройств (до 320px) */
 @media only screen and (max-width: 320px) {
-  
+  :root {
+    --primary-secondary-box-width: 100%;
+  }
+
+  .primary-secondary {
+    height: auto;
+  }
+
+  .primary-secondary .content-box {
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .primary-secondary .content-box .left-box {
+    gap: 0px;
+    height: auto;
+  }
+
+  .primary-secondary .content-box .left-box .description {
+    padding: 12px 18px;
+  }
+
+  .primary-secondary .content-box .description {
+    font-size: 1.1rem;
+  }
+
+  .primary-secondary .content-box .left-box .list {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .primary-secondary .content-box .left-box .list .item {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .primary-secondary .content-box .left-box .list .item-text {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .primary-secondary .content-box .right-box {
+    padding: 18px;
+    gap: 8px;
+    height: auto;
+  }
 }
 
 /* Стили для средних мобильных устройств (321px - 480px) */
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  
+  :root {
+    --primary-secondary-box-width: 100%;
+  }
+
+  .primary-secondary {
+    height: auto;
+  }
+
+  .primary-secondary .content-box {
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .primary-secondary .content-box .left-box {
+    gap: 0px;
+    height: auto;
+  }
+
+  .primary-secondary .content-box .left-box .description {
+    padding: 12px 18px;
+  }
+
+  .primary-secondary .content-box .description {
+    font-size: 1.2rem;
+  }
+
+  .primary-secondary .content-box .left-box .list {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .primary-secondary .content-box .left-box .list .item {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .primary-secondary .content-box .left-box .list .item-text {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .primary-secondary .content-box .right-box {
+    padding: 18px;
+    gap: 8px;
+    height: auto;
+  }
 }
 
 /* Стили для больших мобильных устройств (481px - 767px) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  
+  :root {
+    --primary-secondary-box-width: 100%;
+  }
+
+  .primary-secondary {
+    height: auto;
+  }
+
+  .primary-secondary .content-box {
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .primary-secondary .content-box .left-box {
+    gap: 0px;
+    height: auto;
+  }
+
+  .primary-secondary .content-box .left-box .description {
+    padding: 12px 18px;
+  }
+
+  .primary-secondary .content-box .description {
+    font-size: 1.2rem;
+  }
+
+  .primary-secondary .content-box .left-box .list {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .primary-secondary .content-box .left-box .list .item {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .primary-secondary .content-box .left-box .list .item-text {
+    font-size: 0.8rem;
+  }
+
+  .primary-secondary .content-box .right-box {
+    padding: 18px;
+    gap: 8px;
+    height: auto;
+  }
 }
 
 /* Стили для планшетов в портретном режиме (768px - 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  
+  :root {
+    --primary-secondary-box-width: 47%;
+  }
+
+  .primary-secondary .content-box {
+    margin-top: 20px;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .primary-secondary .content-box .description {
+    font-size: 1.2rem;
+  }
+
+  .primary-secondary .content-box .left-box .list .item {
+    width: 30%;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .primary-secondary .content-box .left-box .list .item-text {
+    font-size: 0.8rem;
+  }
+
+  .primary-secondary .content-box .right-box .list .item {
+    font-size: 0.8rem;
+  }
 }
 
 /* Стили для планшетов в ландшафтном режиме (1025px - 1280px) */

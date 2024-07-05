@@ -522,9 +522,19 @@ section.container-small {
     max-width: 100%;
   }
 
+  .title-box {
+    width: 100%;
+  }
+
   .title-tag-text {
     font-size: 1rem;
     line-height: 1rem;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 130%; /* identical to box height */
   }
 }
 
@@ -569,7 +579,7 @@ section.container-small {
     font-size: 1rem;
     line-height: 1rem;
   }
-  
+
   .title {
     width: 100%;
     font-size: 1.5rem;

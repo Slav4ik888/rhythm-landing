@@ -1,15 +1,11 @@
 import { getById } from '../utils/get-by-id.js';
 
 const
-  getDemo = getById('get-demo'),
-  primarySecondary = getById('primary-secondary'),
   devTimeline = getById('dev-timeline'),
   whyWe = getById('why-we'),
   prices = getById('prices'),
   footer = getById('footer');
 
-getDemo.classList.add('not-visible');
-primarySecondary.classList.add('not-visible');
 devTimeline.classList.add('not-visible');
 whyWe.classList.add('not-visible');
 prices.classList.add('not-visible');
