@@ -62,7 +62,7 @@
 }
 
 /* 01 */
-.dev-timeline .content .list-items .item {
+.dev-timeline .content .list-items .item-dev-tl {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -80,7 +80,7 @@
 }
 
 /* top section */
-.dev-timeline .content .list-items .item .top {
+.dev-timeline .content .list-items .item-dev-tl .top {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -90,7 +90,7 @@
 }
 
 /* title */
-.dev-timeline .content .list-items .item .top .title-box {
+.dev-timeline .content .list-items .item-dev-tl .top .title-box {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -100,12 +100,12 @@
 }
 
 /* icon */
-.dev-timeline .content .list-items .item .top .title-box .icon {
+.dev-timeline .content .list-items .item-dev-tl .top .title-box .icon {
   width: 20px;
 }
 
 /* Первая встреча */
-.dev-timeline .content .list-items .item .top .title-box .text {
+.dev-timeline .content .list-items .item-dev-tl .top .title-box .text {
   position: relative;
   font-family: 'Montserrat-SemiBold';
   font-weight: 600;
@@ -114,9 +114,13 @@
   z-index: 1;
 }
 
+.dev-timeline .list-items .arrows {
+  display: none;
+}
+
 /* SNOSKA */
 
-.dev-timeline .content .list-items .item .top .title-box .snoska-anchor {
+.dev-timeline .content .list-items .item-dev-tl .top .title-box .snoska-anchor {
   position: absolute;
   top: -3px;
   right: -8px;
@@ -141,7 +145,7 @@
 
 /* ---   END SNOSKA   --- */
 
-.dev-timeline .content .list-items .item .top .text-box {
+.dev-timeline .content .list-items .item-dev-tl .top .text-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -149,7 +153,7 @@
   gap: 14px;
 }
 
-.dev-timeline .content .list-items .item .top .text-box .list-item {
+.dev-timeline .content .list-items .item-dev-tl .top .text-box .list-item {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -158,14 +162,14 @@
 }
 
 /* Frame 1727 Rectangle 503 */
-.dev-timeline .content .list-items .item .top .text-box .list-item .dot-box {
+.dev-timeline .content .list-items .item-dev-tl .top .text-box .list-item .dot-box {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   width: 10px;
 }
 
-.dev-timeline .content .list-items .item .top .text-box .list-item .dot {
+.dev-timeline .content .list-items .item-dev-tl .top .text-box .list-item .dot {
   width: 4px;
   height: 4px;
   background: #7F84FF;
@@ -174,13 +178,13 @@
 }
 
 /* Совместно с Вами составим карту «ключевых» и «первичных» показателей. */
-.dev-timeline .content .list-items .item .top .text-box .list-item .text {
+.dev-timeline .content .list-items .item-dev-tl .top .text-box .list-item .text {
   font-size: 1rem;
   line-height: 146%; /* or 20px */
 }
 
 /* result */
-.dev-timeline .content .list-items .item .result-box {
+.dev-timeline .content .list-items .item-dev-tl .result-box {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -192,28 +196,251 @@
 }
 
 /* Затем мы подготовим для Вас таблицу под выбранные показатели. */
-.dev-timeline .content .list-items .item .result-box .text {
+.dev-timeline .content .list-items .item-dev-tl .result-box .text {
   line-height: 138%; /* or 19px */
 }
 
 /* Стили для маленьких мобильных устройств (до 320px) */
 @media only screen and (max-width: 320px) {
-  
+  .dev-timeline {
+    gap: 40px;
+  }
+
+  .dev-timeline .content {
+    width: 100%;
+  }
+
+  .dev-timeline .content .timeline {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .dev-timeline .content .timeline .strip {
+    width: 50%;
+  }
+
+  .round.side {
+    display: none;
+  }
+
+  .dev-timeline .content .list-items {
+    width: 100%;
+    padding: 10px;
+    gap:0;
+  }
+
+  .dev-timeline .content .list-items .item-dev-tl {
+    width: 100%;
+  }
+
+  .dev-timeline .list-items .arrows {
+    display: block;
+  }
+
+  .dev-timeline .list-items .arrows .left,
+  .dev-timeline .list-items .arrows .right {
+    position: absolute;
+    top: 130px;
+    width: 60px;
+    color:#111111;
+    z-index: 2;
+  }
+
+  .dev-timeline .list-items .arrows .left {
+    left: 0px;
+    transform: rotate(180deg);
+  }
+
+  .dev-timeline .list-items .arrows .right {
+    right: 0px;
+  }
+
+  /* SNOSKA */
+  .dev-timeline .content .list-items .snoska-box {
+    top: 60px;
+    left: 30px;
+    width: 280px;
+  }
+
+  .dev-timeline .content .list-items .snoska-box .text {
+    padding: 18px 14px;
+    font-size: 1rem;
+  }
+  /* ---   END SNOSKA   --- */
 }
 
 /* Стили для средних мобильных устройств (321px - 480px) */
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  
+  .dev-timeline {
+    gap: 40px;
+    height: auto;
+  }
+
+  .dev-timeline .content {
+    width: 100%;
+  }
+
+  .dev-timeline .content .timeline {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .dev-timeline .content .timeline .strip {
+    width: 50%;
+  }
+
+  .round.side {
+    display: none;
+  }
+
+  .dev-timeline .content .list-items {
+    width: 100%;
+    padding: 10px;
+    gap:0;
+  }
+
+  .dev-timeline .content .list-items .item-dev-tl {
+    width: 100%;
+  }
+
+  .dev-timeline .list-items .arrows {
+    display: block;
+  }
+
+  .dev-timeline .list-items .arrows .left,
+  .dev-timeline .list-items .arrows .right {
+    position: absolute;
+    top: 130px;
+    width: 60px;
+    color:#111111;
+    z-index: 2;
+  }
+
+  .dev-timeline .list-items .arrows .left {
+    left: 0px;
+    transform: rotate(180deg);
+  }
+
+  .dev-timeline .list-items .arrows .right {
+    right: 0px;
+  }
+
+  /* SNOSKA */
+  .dev-timeline .content .list-items .snoska-box {
+    top: 60px;
+    left: 30px;
+    width: 280px;
+  }
+
+  .dev-timeline .content .list-items .snoska-box .text {
+    padding: 18px 14px;
+    font-size: 1rem;
+  }
+  /* ---   END SNOSKA   --- */
 }
 
 /* Стили для больших мобильных устройств (481px - 767px) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  
+  .dev-timeline {
+    gap: 40px;
+    height: auto;
+  }
+
+  .dev-timeline .content {
+    width: 100%;
+  }
+
+  .dev-timeline .content .timeline {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .dev-timeline .content .timeline .strip {
+    width: 50%;
+  }
+
+  .round.side {
+    display: none;
+  }
+
+  .dev-timeline .content .list-items {
+    width: 100%;
+    padding: 10px;
+    gap:0;
+  }
+
+  .dev-timeline .content .list-items .item-dev-tl {
+    width: 100%;
+  }
+
+  .dev-timeline .list-items .arrows {
+    display: block;
+  }
+
+  .dev-timeline .list-items .arrows .left,
+  .dev-timeline .list-items .arrows .right {
+    position: absolute;
+    top: 130px;
+    width: 60px;
+    color:#111111;
+    z-index: 2;
+  }
+
+  .dev-timeline .list-items .arrows .left {
+    left: 0px;
+    transform: rotate(180deg);
+  }
+
+  .dev-timeline .list-items .arrows .right {
+    right: 0px;
+  }
+
+  /* SNOSKA */
+  .dev-timeline .content .list-items .snoska-box {
+    top: 60px;
+    left: 30px;
+    width: 280px;
+  }
+
+  .dev-timeline .content .list-items .snoska-box .text {
+    padding: 18px 14px;
+    font-size: 1rem;
+  }
+  /* ---   END SNOSKA   --- */
 }
 
 /* Стили для планшетов в портретном режиме (768px - 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  
+  .dev-timeline {
+    height: 950px;
+  }
+
+  .dev-timeline .content {
+    width: 100%;
+  }
+
+  .dev-timeline .content .timeline {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .dev-timeline .content .list-items {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* SNOSKA */
+  .dev-timeline .content .list-items .snoska-box {
+    top: 60px;
+    left: 30px;
+    width: 280px;
+  }
+
+  .dev-timeline .content .list-items .snoska-box .text {
+    padding: 18px 14px;
+    font-size: 1rem;
+  }
+  /* ---   END SNOSKA   --- */
 }
 
 /* Стили для планшетов в ландшафтном режиме (1025px - 1280px) */

@@ -53,6 +53,7 @@
   line-height: 144%; /* or 26px */
   text-align: center;
   color: #111111;
+  padding-top: 20px;
 }
 
 /* Продукт спроектирован так, чтобы вы могли не только детально изучать каждый ключевой показатель, но и одним лишь взглядом определить узкие места в компании */
@@ -85,7 +86,6 @@
 .use-examples-content .first-row .right-image {
   width: 100%;
   border-radius: 20px 20px 0px 0px;
-  /* z-index: 0; */
 }
 
 /* left image */
@@ -116,7 +116,6 @@
   width: var(--use-examples-first-row-slide-element); /* 18px; */
   height: var(--use-examples-first-row-frame-height); /* 318px;*/
   background: rgba(241, 241, 241, 0.749);
-  /* z-index: 2; */
 }
 
 /* Rectangle 492 */
@@ -334,6 +333,7 @@
 
   .use-examples-content .first-row-frame {
     margin-top: 20px;
+    overflow-y: hidden;
   }
 
   .use-examples-content .first-row .frame .advantage-right,
@@ -415,6 +415,7 @@
 
   .use-examples-content .first-row-frame {
     margin-top: 20px;
+    overflow-y: hidden;
   }
 
   .use-examples-content .first-row .frame .advantage-right,
@@ -496,6 +497,7 @@
 
   .use-examples-content .first-row-frame {
     margin-top: 20px;
+    overflow-y: hidden;
   }
 
   .use-examples-content .first-row .frame .advantage-right,
@@ -585,6 +587,7 @@
 
   .use-examples-content .first-row-frame {
     margin-top: 20px;
+    overflow-y: hidden;
   }
 
   .use-examples-content .first-row .frame .advantage-right,

@@ -453,6 +453,10 @@ section.container-small {
     margin-top: 4rem;
   }
 
+  section.container-small {
+    padding: 0 6px;
+  }
+
   .container {
     padding: 0 6px;
     max-width: 100%;
@@ -483,6 +487,10 @@ section.container-small {
 
   section {
     margin-top: 4rem;
+  }
+
+  section.container-small {
+    padding: 0 6px;
   }
 
   .container {
@@ -517,6 +525,10 @@ section.container-small {
     margin-top: 4rem;
   }
 
+  section.container-small {
+    padding: 0 6px;
+  }
+
   .container {
     padding: 0 6px;
     max-width: 100%;
@@ -544,6 +556,10 @@ section.container-small {
     margin-top: 4rem;
   }
 
+  section.container-small {
+    padding: 0 6px;
+  }
+  
   .container {
     padding: 0 12px;
     max-width: 100%;

@@ -49,20 +49,16 @@
 
 /* Помогаем определить «ключевые» и «первичные» показатели */
 .why-we .content .column .box .title {
-  /* width: 490px;
-  height: 58px; */
   font-family: 'Montserrat-Bold';
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 1.6rem;
   line-height: 132%; /* or 29px */
   color: #111111;
 }
 
 /* Среди огромного числа возможных показателей поможем выделить «ключевые», а затем те, что на них влияют. */
 .why-we .content .column .box .text {
-  /* width: 420px;
-  height: 63px; */
   font-family: 'Montserrat-Regular';
   font-style: normal;
   font-weight: 500;
@@ -73,22 +69,109 @@
 
 /* Стили для маленьких мобильных устройств (до 320px) */
 @media only screen and (max-width: 320px) {
-  
+  .why-we .content {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 15px;
+  }
+
+  .why-we .content .column {
+    width: 100%;
+    gap: 15px;
+    height: auto;
+  }
+
+  .why-we .content .column .box {
+    width: 100%;
+    height: auto;
+    padding: 22px 20px;
+  }
+
+  .why-we .content .column .box .title {
+    font-size: 1.2rem;
+  }
 }
 
 /* Стили для средних мобильных устройств (321px - 480px) */
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  
+  .why-we .content {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 15px;
+  }
+
+  .why-we .content .column {
+    width: 100%;
+    gap: 15px;
+    height: auto;
+  }
+
+  .why-we .content .column .box {
+    width: 100%;
+    height: auto;
+    padding: 22px 20px;
+  }
+
+  .why-we .content .column .box .title {
+    font-size: 1.3rem;
+  }
 }
 
 /* Стили для больших мобильных устройств (481px - 767px) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  
+  .why-we .content {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 15px;
+  }
+
+  .why-we .content .column {
+    width: 100%;
+    gap: 15px;
+    height: auto;
+  }
+
+  .why-we .content .column .box {
+    width: 100%;
+    height: auto;
+    padding: 22px 20px;
+  }
+
+  .why-we .content .column .box .title {
+    font-size: 1.3rem;
+  }
 }
 
 /* Стили для планшетов в портретном режиме (768px - 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  
+  :root {
+    --why-we-content-height: 360px;
+  }
+
+  .why-we .content {
+    width: 100%;
+    height: auto;
+    gap: 15px;
+  }
+
+  .why-we .content .column {
+    width: 100%;
+    gap: 15px;
+    height: auto;
+  }
+
+  .why-we .content .column .box {
+    width: 100%;
+    height: auto;
+    padding: 22px 20px;
+  }
+
+  .why-we .content .column .box .title {
+    font-size: 1.3rem;
+  }
 }
 
 /* Стили для планшетов в ландшафтном режиме (1025px - 1280px) */

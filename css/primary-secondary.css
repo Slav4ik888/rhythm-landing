@@ -173,10 +173,15 @@
     height: auto;
   }
 
+  .primary-secondary .background {
+    width: 100%;
+  }
+
   .primary-secondary .content-box {
     flex-direction: column;
     margin-top: 20px;
     width: 100%;
+    height: auto;
     gap: 20px;
   }
 
@@ -233,10 +238,15 @@
     height: auto;
   }
 
+  .primary-secondary .background {
+    width: 100%;
+  }
+
   .primary-secondary .content-box {
     flex-direction: column;
     margin-top: 20px;
     width: 100%;
+    height: auto;
     gap: 20px;
   }
 
@@ -293,10 +303,15 @@
     height: auto;
   }
 
+  .primary-secondary .background {
+    width: 100%;
+  }
+
   .primary-secondary .content-box {
     flex-direction: column;
     margin-top: 20px;
     width: 100%;
+    height: auto;
     gap: 20px;
   }
 
@@ -340,9 +355,14 @@
     --primary-secondary-box-width: 47%;
   }
 
+  .primary-secondary .background {
+    width: 100%;
+  }
+  
   .primary-secondary .content-box {
     margin-top: 20px;
     width: 100%;
+    height: auto;
     gap: 20px;
   }
 

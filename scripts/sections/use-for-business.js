@@ -1,5 +1,6 @@
 import { getById } from '../utils/get-by-id.js';
 import { screenResizeListener } from  '../utils/screen-resize-listener.js';
+import { addNotVisible, removeNotVisible } from '../utils/class-visible.js';
 
 
 // --------------------
@@ -11,55 +12,65 @@ const
   $UsefullForBusinessRight = getById("usefull-for-business-right");
 
 let
-  activeItemId = 0;
+  ufbActiveItemId = 0;
 
 const
-  listItems = document.querySelectorAll('.list-ufb-item'),
-  lastIdx =  listItems.length -  1;
+  ufbListItems = document.querySelectorAll('.list-ufb-item'),
+  ufbLastIdx =  ufbListItems.length -  1;
+
+
+$UsefullForBusinessLeft.addEventListener("click", () => {
+  if (ufbActiveItemId === 0) {
+    ufbActiveItemId = ufbLastIdx;
+    addNotVisible(ufbListItems[0]);
+    removeNotVisible(ufbListItems[ufbLastIdx]);
+  }
+  else {
+    ufbActiveItemId  = ufbActiveItemId - 1;
+    removeNotVisible(ufbListItems[ufbActiveItemId]);
+    addNotVisible(ufbListItems[ufbActiveItemId + 1]);
+  }
+});
+
+$UsefullForBusinessRight.addEventListener('click', function (e) {
+  if (ufbActiveItemId === ufbLastIdx) {
+    ufbActiveItemId = 0;
+    addNotVisible(ufbListItems[ufbLastIdx]);
+    removeNotVisible(ufbListItems[0]);
+  }
+  else {
+    ufbActiveItemId  = ufbActiveItemId + 1;
+    removeNotVisible(ufbListItems[ufbActiveItemId]);
+    addNotVisible(ufbListItems[ufbActiveItemId - 1]);
+  }
+});
+
+
+// --------------------
+// --  SCREEN-RESIZE-LISTENER
+// ----------------------------------------------------------------------------------
 
 screenResizeListener((l) => {
   // console.log('screenResizeListener');
   if (l < 768) {
     // console.log('<<< 768');
-    activeItemId = 0;
-    listItems[0].classList.remove('not-visible');
 
-    for (let i = activeItemId + 1; i < listItems.length; i++)  {
-      listItems[i].classList.add('not-visible');
+    // Если во время листания изменили экран, то для 1й элемент делаем активным
+    ufbActiveItemId = 0;
+    removeNotVisible(ufbListItems[0]);
+
+    // Скрываем все остальные элементы
+    for (let i = ufbActiveItemId + 1; i < ufbListItems.length; i++)  {
+      addNotVisible(ufbListItems[i]);
     }
   }
   else {
     // console.log('>>> 768');
-    activeItemId = 0;
-    for (let i = activeItemId; i < listItems.length; i++)  {
-      listItems[i].classList.remove('not-visible');
+    // Открываем все элементы
+    ufbActiveItemId = 0;
+
+    for (let i = ufbActiveItemId; i < ufbListItems.length; i++)  {
+      removeNotVisible(ufbListItems[i]);
     }
-  }
-});
-
-
-$UsefullForBusinessLeft.addEventListener("click", () => {
-  if (activeItemId === 0) {
-    activeItemId = lastIdx;
-    listItems[0].classList.add('not-visible');
-    listItems[lastIdx].classList.remove('not-visible');
-  }
-  else {
-    activeItemId  = activeItemId - 1;
-    listItems[activeItemId].classList.remove('not-visible');
-    listItems[activeItemId + 1].classList.add('not-visible');
-  }
-});
-
-$UsefullForBusinessRight.addEventListener('click', function (e) {
-  if (activeItemId === lastIdx) {
-    activeItemId = 0;
-    listItems[lastIdx].classList.add('not-visible');
-    listItems[0].classList.remove('not-visible');
-  }
-  else {
-    activeItemId  = activeItemId + 1;
-    listItems[activeItemId].classList.remove('not-visible');
-    listItems[activeItemId - 1].classList.add('not-visible');
   }
 });

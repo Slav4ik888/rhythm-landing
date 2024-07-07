@@ -1,14 +1,8 @@
 import { getById } from '../utils/get-by-id.js';
 
 const
-  devTimeline = getById('dev-timeline'),
-  whyWe = getById('why-we'),
-  prices = getById('prices'),
   footer = getById('footer');
 
-devTimeline.classList.add('not-visible');
-whyWe.classList.add('not-visible');
-prices.classList.add('not-visible');
 footer.classList.add('not-visible');
 
 
