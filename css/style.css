@@ -314,6 +314,16 @@ section.container-small {
   z-index: 1000;
 }
 
+/* Стили для маленьких мобильных устройств (до 320px) */
+@media only screen and (max-height: 400px) {
+  .popup {
+    align-items: flex-start;
+    overflow-y: scroll;
+    padding: 24px 0;
+  }
+}
+
+
 /* container - success | failed */
 .popup .container {
   position: relative;
@@ -552,6 +562,11 @@ section.container-small {
 
 /* Стили для планшетов в портретном режиме (768px - 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  :root {
+    --container: 100%;
+    --gap-base: 5px;
+  }
+
   section {
     margin-top: 4rem;
   }
@@ -559,7 +574,7 @@ section.container-small {
   section.container-small {
     padding: 0 6px;
   }
-  
+
   .container {
     padding: 0 12px;
     max-width: 100%;
@@ -583,6 +598,10 @@ section.container-small {
 
 /* Стили для планшетов в ландшафтном режиме (1025px - 1280px) */
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  :root {
+    --container: 100%;
+  }
+
   section {
     margin-top: 4rem;
   }

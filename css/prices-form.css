@@ -1,6 +1,5 @@
 /* form */
 .prices-form .form-container {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,7 +8,6 @@
   isolation: isolate;
 
   width: 400px;
-  /* height: 430px; */
 
   background: #FFFFFF;
   backdrop-filter: blur(5px);
@@ -79,12 +77,26 @@
 
 /* Стили для маленьких мобильных устройств (до 320px) */
 @media only screen and (max-width: 320px) {
-  
+  .prices-form .form-container {
+    width: 95%;
+    padding: 24px 12px;
+  }
+
+  .prices-form .form-container .elements {
+    width: 100%;
+  }
 }
 
 /* Стили для средних мобильных устройств (321px - 480px) */
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  
+  .prices-form .form-container {
+    width: 95%;
+    padding: 24px 12px;
+  }
+
+  .prices-form .form-container .elements {
+    width: 100%;
+  }
 }
 
 /* Стили для больших мобильных устройств (481px - 767px) */

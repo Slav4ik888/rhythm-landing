@@ -81,10 +81,15 @@ header a {
   header {
     max-width: 100%;
     margin: 2px;
+    gap: 10px;
   }
 
   .header-what-is, .header-timeline {
     display: none;
+  }
+
+  header .menu-button {
+    width: 126px;
   }
 }
 

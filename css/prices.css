@@ -13,7 +13,7 @@
   position: relative;
   margin-top: 26px;
   width: var(--container);
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .prices .title-box {
@@ -324,22 +324,115 @@
 
 /* Стили для маленьких мобильных устройств (до 320px) */
 @media only screen and (max-width: 320px) {
-  
+  :root {
+    --el-strip-width: 25px;
+    --el-width-7: 320px;
+  }
+
+  .prices {
+    margin-top: 0;
+  }
+
+  .prices .content .container-box {
+    margin-top: 0;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .prices .content .container-box .offer-box {
+    width: 100%;
+  }
+
+  .prices .content .container-box .offer-box .price-action-box {
+    width: 100%;
+  }
+
+  .prices .content .container-box .offer-box .price-action-box .text-box .title-box {
+    gap: 5px;
+    width: 100%;
+  }
+
+  .prices .content .container-box .offer-box .price-action-box .text-box .title-box .value {
+    min-width: 140px;
+    font-size: 1.9rem;
+  }
+
+  .prices .content .container-box .offer-box .price-action-box .text-box .title-box .za-pokaz {
+    font-size: 0.7rem;
+  }
+
+  .prices .content .container-box .offer-box .price-action-box .menu-button {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .prices .content .container-box .offer-box .advantage {
+    display: none;
+  }
 }
 
 /* Стили для средних мобильных устройств (321px - 480px) */
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  
+  :root {
+    --el-strip-width: 25px;
+    --el-width-7: 480px;
+  }
+
+  .prices {
+    margin-top: 0;
+  }
+
+  .prices .content .container-box {
+    margin-top: 0;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .prices .content .container-box .offer-box {
+    width: 100%;
+  }
+
+  .prices .content .container-box .offer-box .price-action-box {
+    width: 100%;
+  }
+
+  .prices .content .container-box .offer-box .price-action-box .text-box .title-box {
+    gap: 5px;
+    width: 100%;
+  }
+
+  .prices .content .container-box .offer-box .price-action-box .menu-button {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .prices .content .container-box .offer-box .advantage {
+    display: none;
+  }
 }
 
 /* Стили для больших мобильных устройств (481px - 767px) */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  
+  :root {
+    --el-strip-width: 35px;
+    --el-width-7: 580px;
+  }
+
+  .prices .content .container-box .offer-box .advantage {
+    display: none;
+  }
 }
 
 /* Стили для планшетов в портретном режиме (768px - 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  
+  :root {
+    --el-strip-width: 35px;
+    --el-width-7: 780px;
+  }
+
+  .prices .content .container-box .offer-box .advantage {
+    right: -170px;
+  }
 }
 
 /* Стили для планшетов в ландшафтном режиме (1025px - 1280px) */
