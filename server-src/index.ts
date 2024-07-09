@@ -3,7 +3,7 @@ import app from './app';
 app.listen(process.env.PORT || 9090, () => console.log(`Listening on port ${process.env.PORT || 9090}!`))
 
 // 
-// git add . && git commit -m "2024-07-08 end adapt" && git push origin main
+// git add . && git commit -m "2024-07-09 update email get-price" && git push origin main
 // 
 
 // 200 OK
