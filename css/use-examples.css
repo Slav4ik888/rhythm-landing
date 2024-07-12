@@ -118,6 +118,10 @@
   background: rgba(241, 241, 241, 0.749);
 }
 
+.use-examples-content .first-row .slide-element:hover {
+  cursor: col-resize;
+}
+
 /* Rectangle 492 */
 .use-examples-content .first-row .slide-element .col-stripe {
   width: 4px;
