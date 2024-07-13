@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Width Animation</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            transition: width 1s ease-in-out;
+        }
+        .shrink {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="box"></div>
+    <button id="animateButton">Animate Width</button>
+
+    <script>
+        const box = document.getElementById('box');
+        const button = document.getElementById('animateButton');
+
+        button.addEventListener('click', () => {
+          box.classList.toggle('shrink');
+
+          setTimeout(() => {
+            console.log('shrink');
+            box.classList.toggle('shrink');
+          }, 1000); // Time to shrink and then expand back
+        });
+    </script>
+</body>
+</html>

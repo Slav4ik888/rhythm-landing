@@ -42,7 +42,6 @@
   width: var(--use-examples-content-width);
   height: var(--use-examples-first-row-height);
   margin-top: 30px;
-  /* z-index: 0; */
 }
 
 .use-examples-content .description {
@@ -97,7 +96,22 @@
   height: 100%;
   overflow: hidden;
   border-radius: 20px 20px 0px 0px;
-  /* z-index: 1; */
+}
+/* Чтобы плавно туда-сюда уменьшилась и увеличилась картинка */
+.examples-shrink-1 {
+  width: calc(var(--use-examples-first-row-frame-width) / 2 + 40px - 200px) !important;
+  transition: width 1s ease-in-out;
+  --webkit-transition: width 1s ease-in-out;
+}
+.examples-shrink-2 {
+  width: calc(var(--use-examples-first-row-frame-width) / 2 + 40px + 100px) !important;
+  transition: width 1s ease-in-out;
+  --webkit-transition: width 1s ease-in-out;
+}
+.examples-shrink-3 {
+  width: calc(var(--use-examples-first-row-frame-width) / 2 + 40px) !important;
+  transition: width 1s ease-in-out;
+  --webkit-transition: width 1s ease-in-out;
 }
 
 .use-examples-content .first-row .left-image {
@@ -109,13 +123,32 @@
   position: absolute;
   left: calc(var(--use-examples-first-row-frame-width) / 2 + 40px - var(--use-examples-first-row-slide-element)); /* 371px; */
   top: 0px;
-
   display: flex;
   justify-content: center;
 
   width: var(--use-examples-first-row-slide-element); /* 18px; */
   height: var(--use-examples-first-row-frame-height); /* 318px;*/
   background: rgba(241, 241, 241, 0.749);
+  z-index: 10;
+}
+
+/* Чтобы плавно туда-сюда уменьшилась и увеличилась картинка */
+.examples-shrink-slide-1 {
+  left: calc(var(--use-examples-first-row-frame-width) / 2 + 40px - var(--use-examples-first-row-slide-element) - 200px) !important;
+  transition: left 1s ease-in-out;
+  --webkit-transition: left 1s ease-in-out;
+}
+
+.examples-shrink-slide-2 {
+  left: calc(var(--use-examples-first-row-frame-width) / 2 + 40px - var(--use-examples-first-row-slide-element) + 100px) !important;
+  transition: left 1s ease-in-out;
+  --webkit-transition: left 1s ease-in-out;
+}
+
+.examples-shrink-slide-3 {
+  left: calc(var(--use-examples-first-row-frame-width) / 2 + 40px - var(--use-examples-first-row-slide-element)) !important;
+  transition: left 1s ease-in-out;
+  --webkit-transition: left 1s ease-in-out;
 }
 
 .use-examples-content .first-row .slide-element:hover {
@@ -162,7 +195,7 @@
   box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.08);
   backdrop-filter: blur(8px);
   border-radius: 20px;
-  /* z-index: 1; */
+  z-index: 20;
 }
 
 .advantage-wrap {
@@ -199,7 +232,6 @@
   top: 206px;
   right: -62px;
   width: 212px;
-  z-index: 1;
 }
 
 /* Таблица для детального и глубокого анализа деятельности */
@@ -208,7 +240,6 @@
   top: 19px;
   left: -61px;
   width: 212px;
-  /* z-index: 2; */
 }
 
 

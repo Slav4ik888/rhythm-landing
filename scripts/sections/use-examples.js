@@ -2,28 +2,69 @@ import { getById } from '../utils/get-by-id.js';
 import { removeNotVisible, addNotVisible } from '../utils/class-visible.js';
 
 
-const $draggableExamplesSlideElement = getById('examples-slide-element');
-const $containerFirstRowFrame        = getById('first-row-frame');
-const $examplesLeftImageBox          = getById('examples-left-image-box');
+window.addEventListener('scroll', handleScroll);
+
+let examplesSlideElementStarted = false;
+
+const draggable    = getById('examples-slide-element');
+const container    = getById('first-row-frame');
+const leftImageBox = getById('examples-left-image-box');
+const draggableRectWidth = draggable.getBoundingClientRect().width;
+
+
+function handleScroll() {
+  if (examplesSlideElementStarted) return; // Проверяем, чтобы запустился только 1 раз
+
+  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollPosition >= 3400) { // Пример проверки достижения определённой позиции
+    examplesSlideElementStarted = true;
+    
+    leftImageBox.classList.toggle('examples-shrink');
+
+    setTimeout(() => {
+      leftImageBox.classList.toggle('examples-shrink-1');
+      draggable.classList.toggle('examples-shrink-slide-1');
+    }, 100);
+
+    setTimeout(() => {
+      leftImageBox.classList.toggle('examples-shrink-1'); // Expand back
+      leftImageBox.classList.toggle('examples-shrink-2');
+      draggable.classList.toggle('examples-shrink-slide-1');
+      draggable.classList.toggle('examples-shrink-slide-2');
+    }, 1000);
+
+    setTimeout(() => {
+      leftImageBox.classList.toggle('examples-shrink-2');
+      leftImageBox.classList.toggle('examples-shrink-3'); // Expand back  examples-shrink-2
+      draggable.classList.toggle('examples-shrink-slide-2');
+      draggable.classList.toggle('examples-shrink-slide-3');
+    }, 1800);
+
+    setTimeout(() => {
+      leftImageBox.classList.toggle('examples-shrink-3'); // Expand back  examples-shrink-2
+      draggable.classList.toggle('examples-shrink-slide-3');
+    }, 2800);
+  }
+}
+
+
+// ---------------------------------------------------------
+
 
 let offsetX;
 
-$draggableExamplesSlideElement.addEventListener('dragstart', dragStart);
-$draggableExamplesSlideElement.addEventListener('drag', (e) => { e.preventDefault(); }); // Prevent default to allow custom drag
-$draggableExamplesSlideElement.addEventListener('dragend', dragEnd);
+// draggable.addEventListener('drag', (e) => { e.preventDefault(); }); // Prevent default to allow custom drag
+draggable.addEventListener('dragstart', dragStart);
+draggable.addEventListener('dragend', dragEnd);
 
-$containerFirstRowFrame.addEventListener('dragover', dragover);
-$containerFirstRowFrame.addEventListener('dragenter', dragenter);
-$containerFirstRowFrame.addEventListener('dragleave', dragleave);
-$containerFirstRowFrame.addEventListener('drop', dragdrop);
+container.addEventListener('dragover', dragover);
 
 // ---------------------------------------------------------
 
 function dragStart(e) {
-  console.log('dragStart');
-  // const target = e.target;
-
-  const draggableRect = $draggableExamplesSlideElement.getBoundingClientRect();
+  // console.log('dragStart');
+  const draggableRect = draggable.getBoundingClientRect();
   // {
   //   bottom: 759.6796875
   //   height: 410
@@ -37,58 +78,33 @@ function dragStart(e) {
 
   offsetX = e.clientX - draggableRect.left;
 
-  setTimeout(() => addNotVisible($draggableExamplesSlideElement));
+  setTimeout(() => addNotVisible(draggable));
 }
 
 function dragEnd(e) {
-  console.log('dragEnd');
-  // const target = e.target;
-
-  const containerRect = $containerFirstRowFrame.getBoundingClientRect();
-  const draggableRect = $draggableExamplesSlideElement.getBoundingClientRect();
+  // console.log('dragEnd');
+  const containerRect = container.getBoundingClientRect();
 
   let x = e.clientX - containerRect.left - offsetX;
 
   // Constrain within the container
-  // x = Math.max(0, Math.min(containerRect.width - draggableRect.width, x));
+  x = Math.max(0, Math.min(containerRect.width - draggableRectWidth, x));
 
-  $draggableExamplesSlideElement.style.left = `${x}px`;
-  removeNotVisible($draggableExamplesSlideElement);
+  draggable.style.left = `${x}px`;
+  leftImageBox.style.width = `${x + (draggableRectWidth / 2)}px`;
+  removeNotVisible(draggable);
+  // Чтобы после первого перетаскивания, картинка не перетаскивалась дальше, а только если схватили за ползунок
+  offsetX = undefined;
 }
 
 // ---------------------------------------------------------
 
 function dragover(e) {
-  // console.log('dragover');
   e.preventDefault();
-  const containerRect = $containerFirstRowFrame.getBoundingClientRect();
-  // const draggableRect = $draggableExamplesSlideElement.getBoundingClientRect();
+  const containerRect = container.getBoundingClientRect();
 
   let x = e.clientX - containerRect.left - offsetX;
-  console.log('x: ', x);
+  x = Math.max(0, Math.min(containerRect.width - draggableRectWidth, x));
 
-  $examplesLeftImageBox.style.width = `${x}px`;
-
-  // Constrain within the container
-  // x = Math.max(0, Math.min(containerRect.width - draggableRect.width, x));
-  // y = Math.max(0, Math.min(containerRect.height - draggableRect.height, y));
-
-  // $draggableExamplesSlideElement.style.left = `${x}px`;
-  // $draggableExamplesSlideElement.style.top = `${y}px`;
-}
-
-function dragenter(e) {
-  console.log('dragenter');
-  // e.target.classList.add('hovered');
-}
-
-function dragleave(e) {
-  console.log('dragleave');
-  // e.target.classList.remove('hovered');
-}
-
-function dragdrop(e) {
-  console.log('dragdrop');
-  // e.target.append(item);
-  // e.target.classList.remove('hovered');
+  leftImageBox.style.width = `${x}px`;
 }
