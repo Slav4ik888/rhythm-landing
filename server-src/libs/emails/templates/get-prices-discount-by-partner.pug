@@ -47,6 +47,13 @@ html
         font-size: 14px;
         font-style: italic;
       }
+      .through {
+        text-decoration: line-through;
+        font-weight: 400;
+      }
+      .discount {
+        color: red;
+      }
 
   body
     div.header
@@ -76,7 +83,11 @@ html
       br
 
       p.title СТОИМОСТЬ РАЗРАБОТКИ
-      p.strong.sub-title Базовая стоимость - 43 750 руб.
+      p.discount Вам предоставлена скидка 10%, за переход по партнёрской ссылке!
+      p.strong.sub-title Базовая стоимость -&nbsp;
+        span.through 43 750&nbsp;
+        span &nbsp;39 375 руб.
+
       ul
         li.strong Настройка до 10 показателей (статистик).
         li.empty * Учитываются именно те показатели, которые выводятся на панель. Например, 1 показатель на панели может рассчитываться из 2-3 показателей, которые вносятся в общую таблицу, таким образом это всё равно 1 показатель. 

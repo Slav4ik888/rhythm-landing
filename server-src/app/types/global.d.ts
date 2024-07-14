@@ -1,13 +1,21 @@
 import { Context as KoaContext } from 'koa';
 
 
+interface Utms {
+  utm_source   : string
+  utm_medium   : string
+  utm_campaign : string
+  utm_term     : string
+}
+
+
 type Context = KoaContext & {
   request: {
     body?: {
       email?   : string
       name?    : string
       company? : string
-      partner? : string
+      utms?    : Utms
     }
   },
   state: {

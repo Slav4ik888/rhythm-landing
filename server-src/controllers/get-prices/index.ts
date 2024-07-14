@@ -1,6 +1,6 @@
 import { cfg } from '../../app/config';
 import { Context } from '../../app/types/global';
-import { sendMail } from '../../libs/emails';
+import { getTemplateByDiscountName, sendMail, TemplateType } from '../../libs/emails';
 import { createLogTemp, loggerUsers as logger } from '../../libs/loggers';
 
 
@@ -11,14 +11,15 @@ export async function getPrices(ctx: Context): Promise<any> {
   
   try {
     console.log('Get-prices');
-    const { name, company, email, partner } = ctx.request.body; // { name: '123', company: '456', email: 'korzan.va@mail.ru' }
+    const { name, company, email, utms } = ctx.request.body; // { name: '123', company: '456', email: 'korzan.va@mail.ru' }
     console.log(ctx.request.body); 
+
 
     // mailto Client
     await sendMail({
       to       : email,
       subject  : 'Информация по информационной панели руководителя «Ритм»',
-      template : 'get-prices',
+      template : getTemplateByDiscountName(TemplateType.GET_PRICES, utms),
       locals   : {
         url_demo  : cfg.DEMO_URL,
         url_site  : cfg.SITE_URL,
@@ -36,7 +37,7 @@ export async function getPrices(ctx: Context): Promise<any> {
         companyName: company,
         email,
         name,
-        partner,
+        utms
       }
     });
 

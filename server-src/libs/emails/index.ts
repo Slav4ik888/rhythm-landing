@@ -1,5 +1,5 @@
-export { getGreetting } from './utils'
-export { EmailConfig, SendEmailOptions } from './types'
+export { getGreetting, getTemplateByDiscountName } from './utils'
+export { EmailConfig, SendEmailOptions, TemplateType } from './types'
 export { emailConfig } from './emai-config'
 export { sendGroupMail } from './send-group-mail'
 export { sendMail } from './send-mail'

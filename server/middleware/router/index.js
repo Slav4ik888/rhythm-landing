@@ -15,8 +15,23 @@ router.post('/get-prices', get_prices_1.getPrices);
 // Testing
 router.get('/hello', (ctx) => {
     console.log('Hello wolrd!');
-    ctx.body = 'Hello wolrd!';
+    ctx.body = { string: 'Hello wolrd!' };
 });
+// Отправка запроса POST
+// fetch('http://rhy.thm.su/api/hello', {
+//   method: 'GET',
+//   // body: JSON.stringify({key: 'value'}),
+//   headers: {
+//     'Content-Type': 'application/json'
+//   }
+// })
+// .then((response) => response.json())
+// .then((data) => {
+//   console.log(data); // Вывод ответа сервера
+// })
+// .catch((error) => {
+//   console.error(error); // Обработка ошибок
+// });
 router.get('/hello/:id', (ctx) => {
     // console.log('ctx.path: ', ctx.path); // /api/hello
     const { id } = ctx.params;

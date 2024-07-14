@@ -1,3 +1,5 @@
+import { Utms } from '../../app/types/global';
+
 export interface EmailConfig {
   user : string
   pass : string
@@ -11,7 +13,7 @@ interface Locals {
   url_demo?                   : string
   url_site_primary_secondary? : string
   telegramm?                  : string
-  partner?                    : string
+  utms?                       : Utms
   email?                      : string
   companyId?                  : string
   companyName?                : string
@@ -31,4 +33,9 @@ export interface SendEmailOptions {
   to           : string,
   subject      : string,
   attachments? : Attachment[]
+}
+
+export enum TemplateType {
+  GET_DEMO   = 'get_demo',
+  GET_PRICES = 'get_prices'
 }

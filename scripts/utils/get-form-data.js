@@ -1,3 +1,4 @@
+import { getUTMParameters } from './get-utm-parameters.js';
 
 /**
  * Возвращает объект с данными из формы
@@ -14,5 +15,8 @@ export const getFormData = (formName) => {
     }
   }
 
+  const utmParams = getUTMParameters(body);
+  console.log(utmParams);
+  
   return body;
 };

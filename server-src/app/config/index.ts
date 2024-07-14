@@ -10,3 +10,8 @@ export const cfg = {
     MAX_TOTAL_FILE_SIZE : 12 * 1024 * 1024  // 12Mb
   }
 }
+
+
+export const PARTNERS = [
+  'korzan.va@mail.ru'
+];

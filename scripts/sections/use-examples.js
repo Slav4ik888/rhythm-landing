@@ -2,55 +2,11 @@ import { getById } from '../utils/get-by-id.js';
 import { removeNotVisible, addNotVisible } from '../utils/class-visible.js';
 
 
-window.addEventListener('scroll', handleScroll);
 
-let examplesSlideElementStarted = false;
-
-const draggable    = getById('examples-slide-element');
-const container    = getById('first-row-frame');
-const leftImageBox = getById('examples-left-image-box');
+const draggable          = getById('examples-slide-element');
+const container          = getById('first-row-frame');
+const leftImageBox       = getById('examples-left-image-box');
 const draggableRectWidth = draggable.getBoundingClientRect().width;
-
-
-function handleScroll() {
-  if (examplesSlideElementStarted) return; // Проверяем, чтобы запустился только 1 раз
-
-  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-
-  if (scrollPosition >= 3400) { // Пример проверки достижения определённой позиции
-    examplesSlideElementStarted = true;
-    
-    leftImageBox.classList.toggle('examples-shrink');
-
-    setTimeout(() => {
-      leftImageBox.classList.toggle('examples-shrink-1');
-      draggable.classList.toggle('examples-shrink-slide-1');
-    }, 100);
-
-    setTimeout(() => {
-      leftImageBox.classList.toggle('examples-shrink-1'); // Expand back
-      leftImageBox.classList.toggle('examples-shrink-2');
-      draggable.classList.toggle('examples-shrink-slide-1');
-      draggable.classList.toggle('examples-shrink-slide-2');
-    }, 1000);
-
-    setTimeout(() => {
-      leftImageBox.classList.toggle('examples-shrink-2');
-      leftImageBox.classList.toggle('examples-shrink-3'); // Expand back  examples-shrink-2
-      draggable.classList.toggle('examples-shrink-slide-2');
-      draggable.classList.toggle('examples-shrink-slide-3');
-    }, 1800);
-
-    setTimeout(() => {
-      leftImageBox.classList.toggle('examples-shrink-3'); // Expand back  examples-shrink-2
-      draggable.classList.toggle('examples-shrink-slide-3');
-    }, 2800);
-  }
-}
-
-
-// ---------------------------------------------------------
-
 
 let offsetX;
 
@@ -107,4 +63,49 @@ function dragover(e) {
   x = Math.max(0, Math.min(containerRect.width - draggableRectWidth, x));
 
   leftImageBox.style.width = `${x}px`;
+}
+
+
+// ----- При достижения определённой позиции ----------
+
+window.addEventListener('scroll', handleScroll);
+
+let examplesSlideElementStarted = false;
+
+
+function handleScroll() {
+  if (examplesSlideElementStarted) return; // Проверяем, чтобы запустился только 1 раз
+
+  const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollPosition < 3400) return;
+
+  examplesSlideElementStarted = true;
+  
+  leftImageBox.classList.toggle('examples-shrink');
+
+  
+  setTimeout(() => {
+    leftImageBox.classList.toggle('examples-shrink-1');
+    draggable.classList.toggle('examples-shrink-slide-1');
+  }, 100);
+
+  setTimeout(() => {
+    leftImageBox.classList.toggle('examples-shrink-1'); // Expand back
+    leftImageBox.classList.toggle('examples-shrink-2');
+    draggable.classList.toggle('examples-shrink-slide-1');
+    draggable.classList.toggle('examples-shrink-slide-2');
+  }, 1000);
+
+  setTimeout(() => {
+    leftImageBox.classList.toggle('examples-shrink-2');
+    leftImageBox.classList.toggle('examples-shrink-3'); // Expand back  examples-shrink-2
+    draggable.classList.toggle('examples-shrink-slide-2');
+    draggable.classList.toggle('examples-shrink-slide-3');
+  }, 1800);
+
+  setTimeout(() => {
+    leftImageBox.classList.toggle('examples-shrink-3'); // Expand back  examples-shrink-2
+    draggable.classList.toggle('examples-shrink-slide-3');
+  }, 2800);
 }

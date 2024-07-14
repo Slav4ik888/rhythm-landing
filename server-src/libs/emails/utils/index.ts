@@ -1,6 +1,3 @@
-
-/**
- * v.2023-08-21
- * Приветствие с именем или без
- */
-export const getGreetting = (name?: string) => name ? `${name} здравствуйте!` : 'Здравствуйте!';
+export * from './get-greetting';
+export * from './get-discount-name';
+export * from './get-template-by-discount-name';
