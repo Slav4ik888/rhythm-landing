@@ -3,7 +3,7 @@ import app from './app';
 app.listen(process.env.PORT || 9090, () => console.log(`Listening on port ${process.env.PORT || 9090}!`))
 
 // 
-// git add . && git commit -m "2024-07-14 end utms-labels" && git push origin main
+// git add . && git commit -m "2024-07-20 start promo/page1" && git push origin main
 // 
 
 // 200 OK
