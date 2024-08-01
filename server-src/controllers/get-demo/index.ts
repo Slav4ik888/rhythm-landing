@@ -12,7 +12,7 @@ export async function getDemo(ctx: Context): Promise<any> {
   try {
     console.log('Get-demo');
     const { name, company, email, utms } = ctx.request.body; // { name: '123', company: '456', email: 'korzan.va@mail.ru' }
-    console.log(ctx.request.body); 
+    // console.log(ctx.request.body); 
 
 
     // mailto Client

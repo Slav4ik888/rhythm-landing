@@ -10,7 +10,7 @@ interface Utms {
 
 
 type Context = KoaContext & {
-  request: {
+  request?: {
     body?: {
       email?   : string
       name?    : string

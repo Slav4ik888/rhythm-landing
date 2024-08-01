@@ -1,4 +1,4 @@
-import { Context } from 'koa';
+import { Context } from '../../../app/types/global';
 import { isStr } from '../../validators';
 
 /**
@@ -12,10 +12,12 @@ export const createLogTemp = (
   value?       : string
 ): string => {
   const email = isStr(ctx) ? ctx : (ctx as Context)?.state?.user?.email || 'quest';
+  const utms = isStr(ctx) ? undefined : (ctx as Context)?.request?.body?.utms; // { name: '123', company: '456', email: 'korzan.va@mail.ru' }
 
   let res = `[${functionName}][${email}]`;
 
-  if (value) res += `[${value}]`
+  if (value) res += `[${value}]`;
+  if (utms) res += `[utms: ${JSON.stringify(utms)}]`;
 
   return res
 };

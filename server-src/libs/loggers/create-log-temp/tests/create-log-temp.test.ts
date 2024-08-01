@@ -1,5 +1,5 @@
-import { Context } from 'koa';
 import { createLogTemp } from '..';
+import { Context } from '../../../../app/types/global';
 
 
 describe('createLogTemp', () => {
@@ -17,6 +17,24 @@ describe('createLogTemp', () => {
 
   test('Valid data with value', () => {
     expect(createLogTemp(ctx, 'USER_TEST', 'some value')).toEqual('[USER_TEST][korzan.va@mail.ru][some value]');
+  });
+
+  test('Valid data with context', () => {
+    expect(createLogTemp({
+      ...ctx,
+      // @ts-ignore
+      request: {
+        body: {
+          utms: {
+            utm_source   : 'utm_source111',
+            utm_medium   : 'utm_medium222',
+            utm_campaign : 'utm_campaign333',
+            utm_term     : 'utm_term444',
+          }
+        }
+      }
+    }, 'USER_TEST', 'some value'))
+      .toEqual('[USER_TEST][korzan.va@mail.ru][some value][utms: {\"utm_source\":\"utm_source111\",\"utm_medium\":\"utm_medium222\",\"utm_campaign\":\"utm_campaign333\",\"utm_term\":\"utm_term444\"}]');
   });
 
   test('Ctx undefined', () => {
