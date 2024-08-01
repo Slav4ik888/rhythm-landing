@@ -3,7 +3,7 @@ import app from './app';
 app.listen(process.env.PORT || 9090, () => console.log(`Listening on port ${process.env.PORT || 9090}!`))
 
 // 
-// git add . && git commit -m "2024-08-01 update createLogTemp" && git push origin main
+// git add . && git commit -m "2024-08-01 fix video-duration" && git push origin main
 // 
 
 // sudo apt install certbot
