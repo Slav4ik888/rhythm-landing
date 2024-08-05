@@ -10,7 +10,9 @@ const get_prices_1 = require("../../controllers/get-prices");
 const router = new koa_router_1.default({ prefix: '/api' });
 // { files } = controllers;
 router.post('/get-demo', get_demo_1.getDemo);
+router.post('/get-demo/:id', get_demo_1.getDemo);
 router.post('/get-prices', get_prices_1.getPrices);
+router.post('/get-prices/:id', get_prices_1.getPrices);
 // router.post('/files', checkUserSession, () => { console.log('Hello its /files') });
 // Testing
 router.get('/hello', (ctx) => {

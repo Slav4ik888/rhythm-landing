@@ -11,7 +11,10 @@ const
 
 
 router.post('/get-demo', getDemo);
+router.post('/get-demo/:id', getDemo);
+
 router.post('/get-prices', getPrices);
+router.post('/get-prices/:id', getPrices);
 
 // router.post('/files', checkUserSession, () => { console.log('Hello its /files') });
 
