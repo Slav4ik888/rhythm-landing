@@ -36,7 +36,13 @@ export async function getDemo(ctx: Context): Promise<any> {
         companyName: company,
         email,
         name,
-        utms
+        utm_source   : utms?.utm_source   || '',
+        utm_medium   : utms?.utm_medium   || '',
+        utm_campaign : utms?.utm_campaign || '',
+        utm_term     : utms?.utm_term     || '',
+        utm_content  : utms?.utm_content  || '',
+        utm_device   : utms?.utm_device   || '',
+        utm_date     : utms?.utm_date     || ''
       }
     });
 

@@ -1,4 +1,4 @@
-import { Utms } from '../../app/types/global';
+// import { Utms } from '../../app/types/global';
 
 export interface EmailConfig {
   user : string
@@ -13,7 +13,15 @@ interface Locals {
   url_demo?                   : string
   url_site_primary_secondary? : string
   telegramm?                  : string
-  utms?                       : Utms
+  // utms?                       : Utms
+  utm_source?                 : string
+  utm_medium?                 : string
+  utm_campaign?               : string
+  utm_term?                   : string
+  utm_content?                : string
+  utm_device?                 : string
+  utm_date?                   : string
+
   email?                      : string
   companyId?                  : string
   companyName?                : string

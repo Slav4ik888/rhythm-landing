@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const app_1 = __importDefault(require("./app"));
 app_1.default.listen(process.env.PORT || 9090, () => console.log(`Listening on port ${process.env.PORT || 9090}!`));
 // 
-// git add . && git commit -m "2024-08-05 fix video link" && git push origin main
+// git add . && git commit -m "2024-08-05 fix settings" && git push origin main
 // 
 // sudo apt install certbot
 // sudo certbot --nginx
